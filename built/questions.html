@@ -57,8 +57,8 @@
             <li><a href="dashboard.html">Dashboard</a></li>
               <li><a href="my_profile.html">My profile</a></li>
               <li><a href="get_credit.html">Recharge</a></li>
-              <li><a href="history.html">Call history</a></li>
-              <li><a href="#">Payment history</a></li>
+              <li><a href="call_history.html">Call history</a></li>
+              <li><a href="payment_history.html">Payment history</a></li>
               <li><a href="referral.html">Referrals</a></li>
               <li><a href="#">Logout</a></li>
           </ul>
@@ -72,7 +72,7 @@
           <ul class="question--menu">
             <li class="-active">
               <h2><a href="#">Profile questions</a></h2>
-              <ul style="display: block;">
+              <ul>
                 <li><a href="#quest1" class="openQuestion -active">How do I edit my name or my e-mail address? </a></li>
                 <li><a href="#quest2" class="openQuestion">I forgot my PIN. How do I get a new one?</a></li>
               </ul>
@@ -101,8 +101,8 @@
             <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
 
             <div class="question--images">
-              <img src="./assets/images/content/screen2.jpg" alt="">
-              <img src="./assets/images/content/screen3.jpg" alt="">
+              <a href="#" data-image="./assets/images/content/screen2.jpg"><img id="question--images__small1" src="./assets/images/content/screen2.jpg" alt=""></a>
+              <a href="#" data-image="./assets/images/content/screen3.jpg"><img id="question--images__small2" src="./assets/images/content/screen3.jpg" alt=""></a>
             </div>
 
             <ul>
@@ -123,7 +123,7 @@
             <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
 
             <div class="question--images">
-              <img src="./assets/images/content/screen.jpg" alt="">
+              <a href="#" data-image="./assets/images/content/screen.jpg"><img src="./assets/images/content/screen.jpg" alt=""></a>
             </div>
 
             <ol>
@@ -282,6 +282,10 @@
       </div>
     </footer>
   </div>
+  <div id="overlay" class="-hide"></div>
+
+  <div class="imagePopup"><img src="" alt=""></div>
+
   <script src="assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
   <script src="assets/libs/select2/dist/js/select2.min.js"></script>

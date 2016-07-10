@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: contacts</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <section class="contacts">
+      <h1 class="contacts--headline headline1">Yoloo contacts</h1>
+      <p id="contacts--description--mobile" class="contacts--description">Still can’t find an answer to your question, please write us your question or contact us directly.</p>
+
+      <form action="" class="contacts--form contacts--form--mobile">
+      <fieldset class="contacts--location contacts--location-mobile">
+          <img src="./assets/images/content/planets/UK.png" alt="" class="contacts--planet">
+          <h3>Our office in London:</h3>
+
+          <p>
+            <span class="contacts--address">Address:</span>
+            <span>54 Clarendon Road, Watford, Hertfordshire, WD17 1DU</span>
+          </p>
+
+          <p>
+            <span class="contacts--phone">Phone:</span>
+            <span>+44 20 34112733</span>
+          </p>
+
+          <p>
+            <span class="contacts--fax">Fax:</span>
+            <span>+44 20 33551982</span>
+          </p>
+
+          <p>
+            <span class="contacts--email">Email:</span>
+            <span><a href="#">info@ccstele.co.uk</a></span>
+          </p>
+        </fieldset>
+        <fieldset class="contacts--message" id="contacts--message-mobile">
+          <h2 class="headline2">Drop us a line:</h2>
+          <p class="input_large">
+            <input type="text" id="userName">
+            <label for="userName">Your name</label>
+          </p>
+
+          <p class="input_large">
+            <input type="text" id="userEmail">
+            <label for="userEmail">Your e-mail address</label>
+          </p>
+
+          <p class="input_large">
+            <textarea id="userMessage"></textarea>
+            <label for="userMessage">Leave a message</label>
+          </p>
+
+          <p class="contacts--submit contacts--submit-mobile">
+            <a href="#" id="button_square--mobile" class="button_square -blue -large">Send message</a>
+          </p>
+        </fieldset>
+
+        
+      </form>
+    </section>
+</body>
+</html>

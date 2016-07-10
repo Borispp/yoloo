@@ -29,6 +29,7 @@ var openPopup = function () {
 
 var closePopup = function () {
   $('.-action').addClass('-hidePopup');
+	$('.imagePopup').removeClass('-show')
   $overlay.addClass('-hide');
   $body.removeClass('popup_active');
 }
@@ -48,3 +49,14 @@ var openInfoPopup = function (popupOpen) {
     $(popupOpen).addClass('-hidePopupTop');
   }, 2000);
 }
+
+$('[data-image]').on('click', function (e) {
+	e.preventDefault();
+
+	var imageUrl = $(this).data('image');
+
+	$('.imagePopup img').attr('src', imageUrl);
+	$('.imagePopup').addClass('-show')
+	$overlay.removeClass('-hide')
+  $body.addClass('popup_active');
+});
