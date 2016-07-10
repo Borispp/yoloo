@@ -1,0 +1,268 @@
+#footer
+  background #EFF4F5
+  position relative
+  z-index 2
+
+  .footer--apps
+    padding-top 30px
+    padding-bottom 28px
+    border-bottom 1px solid rgba(188,190,191,0.4)
+    text-align center
+
+    h2
+      display inline-block
+      font-family 'IntroBookBold'
+      font-size 20px
+      color #080340
+      line-height 32px
+      vertical-align top
+      padding-top 13px
+
+    a
+      display inline-block
+      margin-left 15px
+      // float right
+      vertical-align top
+
+  .footer--menu
+    padding-top 80px
+    padding-bottom 80px
+    overflow hidden
+
+    .footer--logo
+      display inline-block
+      float left
+      sprite($s-yoloo)
+
+    .footer--menu--items
+      display inline-block
+      float right
+      width 80%
+      font-size 0
+
+      > div
+        display inline-block
+        font-size 14px
+        vertical-align top
+
+        &:nth-child(1)
+          width 23%
+
+        &:nth-child(2)
+          width 32%
+
+        &:nth-child(3)
+          width 26%
+
+        &:nth-child(4)
+          width 18%
+
+        h3
+          font-family 'IntroBookBold'
+          font-size 16px
+          color #080340
+          padding-bottom 15px
+
+        ul
+          li
+            a
+              font-size 15px
+              color #758188
+              line-height 30px
+
+              &:hover
+                color #FF5D61
+
+  .base_full_col
+    position relative
+    z-index 2
+
+  &:before
+    content ''
+    position absolute
+    z-index 1
+    left -5%
+    top -50px
+    display block
+    width 110%
+    height 100px
+    background #EFF4F5
+    transform rotate(-4deg)
+
+  &.-revert
+    &:before
+      transform rotate(4deg)
+
+  .mobile_copyright
+    padding-top 30px
+    padding-bottom 18px
+    position relative
+    width calc(100% + 18px)
+    clearfix()
+
+    p
+      font-size 8px
+      padding-left 20px
+      color #B3B3B3
+      float left
+
+    .footer--logo
+      display block
+      sprite($s-yoloo)
+      position absolute
+      top 48px
+      left calc(50% - 60px)
+      transform translate(0, -50%) scale(0.6)
+
+    .difiz
+      float right
+      margin-top -12px
+      padding-right 12px
+      transform scale(0.7)
+      text-align center
+
+@media (min-width 1400px)
+  #footer:before
+    transform rotate(-3deg)
+
+  #footer.-revert:before
+    transform rotate(3deg)
+
+@media (min-width 1700px)
+  #footer:before
+    transform rotate(-2deg)
+
+  #footer.-revert:before
+    transform rotate(2deg)
+
+.difiz
+  display block
+  margin-top 28px
+  transition opacity 0.2s
+
+  &:before
+    content ''
+    display inline-block
+    sprite($s-difiz)
+    margin 0 auto 8px
+
+  > span
+    display block
+    color #B3B3B3
+    transition color 0.2s
+
+    span
+      color #0020D8
+      transition color 0.2s
+
+  &:hover
+    opacity 0.6
+    span
+      color #555
+      span
+        color #555
+
+@media (max-width 1160px)
+  #footer .footer--apps
+    text-align center
+
+  #footer .footer--apps h2
+    width 100%
+    text-align center
+
+  #footer .footer--apps a
+    margin-top 10px
+    float none
+
+  #footer .footer--apps .button_square
+    display inline-block
+
+@media (max-width 810px)
+  #footer .footer--menu .footer--menu--items > div h3
+    font-size 13px
+    padding-bottom 10px
+
+  #footer .footer--menu .footer--menu--items > div ul li a
+    font-size 13px
+    line-height 21px
+
+  #footer .footer--menu
+    padding-top 60px
+    padding-bottom 60px
+
+  #footer .footer--menu .footer--logo
+    transform scale(.8)
+
+@media (max-width 767px)
+  .-with_mobile
+    #footer
+
+      .base_full_col
+        padding 0
+
+      .footer--apps
+        padding-top 0
+        border-bottom none
+
+        h2
+          font-size 16px
+          line-height 24px
+          margin-bottom 15px
+          padding 0 18px
+          box-sizing border-box
+
+        .button_square
+          width 240px
+          margin-left 0
+          margin-bottom 12px
+          box-sizing border-box
+
+      .footer--menu
+        padding-top 0
+        padding-bottom 0
+
+        .footer--menu--items
+          float none
+          width 100%
+
+          > div
+            width 100% !important
+            border-top 1px solid #c1e1e6
+
+            &:last-child
+              border-bottom 1px solid #c1e1e6
+
+            h3
+              font-size 14px
+              padding 20px 0 17px 20px
+              position relative
+
+              &:after
+                content ''
+                position absolute
+                top 24px
+                right 20px
+                width 0
+                height 0
+                border-left 4px solid transparent
+                border-right 4px solid transparent
+                border-top 5px solid #09073F
+
+              &.-active
+                &:after
+                  border-left 4px solid transparent
+                  border-right 4px solid transparent
+                  border-bottom 5px solid #09073F
+                  border-top 0
+
+                + ul
+                  display block
+                  margin-top -6px
+                  margin-bottom 18px
+
+                  a
+                    display block
+                    padding 2px 0 2px 20px
+
+          ul
+            display none

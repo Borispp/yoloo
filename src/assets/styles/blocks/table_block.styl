@@ -1,0 +1,94 @@
+.table_block
+  padding-bottom 10px
+
+  h2
+    font-family 'Open Sans Condensed'
+    font-size 34px
+    color #FFF
+    line-height 42px
+    padding-bottom 24px
+
+  .table_block--selection
+    margin-bottom 26px
+    clearfix()
+
+    p, .selection--select
+      float left
+
+      &.selection--select
+        width 180px
+
+      .label
+        display block
+        padding-bottom 8px
+
+      &.selection--submit
+        padding-top 31px
+        margin-left 34px
+
+      &.selection--text
+        font-size 14px
+        color #FFF
+        line-height 22px
+        padding 45px 18px 0
+
+  .table_block--expand_link
+    display block
+    color #EFF4F5
+    font-size 14px
+    position relative
+    padding 16px 0
+
+    span
+      display inline-block
+      float right
+      background #2379FF
+      width calc(100% - 120px)
+      height 1px
+      position relative
+      top 6px
+
+    &.-year
+      span
+        width calc(100% - 60px)
+
+    &:before
+      content ''
+      width 0
+      height 0
+      border-left 4px solid transparent
+      border-right 4px solid transparent
+      border-top 5px solid #fff
+      position relative
+      top 9px
+      margin-right 8px
+      transition border-color 0.2s
+
+    &:hover
+      color #2379FF
+
+      &:before
+        border-top 5px solid #2379FF
+
+  .cssload-loader
+    position relative
+    left 50%
+    margin 18px 0 0 -20px
+
+.sorting_table
+  width 100%
+  color #fff
+
+  .dataTables_empty
+    display none
+
+  thead
+    tr
+      td
+        font-weight 600
+        font-size 16px
+        color #FFF
+        line-height 22px
+
+        &:hover
+          opacity 0.8

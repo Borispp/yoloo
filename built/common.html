@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: Common</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div id="wrapper">
+    <section class="top_section -main">
+      <header id="header">
+        <a href="index.html" class="logo"></a>
+
+        <ul class="menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="get_credit.html">Get Credit</a></li>
+        </ul>
+
+        <div class="user_menu -not_login">
+          <a href="#" class="button -medium">Log In</a>
+          <a href="#" class="button -medium -red">Sign In</a>
+        </div>
+      </header>
+
+      <div class="base_col">
+        <br><br><br><br><br>
+        <a href="#signIn" class="button openPopup">Sign In</a>
+        <br><br>
+        <a href="#check" class="button openPopup">Check</a>
+        <br><br>
+        <a href="#privacy" class="button openPopup">Privacy Popup</a>
+        <br><br>
+        <a href="#infoPopup" class="button openInfoPopup">Info Popup</a>
+        <br><br>
+        <a href="#infoPopup" class="button_square -blue -large openInfoPopup">Send message</a>
+        <br><br>
+
+        <div class="infoPop">
+          <div class="infoPopInner -medium">
+            <div class="infoPop--content">
+              <h2><i class="flag flag-md"></i> Rates in Moldova</h2>
+
+              <ul class="rates_price">
+                <li>
+                  <span>Landline</span>
+                  <p>$0,19</p>
+                </li>
+                <li>
+                  <span>Mobile</span>
+                  <p>$0,49</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="popup_price">
+          <div class="popup_price--header">
+            <img src="./assets/images/content/planets/russia.png" alt="" class="popup_price--country">
+            <h2 class="popup_price--headline">Republic of Moldova</h2>
+            <a href="#" class="button -blue_white">Show all rates</a>
+          </div>
+          <div class="popup_price--prices">
+            <div class="popup_price--item">
+              <h2>MOBILE</h2>
+
+              <div class="popup_price--stat">
+                <h3>Moldova Mobile Moldtelecom CDMA</h3>
+                <span class="popup_price--mobile">
+                  $0.15/min
+                </span>
+                <span class="popup_price--sms">
+                  $0.15/min
+                </span>
+              </div>
+
+              <div class="popup_price--stat">
+                <h3>Moldova Transnistria Mobile</h3>
+                <span class="popup_price--mobile">
+                  $0.15/min
+                </span>
+                <span class="popup_price--sms">
+                  $0.08/min
+                </span>
+              </div>
+
+              <div class="popup_price--stat">
+                <h3>Moldova Moldcell Mobile</h3>
+                <span class="popup_price--mobile">
+                  $1.15/min
+                </span>
+                <span class="popup_price--sms">
+                  $0.06/min
+                </span>
+              </div>
+
+            </div>
+            <div class="popup_price--item">
+              <h2>LANDLINE</h2>
+
+              <div class="popup_price--stat">
+                <h3>Moldova Moldtelecom</h3>
+                <span class="popup_price--landline">
+                  $0.15/min
+                </span>
+              </div>
+
+              <div class="popup_price--stat">
+                <h3>Moldova Transnistria Mobile</h3>
+                <span class="popup_price--landline">
+                  $0.15/min
+                </span>
+              </div>
+
+              <div class="popup_price--stat">
+                <h3>Moldova Moldcell Mobile</h3>
+                <span class="popup_price--landline">
+                  $1.15/min
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="searchCountries -activeInput">
+          <form action="" autocomplete="off">
+            <div>
+              <label for="search" class="searchCountries--icon"></label>
+              <input type="search" id="search" class="input -search -searchCountries">
+
+              <ul class="countriesList -hide">
+                <li data-val="Moldova (+373)" class="visibleLink"><i class="flag flag-md"></i> <span>Moldova (+373)</span></li>
+                <li data-val="United Kingdom (+273)" class="visibleLink"><i class="flag flag-gb"></i> <span>United Kingdom (+273)</span></li>
+                <li data-val="Greece (+173)" class="visibleLink"><i class="flag flag-gr"></i> <span>Greece (+173)</span></li>
+                <li data-val="Italy (+073)" class="visibleLink"><i class="flag flag-it"></i> <span>Italy (+073)</span></li>
+                <li data-val="Germany (+573)" class="visibleLink"><i class="flag flag-de"></i> <span>Germany (+573)</span></li>
+                <li data-val="Spain (673)" class="visibleLink"><i class="flag flag-es"></i> <span>Spain (+673)</span></li>
+                <li data-val="France (+473)" class="visibleLink"><i class="flag flag-fr"></i> <span>France (+473)</span></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <div class="searchCountries -rates">
+          <form action="" autocomplete="off">
+            <div>
+              <label for="search2" class="searchCountries--icon"></label>
+              <label class="searchCountries--rates">See rates</label>
+              <input type="text" id="search2" class="input -search -searchCountries">
+
+              <ul class="countriesList -hide">
+                <li data-val="Moldova (+373)" class="visibleLink"><i class="flag flag-md"></i> <span>Moldova (+373)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                <li data-val="United Kingdom (+273)" class="visibleLink"><i class="flag flag-gb"></i> <span>United Kingdom (+273)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                <li data-val="Greece (+173)" class="visibleLink"><i class="flag flag-gr"></i> <span>Greece (+173)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                <li data-val="Italy (+073)" class="visibleLink"><i class="flag flag-it"></i> <span>Italy (+073)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                <li data-val="Germany (+573)" class="visibleLink"><i class="flag flag-de"></i> <span>Germany (+573)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                <li data-val="Spain (673)" class="visibleLink"><i class="flag flag-es"></i> <span>Spain (+673)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                <li data-val="France (+473)" class="visibleLink"><i class="flag flag-fr"></i> <span>France (+473)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+
+        <br><br><br>
+
+        <div class="notification">
+          <h2>Thank you!</h2>
+        </div>
+
+        <br><br><br>
+
+        <div class="tooltip">
+          <a href="#" class="closePopup"></a>
+          <span class="tooltip--type -green"></span>
+
+          <div class="tooltip--text">
+            <p>Download it for free and use it everywhere you want, because it’s simple to use, get credits and bonuses for your loyality</p>
+            <p><a href="#" class="button -medium -red">Top up your credit</a></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="-revert">
+      <div class="base_full_col">
+        <div class="footer--apps">
+          <h2>Download Yoloo app for free on AppStore or Google Market</h2>
+
+          <a href="#" class="button_square -red -android">Download for Android</a>
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+        </div>
+
+        <div class="footer--menu">
+          <a href="index.html" class="footer--logo"></a>
+
+          <div class="footer--menu--items">
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Yoloo</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Speak freely</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guides</h3>
+              <ul>
+                <li><a href="#">Pricing Guide</a></li>
+                <li><a href="#">Calling Cards</a></li>
+                <li><a href="#">International Calling Guide</a></li>
+                <li><a href="#">Free Calls</a></li>
+                <li><a href="#">Access Numbers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Calling</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Info</h3>
+              <ul>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+
+              <a href="http://difiz.com" class="difiz"><span>Design by <span>difiz.com</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="overlay" class="-hide"></div>
+
+  <div id="infoPopup" class="popup -hidePopupTop">
+    <div class="clipInfo -green">
+      <div class="popupBlock popupInfo">
+        <span class="icon -ok"></span>
+        <p>Your link has been copied to your clipboard</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="signIn" class="popup -hidePopup -action">
+    <div class="clip">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Sign In</h2>
+
+        <form action="" class="form sign">
+          <p class="sign--place"><i class="flag flag-md"></i> You’re in Moldova (+373)</p>
+
+          <p class="sign--phone">
+            <label for="phoneNumber" class="label">Your phone number:</label>
+            <span class="sign--code">+373</span>
+            <input type="tel" id="phoneNumber" placeholder="Enter your phone number" class="input">
+          </p>
+
+          <p class="submit">
+            <input type="submit" value="Get your pass code" class="button -blue">
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="check" class="popup -hidePopup -action">
+    <div class="clip">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+        <br><br>
+        <h2>Check your messages</h2>
+        <form action="" class="form check">
+
+          <p class="check--phone">
+            <label for="phoneNumber2" class="label">Your phone number:</label>
+            <a href="#" class="link -no_underline">Not you?</a>
+            <input type="tel" id="phoneNumber2" placeholder="Enter your phone number" class="input">
+          </p>
+
+          <p class="check--pin">
+            <label for="pin" class="label">Your PIN code:</label>
+            <input type="number" id="pin" placeholder="Enter your PIN code" class="input">
+          </p>
+
+          <p class="check--keep">
+            <input type="checkbox" id="keeplogged"> <label for="keeplogged" class="label">Keep me logged in</label>
+          </p>
+
+          <p class="submit">
+            <input type="submit" value="Sign Up" class="button -blue">
+          </p>
+
+          <p class="check--info">Didn’t receive our text? <a href="#" class="link">We can call you back.</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="privacy" class="popup -hidePopup -action">
+    <div class="popupBlock textPopup">
+      <a href="#" class="closePopup"></a>
+
+      <div class="textPopup--content">
+        <h2>Privacy policy</h2>
+
+        <div class="textPopup--item">
+          <h3>Information we collect</h3>
+          <p>We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which ads you’ll find most useful, the people who matter most to you online, or which YouTube videos you might like.</p>
+          <p>We collect information in the following ways:</p>
+
+          <ul>
+            <li><strong>Information you give us.</strong> For example, many of our services require you to sign up for a Yoloo Account. When you do, we’ll ask for personal information, like your name, email address, telephone number or credit card to store with your account. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible Yoloo Profile, which may include your name and photo. If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            <li><strong>Information we get from your use of our services.</strong> We collect information about the services that you use and how you use them, like when you watch a video on YouTube, visit a website that uses our advertising services, or view and interact with our ads and content. This information includes:</li>
+          </ul>
+        </div>
+
+        <div class="textPopup--item">
+          <h3>How we use information we collect</h3>
+          <p>We use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones, and to protect Yoloo and our users. We also use this information to offer you tailored content – like giving you more relevant search results and ads.</p>
+          <p>We may use the name you provide for your Yoloo Profile across all of the services we offer that require a Yoloo Account. In addition, we may replace past names associated with your Google Account so that you are represented consistently across all our services. If other users already have your email, or other information that identifies you, we may show them your publicly visible Yoloo Profile information, such as your name and photo.</p>
+          <p>If you have a Yoloo Account, we may display your Profile name, Profile photo, and actions you take on Yoloo or on third-party applications connected to your Yoloo Account (such as +1’s, reviews you write and comments you post) in our services, including displaying in ads and other commercial contexts. We will respect the choices you make to limit sharing or visibility settings in your Yoloo Account.</p>
+          <p>When you contact Yoloo, we keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.</p>
+          <p>We use information collected from cookies and other technologies, like pixel tags, to improve your user experience and the overall quality of our services. One of the products we use to do this on our own services is Yoloo Analytics. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate an identifier from cookies or similar technologies with sensitive categories, such as those based on race, religion, sexual orientation or health.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    $.datepicker.regional['en'] = {
+      closeText: 'Close',
+      currentText: 'Today',
+      done: 'Select',
+      // monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      // monthNamesShort: ['янв','фев','мар','апр','май','июн', 'июл','авг','сен','окт','ноя','дек'],
+      dateFormatFrom: 'd M, yy',
+      dateFormat: 'd M, yy',
+      firstDay: 1,
+      isRTL: false,
+      changeDate: function (date) {
+        console.log(date);
+      }
+    };
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+  </script>
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

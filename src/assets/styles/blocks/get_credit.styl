@@ -1,0 +1,134 @@
+.get_credit
+
+  .get_credit--type, .get_credit--ammount, .get_credit--privacy, .get_credit--pay
+    width 530px
+    margin 0 auto
+
+  .get_credit--type
+    clearfix()
+
+    label
+      display inline-block
+      width 250px
+      height 136px
+      border 2px solid #1F5AFB
+      text-align center
+      font-weight 600
+      font-size 18px
+      color #FFF
+      line-height 32px
+      margin 0 6px
+      vertical-align top
+      padding-top 26px
+      borderbox()
+
+      span
+        display block
+
+      &:hover
+        border-color #fff !important
+
+      &.credit_card
+        &:before
+          content ''
+          display inline-block
+          sprite($s-credit_card)
+          margin-bottom 6px
+
+      &.paypal
+        padding-top 34px
+        &:before
+          content ''
+          display inline-block
+          sprite($s-paypal)
+          margin-bottom 2px
+
+    input
+      display none
+
+      &:checked + label
+        background #1F5AFB
+        border-color #1F5AFB !important
+
+  .get_credit--ammount
+    font-size 16px
+    color #FFF
+    line-height 22px
+    padding-top 30px
+    text-align center
+
+    span
+      font-weight 600
+      display inline-block
+      margin-right 30px
+
+    label
+      border 2px solid #1F5AFB
+      display inline-block
+      padding-top 18px
+      border-radius 100px
+      font-size 24px
+      width 119px
+      height 60px
+      margin-right 12px
+      text-align center
+      borderbox()
+
+      &:hover
+        border-color #fff !important
+
+    input
+      display none
+
+      &:checked + label
+        background #1F5AFB
+        border-color #1F5AFB !important
+        color #fff
+
+  .get_credit--privacy
+    font-size 18px
+    color #fff
+    line-height 30px
+    max-width 520px
+    margin 22px auto 0
+
+    a
+      text-decoration underline
+      color #1F5AFB
+
+      &:hover
+        color #809CE7
+
+  .get_credit--pay
+    padding 24px 0 1px 12px
+
+    .checkbox
+      display inline-block
+      vertical-align middle
+      margin-right 24px
+
+    .button_square
+      vertical-align middle
+
+  .get_credit--card
+    width 530px
+    margin 30px auto 0
+    input:focus
+      background #fff
+      color #000
+
+
+    .-date, .-cvc, .-zip
+      display inline-block
+      margin-top 30px
+
+    .-date
+      width 150px
+      margin-right 34px
+
+    .-cvc
+      width 114px
+      margin-right 34px
+
+    .-zip
+      width 179px

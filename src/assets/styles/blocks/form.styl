@@ -1,0 +1,95 @@
+.form
+  &.check
+    .check--phone, .check--pin
+      padding-top 6px
+      padding-bottom 12px
+      position relative
+
+      .link
+        position absolute
+        right 15px
+        bottom 28px
+        font-size 15px
+
+      .label
+        display block
+        padding-bottom 8px
+
+      .input
+        font-weight 600
+        width 100%
+
+        +placeholder()
+          font-weight 600
+          font-size 15px
+          color #cdcccd
+
+    .check--keep
+      padding 8px 0
+
+      input[type="checkbox"]
+        position relative
+        top -2px
+
+    .submit
+      padding-top 8px
+      .button
+        width 100%
+
+    .check--info
+      font-size 16px
+      padding 24px 0 12px
+
+  &.sign
+    .sign--place
+      font-size 16px
+      color #4A4A4A
+      line-height 22px
+
+      .flag
+        position relative
+        top -7px
+
+    .sign--phone
+      padding-top 6px
+
+      .label
+        display block
+        padding-bottom 8px
+
+      .input
+        font-weight 600
+        width 100%
+        padding-left 62px
+
+        +placeholder()
+          font-weight 600
+          font-size 15px
+          color #cdcccd
+
+      .sign--code
+        font-size 16px
+        color #000
+        line-height 22px
+        position absolute
+        margin 15px 0 0 18px
+
+    .submit
+      padding-top 20px
+      .button
+        width 100%
+
+.submitButton
+  background #1F5AFB
+  cursor pointer
+  font-family 'IntroBookBold'
+  padding 0 20px
+  border none
+  font-size 18px
+  color #FFF
+  letter-spacing -1px
+  height 48px
+  transition background 0.3s
+
+  &:hover
+    background #2379FF

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: History</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div id="wrapper">
+    <section class="top_section -universe">
+      <header id="header">
+        <a href="index.html" class="logo"></a>
+
+        <ul class="menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <div class="user_menu">
+          <span class="user_phone">+373 69583934</span>
+          <span class="user_balance">$43.14</span>
+
+          <div class="user_menu--sub">
+            <div class="user_info">
+              <div class="user_info--item">
+                <div class="user_info--name">
+                  <h2>
+                    <span>Bobby Torres</span>
+                    <input type="text" placeholder="Insert your name" class="-insert -hide">
+                  </h2>
+                  <p>
+                    <label for="addPhoto">Add profile photo</label>
+                    <input type="file" id="addPhoto" hidden>
+                  </p>
+                </div>
+              </div>
+              <div class="user_info--email">
+                <span>bob.torres@gmail.com</span>
+                <input type="text" placeholder="Insert your email" class="-insert -mail -hide">
+              </div>
+
+              <p class="user_menu--save -hide">
+                <a href="#" class="button_square -red -small_medium">Save</a>
+              </p>
+            </div>
+
+            <ul class="user_menu--sub_menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="my_profile.html">My profile</a></li>
+              <li><a href="get_credit.html">Recharge</a></li>
+              <li><a href="history.html">Call history</a></li>
+              <li><a href="#">Payment history</a></li>
+              <li><a href="referral.html">Referrals</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="account_params">
+        <aside class="aside">
+          <ul>
+            <li><a href="dashboard.html" class="account_params--dashboard ">Dashboard</a></li>
+            <li><a href="my_profile.html" class="account_params--profile">My profile</a></li>
+            <li><a href="get_credit.html" class="account_params--recharge">Recharge</a></li>
+            <li><a href="history.html" class="account_params--call -active">Call history</a></li>
+            <li><a href="#" class="account_params--payment">Payment history</a></li>
+            <li><a href="referral.html" class="account_params--referrals">Referrals</a></li>
+          </ul>
+        </aside>
+
+        <section class="account_params--content -history">
+          <header class="account_params--header">
+            <h1>Call history</h1>
+            <p>All your calls are registered in the spreadsheet down here</p>
+          </header>
+
+          <div class="table_block">
+            <div class="table_block--selection">
+
+              <!-- <p class="selection--select">
+                <label for="" class="label">Show by</label>
+                <select name="" class="select">
+                  <option value="1">Last week</option>
+                  <option value="2">Last month</option>
+                  <option value="3">Last year</option>
+                </select>
+              </p> -->
+              <div class="selection--select datepicker" style="width: 475px">
+                <label class="label -white -small_padding">Select a date</label>
+                <div class="jrange dates -large" style="width: 475px">
+                  <span class="icon"></span>
+                  <input class="datepicker_chart input -no_focus -datepicker" data-date="" value="5 Mar, 2016"/>
+                  <div></div>
+                </div>
+              </div>
+              <p class="selection--submit">
+                <a href="#" class="button">Update list</a>
+              </p>
+            </div>
+
+            <table class="sorting_table -call_history" id="historyTable" data-url="./posts.json">
+              <thead>
+                <tr>
+                  <td>Date <span></span></td>
+                  <td>Time <span></span></td>
+                  <td>Number <span></span></td>
+                  <td>Duration <span></span></td>
+                  <td>Cost <span></span></td>
+                </tr>
+              </thead>
+              <!-- <tbody>
+                <tr>
+                  <td data-order="1624825580">18 april</td>
+                  <td data-order="721">11:33 AM</td>
+                  <td data-order="42044234124">+ 420 (44) 234-124</td>
+                  <td data-order="145">00:04:25</td>
+                  <td data-order="438">$ 4,38</td>
+                </tr>
+                <tr>
+                  <td data-order="1624825590">28 april</td>
+                  <td data-order="720">11:32 AM</td>
+                  <td data-order="42044234124">+ 420 (44) 234-124</td>
+                  <td data-order="144">00:04:24</td>
+                  <td data-order="638">$ 6,38</td>
+                </tr>
+                <tr>
+                  <td data-order="1624825585">22 april</td>
+                  <td data-order="727">11:37 AM</td>
+                  <td data-order="42044234126">+ 420 (44) 234-126</td>
+                  <td data-order="84">00:01:24</td>
+                  <td data-order="538">$ 5,38</td>
+                </tr>
+                <tr>
+                  <td data-order="1624825555">1 april</td>
+                  <td data-order="500">06:37 AM</td>
+                  <td data-order="42044534126">+ 420 (44) 534-126</td>
+                  <td data-order="624">00:10:24</td>
+                  <td data-order="1538">$ 15,38</td>
+                </tr>
+              </tbody> -->
+            </table>
+
+            <div id="table_start"></div>
+            <a href="#" class="table_block--expand_link" data-url="./posts.json">February, 2016 <span></span></a>
+            <a href="#" class="table_block--expand_link" data-url="./posts.json">January, 2016 <span></span></a>
+            <a href="#" class="table_block--expand_link -year" data-url="./posts.json">2015 <span></span></a>
+            <a href="#" class="table_block--expand_link -year" data-url="./posts.json">2014 <span></span></a>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <footer id="footer">
+      <div class="base_full_col">
+        <div class="footer--apps">
+          <h2>Download Yoloo app for free on AppStore or Google Market</h2>
+
+          <a href="#" class="button_square -red -android">Download for Android</a>
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+        </div>
+
+        <div class="footer--menu">
+          <a href="index.html" class="footer--logo"></a>
+
+          <div class="footer--menu--items">
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Yoloo</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Speak freely</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guides</h3>
+              <ul>
+                <li><a href="#">Pricing Guide</a></li>
+                <li><a href="#">Calling Cards</a></li>
+                <li><a href="#">International Calling Guide</a></li>
+                <li><a href="#">Free Calls</a></li>
+                <li><a href="#">Access Numbers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Calling</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Info</h3>
+              <ul>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+
+              <a href="http://difiz.com" class="difiz"><span>Design by <span>difiz.com</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    $.datepicker.regional['en'] = {
+      closeText: 'Close',
+      currentText: 'Today',
+      done: 'Select',
+      // monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      // monthNamesShort: ['янв','фев','мар','апр','май','июн', 'июл','авг','сен','окт','ноя','дек'],
+      dateFormatFrom: 'd M, yy',
+      dateFormat: 'd M, yy',
+      firstDay: 1,
+      isRTL: false,
+      changeDate: function (date) {
+        console.log(date);
+      }
+    };
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+  </script>
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

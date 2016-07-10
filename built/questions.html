@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: Questions</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header" class="-white">
+      <a href="index.html" class="logo"></a>
+
+      <ul class="menu">
+        <li><a href="index.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="get_credit.html">Get Credit</a></li>
+      </ul>
+
+      <div class="user_menu">
+        <span class="user_phone">+373 69583934</span>
+        <span class="user_balance">$43.14</span>
+
+        <div class="user_menu--sub">
+          <div class="user_info">
+            <div class="user_info--item">
+              <div class="user_info--name">
+                <h2>
+                  <span>Bobby Torres</span>
+                  <input type="text" placeholder="Insert your name" class="-insert -hide">
+                </h2>
+                <p>
+                  <label for="addPhoto">Add profile photo</label>
+                  <input type="file" id="addPhoto" hidden>
+                </p>
+              </div>
+            </div>
+            <div class="user_info--email">
+              <span>bob.torres@gmail.com</span>
+              <input type="text" placeholder="Insert your email" class="-insert -mail -hide">
+            </div>
+
+            <p class="user_menu--save -hide">
+              <a href="#" class="button_square -red -small_medium">Save</a>
+            </p>
+          </div>
+
+          <ul class="user_menu--sub_menu">
+            <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="my_profile.html">My profile</a></li>
+              <li><a href="get_credit.html">Recharge</a></li>
+              <li><a href="history.html">Call history</a></li>
+              <li><a href="#">Payment history</a></li>
+              <li><a href="referral.html">Referrals</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="question">
+      <div class="base_col">
+        <aside class="question--aside">
+          <ul class="question--menu">
+            <li class="-active">
+              <h2><a href="#">Profile questions</a></h2>
+              <ul style="display: block;">
+                <li><a href="#quest1" class="openQuestion -active">How do I edit my name or my e-mail address? </a></li>
+                <li><a href="#quest2" class="openQuestion">I forgot my PIN. How do I get a new one?</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <h2><a href="#">Payment questions</a></h2>
+              <ul>
+                <li><a href="#quest3" class="openQuestion">How do? </a></li>
+              </ul>
+            </li>
+            <li>
+              <h2><a href="#">Calling questions</a></h2>
+              <ul>
+                <li><a href="#quest4" class="openQuestion">My e-mail address? </a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="question--content" id="quest1">
+          <h1 class="headline1">Profile questions</h1>
+
+          <div class="question--item">
+            <h2>How do I edit my name or my e-mail address? </h2>
+            <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
+
+            <div class="question--images">
+              <img src="./assets/images/content/screen2.jpg" alt="">
+              <img src="./assets/images/content/screen3.jpg" alt="">
+            </div>
+
+            <ul>
+              <li>From the main screen, you will find the recent contacts you have called. If icon is displayed then tap on the contact or tap  and swipe left.</li>
+              <li>If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            </ul>
+
+
+
+            <iframe width="695" height="390" src="https://www.youtube.com/embed/NuNvCOUy1Ts?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+            <p>This is it. You’re great!</p>
+          </div>
+
+          <div class="question--item">
+            <h2>I lost the sense of my life. Where can I get the new one?</h2>
+            <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
+
+            <div class="question--images">
+              <img src="./assets/images/content/screen.jpg" alt="">
+            </div>
+
+            <ol>
+              <li><b>Search</b> for the email in your inbox.</li>
+              <li><strong>Click</strong> the Extend My Trial link.</li>
+              <li>You'll be redirected to a page that says "Your trial has been successfully extended."</li>
+              <li>Click Back to your website to log into your trial site.</li>
+              <li>After logging in, you'll see your trial site as you last left it.</li>
+              <li>Your trial will expire in seven days. At that point, you'll be asked to upgrade to pay.</li>
+            </ol>
+
+            <p>This is it. You’re great!</p>
+
+            <div class="helpfull">
+              <h2>Was this article helpful?</h2>
+
+              <p>
+                <a href="#" class="buttonChoice -yes">Yes</a>
+                <a href="#" class="buttonChoice -no">No</a>
+              </p>
+            </div>
+
+            <p>Still can’t find what you're looking for? <a href="#">Contact Our Support</a></p>
+          </div>
+        </div>
+
+        <div class="question--content -hide" id="quest2">
+          <h1 class="headline1">I forgot my PIN. How do I get a new one?</h1>
+
+          <div class="question--item">
+            <h2>How do I edit my name or my e-mail address? </h2>
+            <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
+
+            <ul>
+              <li>From the main screen, you will find the recent contacts you have called. If icon is displayed then tap on the contact or tap  and swipe left.</li>
+              <li>If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            </ul>
+
+            <div class="helpfull">
+              <h2>Was this article helpful?</h2>
+
+              <p>
+                <a href="#" class="buttonChoice -yes">Yes</a>
+                <a href="#" class="buttonChoice -no">No</a>
+              </p>
+            </div>
+
+            <p>Still can’t find what you're looking for? <a href="#">Contact Our Support</a></p>
+          </div>
+        </div>
+
+        <div class="question--content -hide" id="quest3">
+          <h1 class="headline1">How do?</h1>
+
+          <div class="question--item">
+            <h2>How do I edit my name or my e-mail address? </h2>
+            <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
+
+            <ul>
+              <li>From the main screen, you will find the recent contacts you have called. If icon is displayed then tap on the contact or tap  and swipe left.</li>
+              <li>If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            </ul>
+
+            <div class="helpfull">
+              <h2>Was this article helpful?</h2>
+
+              <p>
+                <a href="#" class="buttonChoice -yes">Yes</a>
+                <a href="#" class="buttonChoice -no">No</a>
+              </p>
+            </div>
+
+            <p>Still can’t find what you're looking for? <a href="#">Contact Our Support</a></p>
+          </div>
+        </div>
+
+        <div class="question--content -hide" id="quest4">
+          <h1 class="headline1">My e-mail address?</h1>
+
+          <div class="question--item">
+            <h2>How do I edit my name or my e-mail address? </h2>
+            <p>If you have "Travel mode" or "Internet" as your call setup, you can't receive a call. But to make your life easier, the app will automatically switch your call setup to "Local call" for you to be able to receive it.</p>
+
+            <ul>
+              <li>From the main screen, you will find the recent contacts you have called. If icon is displayed then tap on the contact or tap  and swipe left.</li>
+              <li>If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            </ul>
+
+            <div class="helpfull">
+              <h2>Was this article helpful?</h2>
+
+              <p>
+                <a href="#" class="buttonChoice -yes">Yes</a>
+                <a href="#" class="buttonChoice -no">No</a>
+              </p>
+            </div>
+
+            <p>Still can’t find what you're looking for? <a href="#">Contact Our Support</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="-revert">
+      <div class="base_full_col">
+        <div class="footer--apps">
+          <h2>Download Yoloo app for free on AppStore or Google Market</h2>
+
+          <a href="#" class="button_square -red -android">Download for Android</a>
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+        </div>
+
+        <div class="footer--menu">
+          <a href="index.html" class="footer--logo"></a>
+
+          <div class="footer--menu--items">
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Yoloo</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Speak freely</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guides</h3>
+              <ul>
+                <li><a href="#">Pricing Guide</a></li>
+                <li><a href="#">Calling Cards</a></li>
+                <li><a href="#">International Calling Guide</a></li>
+                <li><a href="#">Free Calls</a></li>
+                <li><a href="#">Access Numbers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Calling</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Info</h3>
+              <ul>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+
+              <a href="http://difiz.com" class="difiz"><span>Design by <span>difiz.com</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    $.datepicker.regional['en'] = {
+      closeText: 'Close',
+      currentText: 'Today',
+      done: 'Select',
+      // monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      // monthNamesShort: ['янв','фев','мар','апр','май','июн', 'июл','авг','сен','окт','ноя','дек'],
+      dateFormatFrom: 'd M, yy',
+      dateFormat: 'd M, yy',
+      firstDay: 1,
+      isRTL: false,
+      changeDate: function (date) {
+        console.log(date);
+      }
+    };
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+  </script>
+
+  <script>
+    $(function() {
+      var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+      ];
+      $( ".autocomplete input" ).autocomplete({
+        source: availableTags
+      });
+    });
+  </script>
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

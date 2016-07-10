@@ -1,0 +1,358 @@
+.hd
+  border-bottom 1px solid #c0e1e7
+  padding-top 40px
+  padding-bottom 60px
+  width 860px
+  margin 0 auto
+  clearfix()
+
+  .hd--description
+    float left
+    width 450px
+
+    h2
+      font-family 'Open Sans Condensed'
+      font-size 62px
+      color #000
+      line-height 72px
+      padding-bottom 30px
+
+    p
+      font-size 18px
+      color #758188
+      line-height 30px
+
+  .hd--image
+    float right
+    width 336px
+    position relative
+    top 40px
+
+.howitworks
+  padding 72px 0 0
+
+  h2
+    font-family 'Open Sans Condensed'
+    font-size 54px
+    color #080340
+    line-height 72px
+    text-align center
+    padding-bottom 70px
+
+  ul
+    li
+      display inline-block
+      position relative
+      width 290px
+      // padding-top 130px
+      padding-bottom 40px
+      margin 0 20px
+      text-align center
+
+      &:before
+        content ''
+        display block
+        margin 0 auto 30px
+        position relative
+        z-index 1
+        left 6px
+
+      .howitworks--num
+        display block
+        position absolute
+        top 0
+        left 50%
+        transform translate(-60%, -30px)
+        z-index 0
+
+      h3
+        font-family 'IntroBookBold'
+        font-weight 600
+        font-size 24px
+        color #080340
+        padding-bottom 20px
+        position relative
+        z-index 1
+
+      p
+        font-size 16px
+        color #758188
+        line-height 24px
+        position relative
+        z-index 1
+
+      &.howitworks--download_app
+
+        .howitworks--num
+          background url('../images/content/1.png') no-repeat
+          background-size 163px 278px
+          width 163px
+          height 278px
+
+        &:before
+          sprite($s-download_app)
+        // background url('../images/content/download_app.jpg') no-repeat 30px 0
+        // background-size 164px 279px
+
+      &.howitworks--create_account
+        .howitworks--num
+          background url('../images/content/2.png') no-repeat
+          background-size 206px 283px
+          width 206px
+          height 283px
+
+        &:before
+          sprite($s-create_account)
+        // background url('../images/content/create_account.jpg') no-repeat 30px 0
+        // background-size 206px 283px
+
+      &.howitworks--get_credit
+        .howitworks--num
+          background url('../images/content/3.png') no-repeat
+          background-size 200px 287px
+          width 200px
+          height 287px
+
+        &:before
+          sprite($s-get_credit)
+        // background url('../images/content/get_credit.jpg') no-repeat 30px 0
+        // background-size 200px 287px
+
+// @media (max-width 1040px)
+//   .howitworks ul li h3
+//     font-size 22px
+//
+//   .howitworks ul li p
+//     font-size 15px
+//
+//   .howitworks ul li
+//     width 30%
+
+@media (max-width 995px)
+  // .hd
+  //   width 100%
+  //
+  //   .hd--description
+  //     h2
+  //       font-size 40px
+  //       line-height 48px
+  //
+  //     p
+  //       width 100%
+  //
+  // .howitworks
+  //   padding-top 54px
+  //
+  //   h2
+  //     font-size 28px !important
+  //     line-height 48px !important
+  //     padding-bottom 30px
+  //
+  //     br
+  //       display inline-block
+  //
+  //   ul li
+  //     transform scale(1)
+  //     text-align left
+  //     padding-top 18px
+  //     background-position 0 0 !important
+  //     padding-left 100px
+  //     box-sizing border-box
+  //     padding-top 0
+  //     border-bottom 1px solid #c1e1e6
+  //     padding-bottom 30px
+  //     width calc(100% - 10px)
+  //     min-height 140px
+  //     margin 0 10px 30px
+  //
+  //     &:last-child
+  //       border-bottom none
+  //       margin-bottom 0
+  //       padding-bottom 0
+  //
+  //     &:before
+  //       position absolute
+  //       transform scale(0.6)
+  //
+  //     .howitworks--num
+  //       left 0
+  //       transform none
+  //       background-size 66px 111px !important
+  //
+  //     &.howitworks--download_app
+  //       &:before
+  //         top 12px
+  //         left 24px
+  //
+  //     &.howitworks--create_account
+  //       &:before
+  //         top 20px
+  //         left 0px
+  //
+  //     &.howitworks--get_credit
+  //       &:before
+  //         top 20px
+  //         left -6px
+  //
+  //     h3, p
+  //       transform scale(1)
+  //
+  //     h3
+  //       padding-top 0
+  //       font-size 14px
+  //       font-family 'IntroBookBold'
+  //       padding-bottom 12px
+  //
+  //     p
+  //       font-size 14px
+
+// @media (max-width 810px)
+//   .howitworks h2
+//     font-size 44px
+//     line-height 52px
+
+
+// @media (max-width 995px)
+//   .hd
+//     padding-bottom 50px
+//
+//   .hd .hd--image
+//     position absolute
+//     top: 0px
+//     left 50%
+//     transform translate(-50%, -100%) scale(0.8)
+//
+//   .hd .hd--description
+//     display block
+//     float none
+//     text-align center
+//     margin 300px auto 0px auto
+//     width 700px
+//
+//   .hd .hd--description h2
+//     font-size 58px
+//     line-height 68px
+//     padding-bottom 20px
+//
+//   .hd .hd--description p
+//     font-size 16px
+//     line-height 25px
+
+// @media (max-width 810px)
+//   .hd
+//     width 400px
+
+  // .hd .hd--image
+    // transform translate(-50%, -100%) scale(0.6)
+
+  // .hd .hd--description
+  //   width 100%
+  //   text-align center
+  //   margin-top 230px
+  //
+  // .hd .hd--description p
+  //   display inline-block
+  //   width 400px
+  //
+  // .hd .hd--description h2
+  //   font-size 52px
+  //   line-height 62px
+  //
+  // .hd .hd--image
+  //   transform translate(-50%, -90%) scale(0.6)
+
+@media (max-width 767px)
+
+  .hd .hd--image
+    position absolute
+    top 0px
+    left 50%
+    transform translate(-50%, -70px) scale(0.6)
+
+  .hd .hd--description
+    width 100%
+    text-align center
+    margin-top 200px
+
+  .hd
+    width calc(100% - 24px)
+    padding-bottom 30px
+
+    .hd--description
+      h2
+        font-size 36px
+        line-height 42px
+        padding-bottom 18px
+
+      p
+        font-size 14px
+        padding 0 12px
+        line-height 26px
+        width 100%
+        borderbox()
+
+  .howitworks
+    padding 36px 2px 0
+
+    h2
+      font-size 36px !important
+      line-height 42px !important
+      padding-bottom 40px
+
+      br
+        display inline-block
+
+    ul li
+      transform scale(1)
+      text-align left
+      padding-top 18px
+      background-position 0 0 !important
+      padding-left 100px
+      box-sizing border-box
+      padding-top 0
+      border-bottom 1px solid #c1e1e6
+      padding-bottom 30px
+      width calc(100% - 10px)
+      min-height 140px
+      margin 0 10px 36px
+
+      &:last-child
+        border-bottom none
+        margin-bottom 0
+        padding-bottom 0
+
+      &:before
+        position absolute
+        transform scale(0.6)
+
+      .howitworks--num
+        left 0
+        transform none
+        background-size 66px 111px !important
+
+      &.howitworks--download_app
+        &:before
+          top 12px
+          left 24px
+
+      &.howitworks--create_account
+        &:before
+          top 20px
+          left 0px
+
+      &.howitworks--get_credit
+        &:before
+          top 20px
+          left -6px
+
+      h3, p
+        transform scale(1)
+
+      h3
+        padding-top 0
+        font-size 14px
+        font-family 'IntroBookBold'
+        padding-bottom 12px
+
+      p
+        font-size 14px

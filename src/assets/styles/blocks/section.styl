@@ -1,0 +1,508 @@
+.top_section
+  &.-universe
+    background #000716 url('../images/content/universbg.jpg')
+    background-size cover
+    background-attachment fixed
+    position relative
+    padding-bottom 120px
+    position relative
+    min-height 800px
+
+    &:before
+      content ''
+      position absolute
+      z-index 0
+      bottom 10px
+      left 50%
+      margin-left 350px
+      display block
+      background url('../images/content/earth.png')
+      width 479px
+      height 482px
+
+  &.-main
+    background url('../images/content/universbg2.jpg')
+    background-size cover
+    background-attachment fixed
+    position relative
+    padding-bottom 120px
+    position relative
+
+    .hand_yoloo
+      background-image url('../images/content/hand_yoloo.png')
+      background-size 709px 729px
+      width 709px
+      height 729px
+      position absolute
+      z-index 0
+      right -60px
+      bottom -130px
+      transform rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)
+      transform rotateX(30deg) rotateY(30deg) rotateZ(20deg) translate(700px, -30px) scale(0.5)
+      transition transform 1s
+
+      &.-position
+        transform rotateX(20deg) rotateY(20deg) rotateZ(15deg) translate(0, 0) scale(0.7)
+
+      &.-transform
+        transform rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)
+
+    .main_description
+      padding 84px 0 20px
+      min-height 343px
+      position relative
+      z-index 2
+      // transform translate(280px, 0)
+      // transition transform 0.4s
+
+      // &.-transform
+      //   transform translate(0, 0)
+
+
+      h1
+        font-family 'Open Sans Condensed'
+        font-weight 300
+        font-size 68px
+        color #FFF
+        line-height 69px
+        padding-bottom 30px
+
+      .main_description--text
+        font-family 'IntroBook'
+        width 500px
+        font-size 20px
+        color #6E989E
+        line-height 30px
+        padding-bottom 32px
+
+      .main_description--download
+        a
+          margin-right 12px
+
+  .header_info
+    padding-top 6px
+
+    h1
+      font-family 'Open Sans Condensed'
+      font-weight 300
+      font-size 68px
+      color #FFF
+      line-height 69px
+
+    .header_info--description
+      font-size 20px
+      color #6E989E
+      line-height 30px
+      padding 30px 0 42px
+
+
+.section
+  position relative
+  padding 30px 0 120px
+
+  h2
+    font-family 'Open Sans Condensed'
+    font-size 62px
+    color #FFF
+    line-height 72px
+    padding-bottom 20px
+
+  &.-blue
+    background #2379FF
+    &:before
+      background #2379FF
+
+  &.-gray
+    background #eff4f5
+    &:before
+      background #eff4f5
+
+  &.-world
+    background url('../images/content/universe3.jpg')
+    padding 300px 0 170px
+    background-size cover
+    background-position center center
+    clearfix()
+
+    &:before
+      background #eff4f5
+
+    .world--description
+      width 450px
+      text-align center
+      margin-top -50px
+      float right
+
+      p
+        font-size 20px
+        color #6E989E
+        line-height 30px
+        padding-bottom 36px
+
+  &.-satellite
+    background url('../images/content/universbg4.jpg')
+    padding 110px 0 130px
+    background-size cover
+    background-position center center
+    clearfix()
+
+    &:before
+      background #eff4f5
+
+    .satellite
+      position absolute
+      z-index 3
+      background url('../images/content/sputnik.png')
+      width 211px
+      height 281px
+      background-size 211px 281px
+      top 30px
+      left 30px
+      -webkit-animation satellite 10s infinite
+      -moz-animation satellite 10s infinite
+      -o-animation satellite 10s infinite
+      animation satellite 10s infinite
+
+  .base_col
+    position relative
+    z-index 2
+
+
+  &.-angle
+    &:before
+      content ''
+      position absolute
+      z-index 1
+      left -5%
+      top -50px
+      display block
+      width 110%
+      height 100px
+      transform rotate(-4deg)
+
+    &.-revert
+
+      &:before
+        content ''
+        position absolute
+        z-index 1
+        left -5%
+        top -50px
+        display block
+        width 110%
+        height 100px
+        transform rotate(4deg)
+
+  &.-land
+    padding-bottom 550px
+    position relative
+
+    #land
+      background-image url('../images/content/land.jpg')
+      width 1295px
+      height 620px
+      background-size 1295px 620px
+      position absolute
+      left 50%
+      margin-left -609px
+      bottom 0
+      transform translate(0, 210px) rotate(10deg)
+      transition transform 0.1s
+
+      &:before
+        content ''
+        display block
+        position absolute
+        background-image url('../images/content/cloud.png')
+        width 356px
+        height 125px
+        background-size 356px 125px
+        transform translate(700px, 25px) rotate(0)
+        transition transform 3s
+
+      &.-transform
+        // transform translate(0, 110px) rotate(-17deg)
+
+        &:before
+          transform translate(250px, -40px) rotate(-20deg)
+
+    #land2
+      background-image url('../images/content/land.jpg')
+      width 456px
+      height 267px
+      background-size 456px 267px
+      margin 0 auto
+
+  &.-hd
+    padding-bottom 24px
+
+@-webkit-keyframes satellite {
+  0%   {transform: translate(0, 0)}
+  50%  {transform: translate(30px, 80%)}
+  100% {transform: translate(0, 0)}
+}
+
+/* Standard syntax */
+@keyframes satellite {
+  0%   {transform: translate(0, 0)}
+  50%  {transform: translate(30px, 80%)}
+  100% {transform: translate(0, 0)}
+}
+
+@media (min-width 1400px)
+  .section.-angle:before
+    transform rotate(-3deg)
+
+  .section.-angle.-revert:before
+    transform rotate(3deg)
+
+@media (min-width 1700px)
+  .section.-angle:before
+    transform rotate(-2deg)
+
+  .section.-angle.-revert:before
+    transform rotate(2deg)
+
+
+@media (max-width 1300px)
+  .top_section.-main .hand_yoloo
+    transform scale(.85)
+
+@media (max-width 1260px)
+  .top_section.-main .main_description h1
+    font-size 62px
+
+  .top_section.-main .hand_yoloo
+    transform scale(.8)
+
+  .top_section.-main .main_description .main_description--text
+    width 458px
+    font-size 18px
+    line-height 27px
+
+// @media (max-width 1170px)
+//   .top_section.-main
+//     padding-bottom 104px
+//
+//   .top_section.-main .hand_yoloo
+//     transform scale(.75)
+//     right -124px
+
+@media (max-width 1125px)
+  // .top_section.-main .main_description h1
+    // font-size 52px
+    // line-height 54px
+
+  // .top_section.-main .main_description .main_description--text
+  //   width 406px
+    // font-size 16px
+    // line-height 23px
+
+  // .top_section.-main .main_description .main_description--text
+  //   padding-bottom 30px
+
+@media (max-width 1040px)
+  // .base_col
+  //   width calc(100% - 60px)
+  //
+  // .top_section.-main
+  //   padding-bottom 24px
+  //
+  // .top_section.-main .main_description
+  //   padding-top 30px
+  //   padding-bottom 100px
+  //
+  //   h1
+  //     font-size 54px
+  //     line-height 54px
+  //
+  // .top_section.-main .main_description .main_description--text
+  //   width 374px
+  //   font-size 17px
+  //   line-height 22px
+  //
+  // .top_section.-main .hand_yoloo
+  //   transform scale(0.75) rotate(-6deg)
+  //   right -139px
+  //   bottom -157px
+
+@media (max-width 980px)
+  // .top_section.-main .main_description
+  //   h1
+  //     font-size 54px
+  //     line-height 60px
+  //
+  // .top_section.-main .main_description .main_description--text
+  //   width 329px
+  //   font-size 16px
+  //   line-height 22px
+
+  // .top_section.-main .hand_yoloo
+  //   transform scale(.6)
+
+@media (max-width 890px)
+  // .top_section.-main .hand_yoloo
+  //   transform scale(0.7) rotate(-5deg)
+  //   right -220px
+  //   bottom -153px
+  //
+  // .top_section.-main .main_description
+  //   padding 40px 0 60px
+
+@media (max-width 810px)
+  .top_section.-main .main_description
+    h1
+      width 100%
+      text-align center
+
+  .top_section.-main .main_description .main_description--text
+    // width 100%
+    margin: 0 auto
+    text-align center
+    font-size 15px
+
+  .top_section.-main .main_description .main_description--download
+    display block
+    width 500px
+    text-align center
+    margin 0 auto
+
+  .top_section.-main .main_description
+    padding 10px 0 60px
+
+  .top_section.-main .hand_yoloo
+    right -452px
+
+// @media (max-width 890px)
+//     .section.-land #land
+//      height 660px
+//      transform: translate(0px, 104.5px) rotate(-7.365deg)
+//
+//
+// @media (max-width 810px)
+//   .section.-land #land
+//
+//     &:before
+//       display none
+//
+// @media (max-width 1000px)
+//   // .section.-world .world--description
+//     // margin 0 auto
+//     // float none
+//   .section.-world .world--description
+//     width 404px
+//
+//   .section.-world .world--description h2
+//     font-size 46px
+//     line-height 54px
+//
+//   .section.-world .world--description p
+//     font-size 17px
+//     line-height 27px
+//     padding-bottom 22px
+//
+//   .section.-world .world--description p .button
+//     font-size 14px
+//     line-height 16px
+//     padding 15px 33px 13px
+//
+//
+// @media (max-width 940px)
+//   .section.-world .world--description
+//     width 320px
+//
+//   .section.-world .world--description h2
+//     line-height 51px
+//     font-size 44px
+//
+//   .section.-world .world--description p
+//     font-size 15px
+//     line-height 22px
+//     padding-bottom 15px
+//
+//   .section.-world
+//     padding 178px 0 160px
+
+
+@media (max-width 767px)
+  .-with_mobile
+    .base_col
+      width calc(100% - 20px)
+
+    .top_section
+      &.-main
+        padding-bottom 250px
+
+        .main_description
+          h1
+            font-size 32px
+            line-height 40px
+
+          .main_description--download a
+            margin-right 0
+
+        .hand_yoloo
+          transform scale(1) rotate(-5deg)
+          background-size 300px 300px
+          width 300px
+          height 300px
+          bottom -10px
+          right 0
+
+         .main_description--text
+           width 100% !important
+
+      .user_menu, .menu
+        display none
+
+      #header
+        padding-top 12px
+
+      .main_description--download
+        text-align center
+        width 100% !important
+
+        a
+          display inline-block
+          width 220px
+          margin-bottom 24px
+
+          &.button_square.-ios,
+          &.button_square.-android
+            padding-left 45px
+
+    .logo
+        transform scale(0.6)
+        float none !important
+        margin 0 auto
+
+    .section
+
+      &.-hd
+        padding-bottom 0
+
+      h2
+        font-size 36px
+        line-height 42px
+
+    .section.-world
+      background-image url("../images/content/universe4.jpg")
+      padding 100px 0 80px
+
+      .world--description
+        width calc(100% - 40px)
+        float none
+        margin 260px auto 0
+
+        h2
+          font-size 36px
+          line-height 42px
+          padding-bottom 16px
+
+        p
+          font-size 16px
+          line-height 24px
+          padding-bottom 20px
+
+          .button
+            font-size 17px

@@ -1,0 +1,46 @@
+.autocomplete
+  position relative
+
+  &:before
+    content ''
+    position absolute
+    sprite($s-search_icon)
+    top 20px
+    left 18px
+
+  .submitButton
+    position absolute
+    right 7px
+    top 7px
+
+  .input
+    padding 19px 48px 17px
+
+    &:focus
+      border-color #2379FF
+
+.ui-autocomplete
+  position absolute
+  width 100%
+  margin-top -20px
+  max-width 870px
+  max-height 300px
+  overflow-y scroll
+  z-index 9990
+  border 2px solid #2379FF
+  background #fff
+  borderbox()
+
+  li
+    padding 18px 24px
+    font-size 16px
+    cursor pointer
+
+    &:nth-child(even)
+      background #f5fafb
+
+    &.ui-state-focus, &:hover
+      background #e9f5f7
+
+.ui-helper-hidden-accessible
+  display none

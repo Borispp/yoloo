@@ -1,0 +1,267 @@
+.searchCountries
+  position relative
+
+  &.-rates
+    .-search
+      padding 19px 0 17px 40px
+      font-weight 600
+
+      &:focus
+        border-color #1F5AFB
+
+    .searchCountries--rates
+      font-weight 600
+      font-size 18px
+      color #FFF
+      letter-spacing -1px
+      background #1F5AFB
+      position absolute
+      z-index 11
+      top 8px
+      right 8px
+      padding 16px 30px 13px
+      transition background 0.25s
+
+      &:hover
+        background #0E58CB
+
+    .countriesList
+      border-color #1F5AFB
+      background #1F5AFB
+      color #fff
+
+      li
+        border-bottom 1px solid #1B65D8
+        // cursor auto
+        clearfix()
+
+        span
+          color #fff
+
+        &:hover, &.active
+          background #4673F0
+
+        .countriesList--prices
+          padding-top 8px
+          font-weight 600
+          display inline-block
+          float right
+
+          strong
+            color #a9bef8
+            padding-right 12px
+
+          strong, em
+            display inline-block
+            vertical-align top
+            font-size 14px
+
+          em
+            width 60px
+
+            &:last-child
+              width 52px
+
+  .-search
+    width 100%
+    padding-left 40px
+    position relative
+    z-index 10
+
+  .searchCountries--icon
+    position relative
+    z-index 11
+
+    &:before
+      content ''
+      position absolute
+      sprite($s-search_icon)
+      top -7px
+      left 15px
+
+  .searchCountries--result
+    width 100%
+    margin-top 52px
+    clearfix()
+
+    .searchCountries--info
+      height 170px
+      clearfix()
+
+    .searchCountries--table
+      width 100%
+      color #fff
+      margin-bottom 36px
+
+      &:last-child
+        margin-bottom 0
+
+      thead
+        td
+          font-family 'IntroBookBold'
+          font-size 16px
+          color #95E7FF
+          line-height 22px
+          text-transform uppercase
+          border-bottom 1px solid rgba(149, 231, 255, .23)
+          padding-bottom 12px
+
+          &:first-child
+            width 320px
+
+          .searchCountries--min
+            position relative
+            padding-left 20px
+
+            &:before
+              content ''
+              position absolute
+              left 0
+              sprite($s-mobile_blue)
+
+          .searchCountries--sms
+            position relative
+            padding-left 22px
+
+            &:before
+              content ''
+              position absolute
+              left 0
+              top 0px
+              sprite($s-sms_blue)
+
+          .searchCountries--landline
+            position relative
+            padding-left 22px
+
+            &:before
+              content ''
+              position absolute
+              left 0
+              top -3px
+              sprite($s-landline_blue)
+
+      tbody
+        tr
+          td
+            padding 4px 0
+            font-size 14px
+            line-height 22px
+
+          &:first-child td
+            padding-top 18px
+
+    .searchCountries--planet
+      width 135px
+      float left
+      margin-right 40px
+
+    .searchCountries--country
+      float left
+      width 370px
+      clearfix()
+
+      h2
+        float left
+        width 216px
+        font-family 'Open Sans Condensed'
+        font-size 30px
+        color #95E7FF
+        line-height 35px
+        position relative
+        margin-top 30px
+        margin-bottom 42px
+
+        &:after
+          content ''
+          width 70px
+          height 1px
+          background #95E7FF
+          opacity .5
+          position absolute
+          bottom -18px
+          left 0
+
+      p
+        float right
+        width 150px
+        text-align right
+
+      .searchCountries--plan
+        li
+          display inline-block
+          margin-right 24px
+          position relative
+
+          &:last-child
+            margin-right 0
+
+          &.searchCountries--phone
+            padding-left 70px
+            &:before
+              content ''
+              position absolute
+              left 0
+              top 16px
+              sprite($s-phone)
+
+          &.searchCountries--mobile
+            padding-left 70px
+            &:before
+              content ''
+              position absolute
+              left 0
+              top 2px
+              sprite($s-mobile)
+
+          span
+            font-weight 600
+            font-size 16px
+            color #FFF
+            line-height 22px
+
+          p
+            font-family 'Open Sans Condensed'
+            font-weight 300
+            font-size 72px
+            color #FFF
+            line-height 80px
+
+    .-get_credit
+      margin 36px 0 0 0
+
+.countriesList
+  position absolute
+  z-index 12
+  margin-top -2px
+  background #fff
+  width 100%
+  border 2px solid #95E7FF
+  overflow-y auto
+  max-height 200px
+  borderbox()
+
+  &.-empty
+    border-bottom none
+
+  li
+    padding 8px 10px
+    border-bottom 1px solid #ceeaee
+    cursor pointer
+    position relative
+
+    &:hover, &.active
+      background #f3f6f7
+
+    &:first-child
+      padding-top 12px
+
+    &:last-child
+      margin-bottom -1px
+
+    span
+      display inline-block
+      font-size 16px
+      color #09073F
+      line-height 22px
+      padding-top 6px

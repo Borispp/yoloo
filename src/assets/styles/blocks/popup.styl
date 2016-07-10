@@ -1,0 +1,389 @@
+.popup_active
+  overflow hidden
+
+#overlay
+  background rgba(36,55,79, 0.6)
+  position fixed
+  z-index 9998
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+.closePopup
+  position absolute
+  top 20px
+  right 20px
+  sprite($s-icon-close)
+  cursor pointer
+  opacity 0.5
+  transition opacity 0.25s
+
+  &:hover
+    opacity 1
+
+.popup
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  z-index 9999
+  transform translate(0,0)
+  transition transform 0.5s
+
+  &.-hidePopup
+    transform translate(-150%, 0)
+
+  &.-hidePopupTop
+    transform translate(0, -100%)
+
+// div.clip
+//   width 600px
+//   position absolute
+//   left 50%
+//   top 50%
+//   transform translate(-50%, -50%)
+//   background #fff
+//   -webkit-clip-path polygon(1% 18%, 100% 0, 90% 95%, 10% 86%)
+//   clip-path polygon(1% 18%, 100% 0, 90% 95%, 10% 86%)
+
+div.clip
+  background url('../images/content/sign_mask.png')
+  background-size 607px 511px
+  width 607px
+  height 511px
+  position absolute
+  left 50%
+  top 50%
+  transform translate(-50%, -50%)
+
+#check
+  div.clip
+    background url('../images/content/check_mask.png')
+    background-size 607px 613px
+    width 607px
+    height 613px
+
+  .bigPopup
+    margin-top 100px
+
+  .closePopup
+    top -60px
+
+div.clipInfo
+  width 320px
+  position absolute
+  left 50%
+  top 50%
+  transform translate(-50%, -90%)
+  // background #fff
+  // -webkit-clip-path polygon(0 0, 100% 20%, 90% 93%, 4% 100%)
+  // clip-path polygon(0 0, 100% 20%, 90% 93%, 4% 100%)
+
+  .icon
+    margin 80px auto 18px
+
+  p
+    font-size 20px
+    color #EFF4F5
+    line-height 30px
+    text-align center
+    padding 0 48px 60px 36px
+    borderbox()
+
+  &.-green
+    background url('../images/content/info_mask.png')
+    width 303px
+    height 265px
+    background-size 303px 265px
+  //   background #66CC66
+
+.textPopup
+  width 900px
+  height calc(94% - 160px)
+  position absolute
+  left 50%
+  top 50%
+  transform translate(-50%, -50%)
+  background #fff
+
+  .closePopup
+    top -45px
+    right 35px
+
+  &:before
+    content ''
+    position absolute
+    top -80px
+    left 0
+    width 0
+    height 0
+    border-bottom 80px solid #fff
+    border-left 900px solid transparent
+
+  &:after
+    content ''
+    position absolute
+    bottom -80px
+    left 0
+    width 0
+    height 0
+    border-top 80px solid #fff
+    border-left 900px solid transparent
+
+.bigPopup
+  width 350px
+  position relative
+  margin 150px 0 140px 130px
+
+  .closePopup
+    top -110px
+    right -90px
+
+.popupBlock
+  h2
+    font-weight 600
+    font-size 24px
+    color #FF5D61
+    padding-bottom 26px
+
+.textPopup--content
+  height 100%
+  overflow-y scroll
+  padding 60px 48px 0
+  font-size 16px
+  color #000
+  line-height 22px
+  borderbox()
+
+  h2
+    font-family 'Open Sans Condensed'
+    font-weight 300
+    font-size 68px
+    color #000
+    line-height 69px
+
+  h3
+    font-weight 600
+    font-size 20px
+    color #080340
+    line-height 32px
+    padding-bottom 18px
+
+  p
+    padding-bottom 18px
+
+  ul
+    li
+      padding-left 15px
+      padding-bottom 18px
+      position relative
+
+      &:before
+        content ''
+        position absolute
+        left 0
+        top 6px
+        background #676E89
+        width 6px
+        height 6px
+        border-radius 50%
+
+  .textPopup--item
+    border-bottom 1px solid #ceeaee
+    padding-bottom 18px
+    margin-bottom 36px
+
+.mobile_menu_popup
+  display block
+  position fixed
+  overflow-y scroll
+  z-index 9999
+  top 0
+  left 0
+  width 100%
+  height calc(100% + 30px)
+  background rgba(35, 121, 255, 0.97)
+  transition transform 0.2s
+
+  .mobile_menu_popup--list
+    text-align center
+    padding-top 100px
+    a
+      display block
+      text-transform uppercase
+      width 100%
+      padding 18px 0
+      font-family 'IntroBookBold'
+      font-size 14px
+      color #FFFFFF
+
+  .main_description--download
+    text-align center
+    margin-top 40px
+
+    .button_square
+      width 200px
+      text-align center
+      padding-left 45px
+      margin-bottom 20px
+
+  .close
+    display block
+    position absolute
+    width 66px
+    height 66px
+
+    &:before
+      content ''
+      display block
+      position absolute
+      left 24px
+      top 24px
+      sprite($s-close2)
+
+  .closeBack
+    display block
+    position absolute
+    top 8px
+    width 66px
+    height 66px
+
+    &:before
+      content ''
+      display block
+      position absolute
+      left 24px
+      top 24px
+      sprite($s-close_back)
+
+
+  &.-mobile_hide_popup
+    transform translate(-100%, 0)
+
+.popup_price
+  background url('../images/content/popup_price.png')
+  width 661px
+  height 475px
+  background-size 661px 475px
+  transition opacity 0.25s
+
+  .popup_price--header
+    position relative
+    clearfix()
+
+    .popup_price--country
+      width 120px
+      margin 8px 0 0 30px
+      float left
+
+    .popup_price--headline
+      float left
+      font-family 'Open Sans Condensed'
+      font-size 30px
+      color #1F5AFB
+      line-height 35px
+      width 140px
+      margin 40px 0 0 30px
+
+      &:after
+        content ''
+        display block
+        width 77px
+        height 1px
+        background #1F5AFB
+        opacity .5
+        margin-top 8px
+
+    .button
+      float right
+      margin-top 54px
+      margin-right 50px
+      padding 14px 60px 10px
+
+      &:after
+        display none
+
+  .popup_price--prices
+    padding-top 12px
+    padding-left 64px
+    clearfix()
+
+    .popup_price--item
+      font-family 'IntroBook'
+      float left
+      width 260px
+      margin-right 40px
+
+      &:last-child
+        width 225px
+        margin-right 0
+
+      h2
+        font-family 'IntroBookBold'
+        font-size 12px
+        color #C1C1C1
+        letter-spacing 0.85px
+        line-height 30px
+        padding-top 0
+        margin-bottom 6px
+        text-transform uppercase
+
+      .popup_price--stat
+        border-bottom 1px solid rgba(207,207,207,.45)
+        padding-bottom 3px
+        margin-bottom 16px
+
+        &:last-child
+          border-bottom none
+
+      h3
+        font-family 'IntroBook'
+        font-size 14px
+        color #09073F
+        line-height 16px
+
+      .popup_price--mobile, .popup_price--sms, .popup_price--landline
+        position relative
+        display inline-block
+        font-size 14px
+        color #4A4A4A
+        line-height 30px
+
+        &:before
+          content ''
+          position absolute
+          top 5px
+          left 0
+
+      .popup_price--mobile
+        margin-right 18px
+        padding-left 14px
+
+        &:before
+          sprite($s-mobile_black)
+
+      .popup_price--sms
+        padding-left 20px
+
+        &:before
+          sprite($s-sms_black)
+
+      .popup_price--landline
+        padding-left 20px
+
+        &:before
+          sprite($s-landline_black)
+
+  &.-opened
+    position absolute
+    z-index 9999
+    bottom 360px
+    margin-left -40px
+    opacity 1
+
+  &.-closed
+    position absolute
+    left -2000px
+    opacity 0 !important

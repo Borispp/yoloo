@@ -1,0 +1,384 @@
+#header
+  width 100%
+  margin 0 auto
+  position relative
+  box-sizing border-box
+  padding 60px 60px 0
+  clearfix()
+
+  .menu_mobile
+    position absolute
+    padding 12px
+    right 12px
+    top 24px
+    display inline-block
+
+    &:before
+      content ''
+      display block
+      sprite($s-menu)
+
+  &.-white
+    .logo
+      sprite($s-logo_white)
+
+    .menu li a
+      color #000
+
+    .button
+      color #000
+
+      &:hover
+        border-color #000
+
+      &.-red
+        color #fff
+
+        &:hover
+          border-color #d62a19
+
+    .user_menu
+      &:before
+        sprite($s-user_icon_black)
+
+      .user_phone
+        color #000
+
+        &:after
+          sprite($s-black_arrow)
+
+      .user_menu--sub
+        box-shadow 1px 2px 6px rgba(0,0,0,0.2)
+        z-index 2
+
+        &:before
+          display none
+
+  .logo
+    float left
+
+  .menu
+    position absolute
+    left calc(50% + 15px)
+    top 72px
+    transform translate(-50%, 0)
+
+    li
+      display inline-block
+      a
+        display inline-block
+        padding 0 18px
+        font-size 18px
+        color #fff
+        font-family 'IntroBookBold'
+        opacity 1
+        transition color 0.2s
+
+        &:hover
+          color #FF5D61
+
+  .user_menu
+    float right
+    color #fff
+    position relative
+    padding-left 42px
+    padding-right 22px
+    padding-top 8px
+
+    .user_menu--avatar
+      position absolute
+      margin -4px 0 0 -48px
+      width 40px
+      height 40px
+      border-radius 50%
+
+      img
+        width 100%
+        border-radius 50%
+
+    &.-not_login
+      margin-top -12px
+
+      a
+        display inline-block
+        margin-right 16px
+
+        &:last-child
+          margin-right 0
+
+      &:before
+        display none
+        padding-left 0
+
+    &:hover
+      overflow visible
+
+      .user_phone
+        color #FF5D61
+        &:after
+          sprite($s-red_arrow)
+
+      &:before
+        sprite($s-user_icon_hover)
+
+      .user_menu--sub
+        right 0
+        opacity 1
+        height auto
+        transform translate(0, 0px)
+
+    &:before
+      content ''
+      cursor pointer
+      display block
+      position absolute
+      left 0
+      margin-top -1px
+      sprite($s-user_icon)
+
+    .user_phone, .user_balance
+      display block
+      cursor pointer
+
+    .user_phone
+      font-family 'IntroBookBold'
+      font-size 18px
+      color #FFF
+      letter-spacing -1px
+      padding-bottom 3px
+      position relative
+
+      &:after
+        content ''
+        display block
+        position absolute
+        top 3px
+        right -22px
+        sprite($s-white_arrow)
+
+    .user_balance
+      font-family 'IntroBookBold'
+      font-size 16px
+      color #66CC66
+      line-height 22px
+
+    .user_menu--sub
+      background #fff
+      width 250px
+      height 0
+      position absolute
+      z-index 9990
+      right -1000px
+      opacity 0
+      transform translate(0, -8px)
+      transition opacity 0.2s linear, transform 0.2s linear
+
+      &:before
+        content ''
+        display block
+        position absolute
+        top -7px
+        right 18px
+        width 0
+        height 0
+        border-left 10px solid transparent
+        border-right 10px solid transparent
+        border-bottom 8px solid #fff
+
+      .user_info
+        border-bottom 1px solid #BCBEBF
+        padding 24px 24px 12px
+        box-sizing border-box
+
+        input.-insert
+          font-family 'IntroBookBold'
+          font-size 18px
+          color #080340
+          padding-bottom 7px
+          width 130px
+          border none
+          border-bottom 1px solid #ddd
+          font-size 15px
+
+          &.-mail
+            // border none
+            width 100%
+
+        .button_square
+          width 100%
+          text-align center
+          margin-top 10px
+          borderbox()
+
+        .user_info--item
+          clearfix()
+
+          .user_info--img
+            float left
+
+            img
+              width 56px
+              height 56px
+              border-radius 50%
+
+            .non_avatar
+              width 56px
+              height 56px
+              border-radius 50%
+              background #eee
+
+          .user_info--name
+            float left
+            padding-top 8px
+            // padding-left 12px
+
+            h2
+              font-family 'IntroBookBold'
+              cursor pointer
+              font-size 18px
+              color #080340
+              padding-bottom 7px
+              width 130px
+
+              span
+                position relative
+
+                &:after
+                  content ''
+                  display none
+                  position absolute
+                  top -2px
+                  right -26px
+                  sprite($s-edit)
+
+              &:hover
+                span:after
+                  display block
+
+            label
+              font-family 'IntroBookBold'
+              font-size 14px
+              color #2379FF
+              line-height 22px
+
+              &:hover
+                color #000
+
+        .user_info--email
+          font-family 'IntroBookBold'
+          font-size 14px
+          color #9B9B9B
+          line-height 22px
+          padding-top 12px
+          cursor pointer
+
+          span
+            position relative
+
+            &:after
+              content ''
+              display none
+              position absolute
+              top -4px
+              right -26px
+              sprite($s-edit)
+
+          &:hover
+            span:after
+              display block
+
+      .user_menu--sub_menu
+        li
+          a
+            display block
+            width 100%
+            padding 18px 24px
+            font-size 18px
+            color #2379FF
+            box-sizing border-box
+            transition color 0.2s linear, background 0.2s linear
+
+            &:hover
+              color #000
+              background #f3f6f7
+
+          &:last-child
+            a
+              border-top 1px solid #BCBEBF
+              color #9B9B9B
+              padding 24px
+
+              &:hover
+                color #000
+
+.logo
+  display block
+  sprite($s-logo)
+
+@media (min-width 1600px)
+  .top_section.-main
+
+    .main_description
+      text-align center
+
+      .main_description--text
+        margin 0 auto
+
+    .hand_yoloo
+      right -180px !important
+
+@media (max-width 1220px)
+  #header
+    width 1120px
+
+  .logo
+    transform scale(.95)
+
+@media (max-width 767px)
+  #header
+    width 100%
+
+//
+// @media (max-width 1125px)
+//   #header .menu li a
+//     font-size 17px
+//     padding 0px 16px
+//
+// @media (max-width 1040px)
+//   .logo
+//     transform scale(.85)
+//
+// @media (max-width 1040px)
+//   #header
+//     width 95%
+//
+//     .menu li a
+//       font-size 16px
+//       padding 0px 14px
+//
+// @media (max-width 980px)
+//   .logo
+//     transform scale(.75)
+//
+// @media (max-width 980px)
+//   #header
+//     .menu li a
+//       font-size 15px
+//       padding: 0px 12px
+//
+// @media (max-width 890px)
+//   #header
+//     padding 34px 0 0
+//
+//   .logo
+//     transform scale(.75) translateY(-20%)
+//
+//   #header .menu
+//     top 38px
+//
+// @media (max-width 810px)
+//   #header .menu
+//     left calc(50% + 0px)
+//
+//   #header .user_menu
+//     padding-right 10px

@@ -1,0 +1,102 @@
+.sorting_table
+
+  thead
+    padding-bottom 12px
+
+    td
+      position relative
+      cursor pointer
+      padding-bottom 12px
+      border-bottom 1px solid #1F5AFB
+
+      &.nosort
+        cursor auto
+
+      span
+        position absolute
+        margin 3px 0 0 18px
+
+        &:before, &:after
+          content ''
+          position absolute
+          right 0
+
+        &:before
+          width 0
+          height 0
+          border-left 3px solid transparent
+          border-right 3px solid transparent
+          border-bottom 4px solid #9B9B9B
+
+        &:after
+          width 0
+          height 0
+          border-left 3px solid transparent
+          border-right 3px solid transparent
+          border-top 4px solid #9B9B9B
+          margin-top 6px
+
+      &.sorting_desc
+        span:after
+          border-top 4px solid #fff !important
+
+      &.sorting_asc
+        span:before
+          border-bottom 4px solid #fff !important
+
+  tbody
+    font-size 14px
+    td
+      border-bottom 1px solid rgba(255,255,255,0.2)
+      padding-top 12px
+      padding-bottom 15px
+
+      &:first-child
+        padding-top 24px
+
+    tr:last-child td
+      border-bottom none
+
+  &.-call_history
+    tbody
+      td:nth-child(1), td:nth-child(2)
+        color #6E989E
+
+      td:nth-child(3)
+        color #fff
+
+      td:nth-child(4)
+        color #2379FF
+
+      td:nth-child(5)
+        color #66CC66
+
+  &.-payment_history
+    thead
+      td:nth-child(1)
+        width 110px
+
+      td:nth-child(2)
+        width 120px
+
+      td:nth-child(3)
+        width 150px
+
+      td:nth-child(5)
+        width 140px
+
+    tbody
+      td:nth-child(1), td:nth-child(2)
+        color #6E989E
+
+      td:nth-child(3)
+        color #fff
+
+      td:nth-child(4)
+        color #66CC66
+
+      td:nth-child(5)
+        color #2379FF
+
+        span
+          border-bottom 1px dotted #2379FF

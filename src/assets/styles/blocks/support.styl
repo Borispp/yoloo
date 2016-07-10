@@ -1,0 +1,201 @@
+.support
+  padding-top 6px
+  padding-bottom 30px
+
+  h1
+    &.headline1
+      color #000
+      text-align center
+      padding-bottom 44px
+
+  h2
+    &.headline1
+      color #000
+      text-align center
+      font-size 62px
+      padding-bottom 32px
+
+  .headline2
+    color #000
+    text-align center
+    padding-bottom 44px
+
+  .autocomplete
+    width 100%
+
+    input[type="text"]
+      width 100%
+
+  .support--questions
+    padding-top 40px
+    padding-bottom 60px
+    margin-bottom 40px
+    border-bottom 1px solid #ceeaee
+    font-size 0
+
+    li
+      display inline-block
+      vertical-align top
+      font-size 16px
+      width 250px
+      margin-right 60px
+
+      &:last-child
+        margin-right 0
+
+      p
+        padding-top 18px
+        padding-right 12px
+
+        a
+          font-family 'IntroBookBold'
+          font-size 16px
+          color #676E89
+          line-height 20px
+
+          &:hover
+            color #ff5d61
+
+        &.support--view_all
+          padding-top 36px
+          a
+            font-size 18px
+            color #2379FF
+
+            &:hover
+              color #ff5d61
+
+      .quest--icon
+        display block
+        width 250px
+        height 156px
+        margin-bottom 12px
+        border 2px solid #2379FF
+        text-align center
+        transition background 0.1s linear, border-color 0.1s linear
+        borderbox()
+
+        &:hover
+          background #FF5D61
+          border-color #FF5D61
+
+          span
+            color #fff
+
+        span
+          font-family 'IntroBookBold'
+          font-size 18px
+          color #2379FF
+          line-height 32px
+
+        &:before
+          content ''
+          display block
+          position relative
+          margin 30px auto 6px
+
+        &.-profile
+          &:before
+            sprite($s-profile_question)
+
+          &:hover:before
+            sprite($s-profile_question_hover)
+
+        &.-payment
+          &:before
+            sprite($s-payment_question)
+
+          &:hover:before
+            sprite($s-payment_question_hover)
+
+        &.-calling
+          &:before
+            sprite($s-calling_question)
+
+          &:hover:before
+            sprite($s-calling_question_hover)
+
+  .support--asked
+    padding-top 30px
+    padding-bottom 20px
+
+    li
+      width 370px
+      display inline-block
+      vertical-align top
+      margin-right 70px
+
+      &:last-child
+        margin-right 0
+
+      p
+        padding-bottom 18px
+
+        a
+          font-family 'IntroBookBold'
+          font-size 16px
+          color #676E89
+          line-height 20px
+
+          &:hover
+            color #ff5d61
+
+#supportMobile
+  background #fff
+
+  h2
+    background rgba(35,121,255,0.97)
+    padding 18px 0
+    text-align center
+    font-family 'Open Sans Condensed'
+    font-size 28px
+    color #FFFFFF
+    line-height 35px
+    box-shadow 0 2px 4px rgba(0,0,0,.1)
+
+  .closeBack
+    top 6px
+
+  .support--list
+
+    .support--item
+      border-bottom 1px solid #ceeaee
+
+      &.-opened
+        .support--response
+          display block
+
+      .support--response
+        display none
+
+    h3
+      font-family 'IntroBookBold'
+      font-size 16px
+      color #09073F
+      position relative
+      padding 20px 24px
+
+      &:after
+        content ''
+        position absolute
+        top 25px
+        right 20px
+        width 0
+        height 0
+        border-left 4px solid transparent
+        border-right 4px solid transparent
+        border-top 5px solid #09073f
+
+    .support--response
+      font-size 15px
+      color #758188
+      line-height 22px
+      padding-left 24px
+      padding-right 24px
+
+      strong
+        display block
+        margin 2px 0 8px
+
+      p
+        margin-bottom 18px

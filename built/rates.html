@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: Common</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div id="wrapper">
+    <section class="top_section -main">
+      <header id="header">
+        <a href="index" class="logo"></a>
+
+        <ul class="menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="get_credit.html">Get Credit</a></li>
+        </ul>
+
+        <div class="user_menu">
+          <span class="user_phone">+373 69583934</span>
+          <span class="user_balance">$43.14</span>
+
+          <div class="user_menu--sub">
+            <div class="user_info">
+              <div class="user_info--item">
+                <div class="user_info--name">
+                  <h2>
+                    <span>Bobby Torres</span>
+                    <input type="text" placeholder="Insert your name" class="-insert -hide">
+                  </h2>
+                  <p>
+                    <label for="addPhoto">Add profile photo</label>
+                    <input type="file" id="addPhoto" hidden>
+                  </p>
+                </div>
+              </div>
+              <div class="user_info--email">
+                <span>bob.torres@gmail.com</span>
+                <input type="text" placeholder="Insert your email" class="-insert -mail -hide">
+              </div>
+
+              <p class="user_menu--save -hide">
+                <a href="#" class="button_square -red -small_medium">Save</a>
+              </p>
+            </div>
+
+            <ul class="user_menu--sub_menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="my_profile.html">My profile</a></li>
+                <li><a href="get_credit.html">Recharge</a></li>
+                <li><a href="history.html">Call history</a></li>
+                <li><a href="#">Payment history</a></li>
+                <li><a href="referral.html">Referrals</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="base_col">
+        <div class="header_info rates_header">
+          <h1>Yoloo rates</h1>
+          <p class="header_info--description">Choose a country to know the best rates in the universe</p>
+
+          <div class="searchCountries -rates">
+            <form action="" autocomplete="off">
+              <div>
+                <label for="search2" class="searchCountries--icon"></label>
+                <label class="searchCountries--rates">See rates</label>
+                <input type="text" id="search2" class="input -search -searchCountries" placeholder="Where are you calling?">
+
+                <ul class="countriesList -hide">
+                  <li data-val="Moldova (+373)" data-rates='{"country": "Moldova", "image": "moldova", "land": "0,19", "mob": "0,09"}' class="visibleLink"><i class="flag flag-md"></i> <span>Moldova (+373)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,19</em> <strong>Mob:</strong> <em>$0,09</em></div></li>
+                  <li data-val="United Kingdom (+273)" data-rates='{"country": "United Kingdom", "image": "UK", "land": "0,20", "mob": "0,10"}' class="visibleLink"><i class="flag flag-gb"></i> <span>United Kingdom (+273)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,20</em> <strong>Mob:</strong> <em>$0,10</em></div></li>
+                  <li data-val="Greece (+173)" data-rates='{"country": "Greece", "image": "greece", "land": "0,23", "mob": "0,11"}' class="visibleLink"><i class="flag flag-gr"></i> <span>Greece (+173)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,23</em> <strong>Mob:</strong> <em>$0,11</em></div></li>
+                  <li data-val="Italy (+073)" data-rates='{"country": "Italy", "image": "italy", "land": "0,22", "mob": "0,12"}' class="visibleLink"><i class="flag flag-it"></i> <span>Italy (+073)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,22</em> <strong>Mob:</strong> <em>$0,12</em></div></li>
+                  <li data-val="Germany (+573)" data-rates='{"country": "Germany", "image": "germany", "land": "0,18", "mob": "0,13"}' class="visibleLink"><i class="flag flag-de"></i> <span>Germany (+573)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,18</em> <strong>Mob:</strong> <em>$0,13</em></div></li>
+                  <li data-val="Spain (673)" data-rates='{"country": "Spain", "image": "spain", "land": "0,17", "mob": "0,14"}' class="visibleLink"><i class="flag flag-es"></i> <span>Spain (+673)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,17</em> <strong>Mob:</strong> <em>$0,14</em></div></li>
+                  <li data-val="France (+473)" data-rates='{"country": "France", "image": "france", "land": "0,16", "mob": "0,15"}' class="visibleLink"><i class="flag flag-fr"></i> <span>France (+473)</span> <div class="countriesList--prices"><strong>Land:</strong> <em>$0,16</em> <strong>Mob:</strong> <em>$0,15</em></div></li>
+                </ul>
+
+                <div class="searchCountries--result">
+                  <div class="searchCountries--info">
+                    <img src="./assets/images/content/md.png" alt="" class="searchCountries--planet">
+
+                    <div class="searchCountries--country">
+                      <h2>Moldova</h2>
+                      <p><a href="#" class="button -red -medium -get_credit">Get credit</a></p>
+                    </div>
+                  </div>
+
+                  <table class="searchCountries--table">
+                    <thead>
+                      <tr>
+                        <td>MOBILE </td>
+                        <td><span class="searchCountries--min">$/MIN</span></td>
+                        <td><span class="searchCountries--sms">$/SMS</span></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Moldova Mobile Moldtelecom CDMA</td>
+                        <td><span class="searchCountries--per_min">$0,15</span></td>
+                        <td><span class="searchCountries--per_sms">$0,08</span></td>
+                      </tr>
+                      <tr>
+                        <td>Moldova Mobile Moldtelecom CDMA</td>
+                        <td><span class="searchCountries--per_min">$0,15</span></td>
+                        <td><span class="searchCountries--per_sms">$0,08</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table class="searchCountries--table">
+                    <thead>
+                      <tr>
+                        <td>LANDLINE </td>
+                        <td><span class="searchCountries--landline">$/MIN</span></td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Moldova Mobile Moldtelecom CDMA</td>
+                        <td><span class="searchCountries--per_min">$0,15</span></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Moldova Mobile Moldtelecom CDMA</td>
+                        <td><span class="searchCountries--per_min">$0,15</span></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- <div class="searchCountries--result">
+                  <img src="./assets/images/content/md.png" alt="" class="searchCountries--planet">
+
+                  <div class="searchCountries--country">
+                    <h2>Moldova</h2>
+
+                    <ul class="searchCountries--plan">
+                      <li class="searchCountries--phone">
+                        <span>Landline / minute</span>
+                        <p>$0,19</p>
+                      </li>
+                      <li class="searchCountries--mobile">
+                        <span>Mobile / minute</span>
+                        <p>$0,15</p>
+                      </li>
+                    </ul>
+
+                    <p><a href="#" class="button -red -medium -get_credit">Get credit</a></p>
+                  </div>
+                </div> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section -blue -angle -revert">
+      <div class="base_col">
+
+        <div class="top_countries">
+          <h2>Top Countries</h2>
+
+          <div class="rates--countries">
+            <ul>
+              <li>
+                <div class="rates--globe_img">
+                  <img src="./assets/images/content/md.png" alt="" width="152">
+                </div>
+                <h2><a href="#">Moldova</a></h2>
+                <dl>
+                  <dt>Landline / minute</dt>
+                  <dd>$0,12</dd>
+
+                  <dt>Mobile / minute</dt>
+                  <dd>$0,02</dd>
+                </dl>
+              </li>
+              <li>
+                <div class="rates--globe_img">
+                  <img src="./assets/images/content/uk.png" alt="" width="152">
+                </div>
+                <h2><a href="#">United Kingdom</a></h2>
+                <dl>
+                  <dt>Landline / minute</dt>
+                  <dd>$0,12</dd>
+
+                  <dt>Mobile / minute</dt>
+                  <dd>$0,02</dd>
+                </dl>
+              </li>
+              <li>
+                <div class="rates--globe_img">
+                  <img src="./assets/images/content/rus.png" alt="" width="136">
+                </div>
+                <h2><a href="#">Russian Federation</a></h2>
+                <dl>
+                  <dt>Landline / minute</dt>
+                  <dd>$0,12</dd>
+
+                  <dt>Mobile / minute</dt>
+                  <dd>$0,02</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+
+          <div class="countriesCatalog">
+            <h2>All Countries</h2>
+            <ul class="countriesCatalog--alphabet">
+              <li><a href="#letterA" class="scrollto">A</a></li>
+              <li><a href="#letterB" class="scrollto">B</a></li>
+              <li><a href="#letterC" class="scrollto">C</a></li>
+              <li><a href="#letterD" class="scrollto">D</a></li>
+              <li><a href="#letterE" class="scrollto">E</a></li>
+              <li><a href="#letterF" class="scrollto">F</a></li>
+              <li><a href="#letterG" class="scrollto">G</a></li>
+              <li><a href="#letterH" class="scrollto">H</a></li>
+              <li><a href="#letterI" class="scrollto">I</a></li>
+              <li><a href="#letterJ" class="scrollto">J</a></li>
+              <li><a href="#letterL" class="scrollto">L</a></li>
+              <li><a href="#letterM" class="scrollto">M</a></li>
+              <li><a href="#letterN" class="scrollto">N</a></li>
+              <li><a href="#letterO" class="scrollto">O</a></li>
+              <li><a href="#letterP" class="scrollto">P</a></li>
+              <li><a href="#letterQ" class="scrollto">Q</a></li>
+              <li><a href="#letterR" class="scrollto">R</a></li>
+              <li><a href="#letterS" class="scrollto">S</a></li>
+              <li><a href="#letterT" class="scrollto">T</a></li>
+              <li><a href="#letterU" class="scrollto">U</a></li>
+              <li><a href="#letterV" class="scrollto">V</a></li>
+              <li><a href="#letterY" class="scrollto">Y</a></li>
+              <li><a href="#letterZ" class="scrollto">Z</a></li>
+            </ul>
+
+            <div class="countriesCatalog--list">
+              <div class="countriesCatalog--collumn">
+                <ul id="letterA">
+                  <li><h3>A</h3></li>
+                  <li><a href="#">Afghanistan</a></li>
+                  <li><a href="#">Albania</a></li>
+                  <li><a href="#">Algeria</a></li>
+                  <li><a href="#">Andorra</a></li>
+                  <li><a href="#">Angola</a></li>
+                  <li><a href="#">Antigua and Barbuda</a></li>
+                  <li><a href="#">Argentina</a></li>
+                  <li><a href="#">Armenia</a></li>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">Austria</a></li>
+                  <li><a href="#">Azerbaijan</a></li>
+                </ul>
+                <ul id="letterB">
+                  <li><h3>B</h3></li>
+                  <li><a href="#">Bahamas</a></li>
+                  <li><a href="#">Bahrain</a></li>
+                  <li><a href="#">Bangladesh</a></li>
+                  <li><a href="#">Barbados</a></li>
+                  <li><a href="#">Belarus</a></li>
+                  <li><a href="#">Belgium</a></li>
+                  <li><a href="#">Belize</a></li>
+                  <li><a href="#">Benin</a></li>
+                  <li><a href="#">Bhutan</a></li>
+                  <li><a href="#">Bolivia</a></li>
+                  <li><a href="#">Bosnia and Herzegovina</a></li>
+                  <li><a href="#">Botswana</a></li>
+                  <li><a href="#">Brazil</a></li>
+                  <li><a href="#">Brunei</a></li>
+                  <li><a href="#">Bulgaria</a></li>
+                  <li><a href="#">Burkina Faso</a></li>
+                  <li><a href="#">Burundi</a></li>
+                </ul>
+                <ul id="letterC">
+                  <li><h3>C</h3></li>
+                  <li><a href="#">Cabo Verde</a></li>
+                  <li><a href="#">Cambodia</a></li>
+                  <li><a href="#">Cameroon</a></li>
+                  <li><a href="#">Canada</a></li>
+                  <li><a href="#">Central African Republic</a></li>
+                  <li><a href="#">Chad</a></li>
+                  <li><a href="#">Chile</a></li>
+                  <li><a href="#">China</a></li>
+                  <li><a href="#">Colombia</a></li>
+                  <li><a href="#">Comoros</a></li>
+                  <li><a href="#">Congo, Republic of the</a></li>
+                  <li><a href="#">Congo, Democratic Republic of the</a></li>
+                  <li><a href="#">Costa Rica</a></li>
+                  <li><a href="#">Cote d'Ivoire</a></li>
+                  <li><a href="#">Croatia</a></li>
+                  <li><a href="#">Cuba</a></li>
+                  <li><a href="#">Cyprus</a></li>
+                  <li><a href="#">Czech Republic</a></li>
+                </ul>
+                <ul id="letterD">
+                  <li><h3>D</h3></li>
+                  <li><a href="#">Denmark</a></li>
+                  <li><a href="#">Djibouti</a></li>
+                  <li><a href="#">Dominica</a></li>
+                  <li><a href="#">Dominican Republic</a></li>
+                </ul>
+              </div>
+
+              <div class="countriesCatalog--collumn">
+                <ul id="letterE">
+                  <li><h3>E</h3></li>
+                  <li><a href="#">Ecuador</a></li>
+                  <li><a href="#">Egypt</a></li>
+                  <li><a href="#">El Salvador</a></li>
+                  <li><a href="#">Equatorial Guinea</a></li>
+                  <li><a href="#">Eritrea</a></li>
+                  <li><a href="#">Estonia</a></li>
+                  <li><a href="#">Ethiopia</a></li>
+                </ul>
+                <ul id="letterF">
+                  <li><h3>F</h3></li>
+                  <li><a href="#">Fiji</a></li>
+                  <li><a href="#">Finland</a></li>
+                  <li><a href="#">France</a></li>
+                </ul>
+                <ul id="letterG">
+                  <li><h3>G</h3></li>
+                  <li><a href="#">Gabon</a></li>
+                  <li><a href="#">Gambia</a></li>
+                  <li><a href="#">Georgia</a></li>
+                  <li><a href="#">Germany</a></li>
+                  <li><a href="#">Ghana</a></li>
+                  <li><a href="#">Greece</a></li>
+                  <li><a href="#">Grenada</a></li>
+                  <li><a href="#">Guatemala</a></li>
+                  <li><a href="#">Guinea</a></li>
+                  <li><a href="#">Guinea-Bissau</a></li>
+                  <li><a href="#">Guyana</a></li>
+                </ul>
+                <ul id="letterH">
+                  <li><h3>H</h3></li>
+                  <li><a href="#">Haiti</a></li>
+                  <li><a href="#">Honduras</a></li>
+                  <li><a href="#">Hungary</a></li>
+                </ul>
+                <ul id="letterI">
+                  <li><h3>I</h3></li>
+                  <li><a href="#">Iceland</a></li>
+                  <li><a href="#">India</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">Iran</a></li>
+                  <li><a href="#">Iraq</a></li>
+                  <li><a href="#">Ireland</a></li>
+                  <li><a href="#">Israel</a></li>
+                  <li><a href="#">Italy</a></li>
+                </ul>
+                <ul id="letterJ">
+                  <li><h3>J</h3></li>
+                  <li><a href="#">Jamaica</a></li>
+                  <li><a href="#">Japan</a></li>
+                  <li><a href="#">Jordan</a></li>
+                </ul>
+                <ul id="letterK">
+                  <li><h3>K</h3></li>
+                  <li><a href="#">Kazakhstan</a></li>
+                  <li><a href="#">Kenya</a></li>
+                  <li><a href="#">Kiribati</a></li>
+                  <li><a href="#">Kosovo</a></li>
+                  <li><a href="#">Kuwait</a></li>
+                  <li><a href="#">Kyrgyzstan</a></li>
+                </ul>
+                <ul id="letterL">
+                  <li><h3>L</h3></li>
+                  <li><a href="#">Laos</a></li>
+                  <li><a href="#">Latvia</a></li>
+                  <li><a href="#">Lebanon</a></li>
+                  <li><a href="#">Lesotho</a></li>
+                  <li><a href="#">Liberia</a></li>
+                  <li><a href="#">Libya</a></li>
+                  <li><a href="#">Liechtenstein</a></li>
+                  <li><a href="#">Lithuania</a></li>
+                  <li><a href="#">Luxembourg</a></li>
+                </ul>
+              </div>
+
+              <div class="countriesCatalog--collumn">
+
+                <ul id="letterM">
+                  <li><h3>M</h3></li>
+                  <li><a href="#">Macedonia</a></li>
+                  <li><a href="#">Madagascar</a></li>
+                  <li><a href="#">Malawi</a></li>
+                  <li><a href="#">Malaysia</a></li>
+                  <li><a href="#">Maldives</a></li>
+                  <li><a href="#">Mali</a></li>
+                  <li><a href="#">Malta</a></li>
+                  <li><a href="#">Marshall Islands</a></li>
+                  <li><a href="#">Mauritania</a></li>
+                  <li><a href="#">Mauritius</a></li>
+                  <li><a href="#">Mexico</a></li>
+                  <li><a href="#">Micronesia</a></li>
+                  <li><a href="#">Moldova</a></li>
+                  <li><a href="#">Monaco</a></li>
+                  <li><a href="#">Mongolia</a></li>
+                  <li><a href="#">Montenegro</a></li>
+                  <li><a href="#">Morocco</a></li>
+                  <li><a href="#">Mozambique</a></li>
+                  <li><a href="#">Myanmar (Burma)</a></li>
+                </ul>
+
+                <ul id="letterN">
+                  <li><h3>N</h3></li>
+                  <li><a href="#">Namibia</a></li>
+                  <li><a href="#">Nauru</a></li>
+                  <li><a href="#">Nepal</a></li>
+                  <li><a href="#">Netherlands</a></li>
+                  <li><a href="#">New Zealand</a></li>
+                  <li><a href="#">Nicaragua</a></li>
+                  <li><a href="#">Niger</a></li>
+                  <li><a href="#">Nigeria</a></li>
+                  <li><a href="#">North Korea</a></li>
+                  <li><a href="#">Norway</a></li>
+                </ul>
+
+                <ul id="letterO">
+                  <li><h3>O</h3></li>
+                  <li><a href="#">Oman</a></li>
+                </ul>
+
+                <ul id="letterP">
+                  <li><h3>P</h3></li>
+                  <li><a href="#">Pakistan</a></li>
+                  <li><a href="#">Palau</a></li>
+                  <li><a href="#">Palestine</a></li>
+                  <li><a href="#">Panama</a></li>
+                  <li><a href="#">Papua New Guinea</a></li>
+                  <li><a href="#">Paraguay</a></li>
+                  <li><a href="#">Peru</a></li>
+                  <li><a href="#">Philippines</a></li>
+                  <li><a href="#">Poland</a></li>
+                  <li><a href="#">Portugal</a></li></a></li>
+                </ul>
+
+                <ul id="letterQ">
+                  <li><h3>Q</h3></li>
+                  <li><a href="#">Qatar</a></li>
+                </ul>
+
+                <ul id="letterR">
+                  <li><h3>R</h3></li>
+                  <li><a href="#">Romania</a></li>
+                  <li><a href="#">Russia</a></li>
+                  <li><a href="#">Rwanda</a></li>
+                </ul>
+              </div>
+              <div class="countriesCatalog--collumn">
+
+                <ul id="letterS">
+                  <li><h3>S</h3></li>
+                  <li><a href="#">St. Kitts and Nevis</a></li>
+                  <li><a href="#">St. Lucia</a></li>
+                  <li><a href="#">St. Vincent and The Grenadines</a></li>
+                  <li><a href="#">Samoa</a></li>
+                  <li><a href="#">San Marino</a></li>
+                  <li><a href="#">Sao Tome and Principe</a></li>
+                  <li><a href="#">Saudi Arabia</a></li>
+                  <li><a href="#">Senegal</a></li>
+                  <li><a href="#">Serbia</a></li>
+                  <li><a href="#">Seychelles</a></li>
+                  <li><a href="#">Sierra Leone</a></li>
+                  <li><a href="#">Singapore</a></li>
+                  <li><a href="#">Slovakia</a></li>
+                  <li><a href="#">Slovenia</a></li>
+                  <li><a href="#">Solomon Islands</a></li>
+                  <li><a href="#">Somalia</a></li>
+                  <li><a href="#">South Africa</a></li>
+                  <li><a href="#">South Korea</a></li>
+                  <li><a href="#">South Sudan</a></li>
+                  <li><a href="#">Spain</a></li>
+                  <li><a href="#">Sri Lanka</a></li>
+                  <li><a href="#">Sudan</a></li>
+                  <li><a href="#">Suriname</a></li>
+                  <li><a href="#">Swaziland</a></li>
+                  <li><a href="#">Sweden</a></li>
+                  <li><a href="#">Switzerland</a></li>
+                  <li><a href="#">Syria</a></li>
+                </ul>
+
+                <ul id="letterT">
+                  <li><h3>T</h3></li>
+                  <li><a href="#">Taiwan</a></li>
+                  <li><a href="#">Tajikistan</a></li>
+                  <li><a href="#">Tanzania</a></li>
+                  <li><a href="#">Thailand</a></li>
+                  <li><a href="#">Timor-Leste</a></li>
+                  <li><a href="#">Togo</a></li>
+                  <li><a href="#">Tonga</a></li>
+                  <li><a href="#">Trinidad and Tobago</a></li>
+                  <li><a href="#">Tunisia</a></li>
+                  <li><a href="#">Turkey</a></li>
+                  <li><a href="#">Turkmenistan</a></li>
+                  <li><a href="#">Tuvalu</a></li>
+                </ul>
+
+                <ul id="letterU">
+                  <li><h3>U</h3></li>
+                  <li><a href="#">Uganda</a></li>
+                  <li><a href="#">Ukraine</a></li>
+                  <li><a href="#">United Arab Emirates</a></li>
+                  <li><a href="#">UK (United Kingdom)</a></li>
+                  <li><a href="#">USA (United States of America)</a></li>
+                  <li><a href="#">Uruguay</a></li>
+                  <li><a href="#">Uzbekistan</a></li>
+                </ul>
+
+                <ul id="letterV">
+                  <li><h3>V</h3></li>
+                  <li><a href="#">Vanuatu</a></li>
+                  <li><a href="#">Vatican City (Holy See)</a></li>
+                  <li><a href="#">Venezuela</a></li>
+                  <li><a href="#">Vietnam</a></li>
+                </ul>
+
+                <ul id="letterY">
+                  <li><h3>Y</h3></li>
+                  <li><a href="#">Yemen</a></li>
+                </ul>
+
+                <ul id="letterZ">
+                  <li><h3>Z</h3></li>
+                  <li><a href="#">Zambia</a></li>
+                  <li><a href="#">Zimbabwe</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="-revert">
+      <div class="base_full_col">
+        <div class="footer--apps">
+          <h2>Download Yoloo app for free on AppStore or Google Market</h2>
+
+          <a href="#" class="button_square -red -android">Download for Android</a>
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+        </div>
+
+        <div class="footer--menu">
+          <a href="#" class="footer--logo"></a>
+
+          <div class="footer--menu--items">
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Yoloo</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Speak freely</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guides</h3>
+              <ul>
+                <li><a href="#">Pricing Guide</a></li>
+                <li><a href="#">Calling Cards</a></li>
+                <li><a href="#">International Calling Guide</a></li>
+                <li><a href="#">Free Calls</a></li>
+                <li><a href="#">Access Numbers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Calling</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Info</h3>
+              <ul>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+
+              <a href="http://difiz.com" class="difiz"><span>Design by <span>difiz.com</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="overlay" class="-hide"></div>
+
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    $.datepicker.regional['en'] = {
+      closeText: 'Close',
+      currentText: 'Today',
+      done: 'Select',
+      // monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      // monthNamesShort: ['янв','фев','мар','апр','май','июн', 'июл','авг','сен','окт','ноя','дек'],
+      dateFormatFrom: 'd M, yy',
+      dateFormat: 'd M, yy',
+      firstDay: 1,
+      isRTL: false,
+      changeDate: function (date) {
+        console.log(date);
+      }
+    };
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+  </script>
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

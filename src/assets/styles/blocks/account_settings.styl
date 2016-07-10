@@ -1,0 +1,69 @@
+.account_settings
+  margin-top -18px
+  width 530px
+  margin 0 auto
+
+  .account_settings--avatar
+    text-align center
+    font-weight 600
+    font-size 14px
+    color #6E989E
+    line-height 22px
+
+    label
+      cursor pointer
+      color #2379FF
+      font-family 'IntroBookBold'
+      font-size 18px
+
+      &:hover
+        color #669CEF
+
+    .account_settings--user_img
+      display block
+      margin 0 auto 20px
+      sprite($s-avatar)
+
+  h3
+    font-family 'Open Sans Condensed'
+    font-size 34px
+    color #FFF
+    line-height 42px
+    text-align center
+    padding 25px 0
+
+  .-half
+    display inline-block
+    width 250px
+    margin-right 16px
+    margin-bottom 30px
+
+    &:nth-child(even)
+      margin-right 0
+
+  .input_large
+    margin-bottom 30px
+
+  .account_settings--submit
+    padding-top 6px
+    padding-bottom 1px
+    width 100%
+    clearfix()
+
+    a
+      width calc(50% - 10px)
+      text-align center
+      float right
+      borderbox()
+
+  .avatar--clip
+    display block
+    width 125px
+    height 125px
+    -webkit-clip-path polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%)
+    clip-path polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%)
+    // background #fff
+    margin 0 auto 20px
+
+    img
+      width 100%

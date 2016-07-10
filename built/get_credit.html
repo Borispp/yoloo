@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: Recharge</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div id="wrapper">
+    <section class="top_section -universe">
+      <header id="header">
+        <a href="index.html" class="logo"></a>
+
+        <ul class="menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <div class="user_menu">
+          <span class="user_phone">+373 69583934</span>
+          <span class="user_balance">$43.14</span>
+
+          <div class="user_menu--sub">
+            <div class="user_info">
+              <div class="user_info--item">
+                <div class="user_info--name">
+                  <h2>
+                    <span>Bobby Torres</span>
+                    <input type="text" placeholder="Insert your name" class="-insert -hide">
+                  </h2>
+                  <p>
+                    <label for="addPhoto">Add profile photo</label>
+                    <input type="file" id="addPhoto" hidden>
+                  </p>
+                </div>
+              </div>
+              <div class="user_info--email">
+                <span>bob.torres@gmail.com</span>
+                <input type="text" placeholder="Insert your email" class="-insert -mail -hide">
+              </div>
+
+              <p class="user_menu--save -hide">
+                <a href="#" class="button_square -red -small_medium">Save</a>
+              </p>
+            </div>
+
+            <ul class="user_menu--sub_menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="my_profile.html">My profile</a></li>
+              <li><a href="get_credit.html">Recharge</a></li>
+              <li><a href="history.html">Call history</a></li>
+              <li><a href="#">Payment history</a></li>
+              <li><a href="referral.html">Referrals</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="account_params">
+        <aside class="aside">
+          <ul>
+            <li><a href="dashboard.html" class="account_params--dashboard ">Dashboard</a></li>
+            <li><a href="my_profile.html" class="account_params--profile">My profile</a></li>
+            <li><a href="get_credit.html" class="account_params--recharge -active">Recharge</a></li>
+            <li><a href="history.html" class="account_params--call">Call history</a></li>
+            <li><a href="#" class="account_params--payment">Payment history</a></li>
+            <li><a href="referral.html" class="account_params--referrals">Referrals</a></li>
+          </ul>
+        </aside>
+
+        <section class="account_params--content">
+          <header class="account_params--header">
+            <h1>Top up your credit</h1>
+            <p>Pay securely with a credit card or PayPal</p>
+          </header>
+
+          <div class="get_credit">
+            <form action="">
+              <p class="get_credit--type">
+                <input name="payment_type" type="radio" id="credit_card" checked>
+                <label for="credit_card" class="credit_card"><span>Pay by Credit Card</span></label>
+                <input name="payment_type" type="radio" id="paypal">
+                <label for="paypal" class="paypal"><span>Pay by PayPal</span></label>
+              </p>
+
+              <p class="get_credit--ammount">
+                <span>Ammount: </span>
+                <input name="ammount" type="radio" value="1" id="one" checked>
+                <label for="one">$1</label>
+                <input name="ammount" type="radio" value="1" id="five">
+                <label for="five">$5</label>
+                <input name="ammount" type="radio" value="1" id="ten">
+                <label for="ten">$10</label>
+              </p>
+
+              <form action="">
+                <section class="get_credit--card">
+                  <p class="input_large">
+                    <input type="text" id="userFirstName" value="">
+                    <label for="userFirstName" class="-non_empty">Card number</label>
+                  </p>
+
+                  <p class="input_large -date">
+                    <input type="text" id="getCreditDate" value="">
+                    <label for="getCreditDate" class="">MM/YY</label>
+                  </p>
+
+                  <p class="input_large -cvc">
+                    <input type="text" id="getCreditCVC" value="">
+                    <label for="getCreditCVC" class="">CVC</label>
+                  </p>
+
+                  <p class="input_large -zip">
+                    <input type="text" id="getCreditZip" value="">
+                    <label for="getCreditZip" class="">Zip/Postal Code</label>
+                  </p>
+                </section>
+              </form>
+
+              <p class="get_credit--privacy">This <a href="#privacy" class="openPopup">privacy policy</a> has been compiled to better serve those who are concerned with how their 'Personally identifiable information' (PII) is being used online.</p>
+
+              <div class="get_credit--pay">
+                <p class="checkbox">
+                  <input type="checkbox" value="agree" id="agreement" checked disabled>
+                  <label for="agreement"><span class="checkbox--status"></span>I agree to Yoloo Privacy <br> Policy</label>
+                </p>
+
+                <a href="#" class="button_square -red -large">Confirm payment of $ <span id="getCreditSumm">1</span></a>
+              </div>
+            </form>
+          </div>
+
+        </section>
+      </section>
+    </section>
+
+    <footer id="footer">
+      <div class="base_full_col">
+        <div class="footer--apps">
+          <h2>Download Yoloo app for free on AppStore or Google Market</h2>
+
+          <a href="#" class="button_square -red -android">Download for Android</a>
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+        </div>
+
+        <div class="footer--menu">
+          <a href="index.html" class="footer--logo"></a>
+
+          <div class="footer--menu--items">
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Yoloo</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Speak freely</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guides</h3>
+              <ul>
+                <li><a href="#">Pricing Guide</a></li>
+                <li><a href="#">Calling Cards</a></li>
+                <li><a href="#">International Calling Guide</a></li>
+                <li><a href="#">Free Calls</a></li>
+                <li><a href="#">Access Numbers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Calling</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Info</h3>
+              <ul>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+
+              <a href="http://difiz.com" class="difiz"><span>Design by <span>difiz.com</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="overlay" class="-hide"></div>
+  <div id="privacy" class="popup -hidePopup -action">
+    <div class="popupBlock textPopup">
+      <a href="#" class="closePopup"></a>
+
+      <div class="textPopup--content">
+        <h2>Privacy policy</h2>
+
+        <div class="textPopup--item">
+          <h3>Information we collect</h3>
+          <p>We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which ads you’ll find most useful, the people who matter most to you online, or which YouTube videos you might like.</p>
+          <p>We collect information in the following ways:</p>
+
+          <ul>
+            <li><strong>Information you give us.</strong> For example, many of our services require you to sign up for a Yoloo Account. When you do, we’ll ask for personal information, like your name, email address, telephone number or credit card to store with your account. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible Yoloo Profile, which may include your name and photo. If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            <li><strong>Information we get from your use of our services.</strong> We collect information about the services that you use and how you use them, like when you watch a video on YouTube, visit a website that uses our advertising services, or view and interact with our ads and content. This information includes:</li>
+          </ul>
+        </div>
+
+        <div class="textPopup--item">
+          <h3>How we use information we collect</h3>
+          <p>We use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones, and to protect Yoloo and our users. We also use this information to offer you tailored content – like giving you more relevant search results and ads.</p>
+          <p>We may use the name you provide for your Yoloo Profile across all of the services we offer that require a Yoloo Account. In addition, we may replace past names associated with your Google Account so that you are represented consistently across all our services. If other users already have your email, or other information that identifies you, we may show them your publicly visible Yoloo Profile information, such as your name and photo.</p>
+          <p>If you have a Yoloo Account, we may display your Profile name, Profile photo, and actions you take on Yoloo or on third-party applications connected to your Yoloo Account (such as +1’s, reviews you write and comments you post) in our services, including displaying in ads and other commercial contexts. We will respect the choices you make to limit sharing or visibility settings in your Yoloo Account.</p>
+          <p>When you contact Yoloo, we keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.</p>
+          <p>We use information collected from cookies and other technologies, like pixel tags, to improve your user experience and the overall quality of our services. One of the products we use to do this on our own services is Yoloo Analytics. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate an identifier from cookies or similar technologies with sensitive categories, such as those based on race, religion, sexual orientation or health.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    $.datepicker.regional['en'] = {
+      closeText: 'Close',
+      currentText: 'Today',
+      done: 'Select',
+      // monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      // monthNamesShort: ['янв','фев','мар','апр','май','июн', 'июл','авг','сен','окт','ноя','дек'],
+      dateFormatFrom: 'd M, yy',
+      dateFormat: 'd M, yy',
+      firstDay: 1,
+      isRTL: false,
+      changeDate: function (date) {
+        console.log(date);
+      }
+    };
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+  </script>
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

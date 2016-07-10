@@ -1,0 +1,554 @@
+.rates
+  clearfix()
+
+  .rates--check
+    float right
+    margin-top 30px
+    width 250px
+    vertical-align top
+    clearfix()
+
+    h3
+      font-weight 600
+      font-size 21px
+      color #FFFFFF
+      letter-spacing 1px
+      line-height 25px
+      width 170px
+      text-align left
+      float right
+
+    h2
+      font-family 'Open Sans Condensed'
+      font-size 68px
+      color #FFF
+      line-height 69px
+      padding 12px 0 18px
+      clear both
+
+    .label
+      padding-bottom 16px
+
+    .-searchCountries
+      margin-top -8px
+      background transparent
+      color #fff
+      border-color #95E7FF
+
+  .rates--form
+    font-size 16px
+    color #AEC4FF
+    line-height 22px
+
+    .form--search
+      padding 18px 0 0
+
+    .rates--form--text
+      padding 24px 0 24px
+
+    .input
+      width 250px
+
+.rates--countries
+  float left
+  vertical-align top
+
+  ul
+    li
+      padding-top 31px
+      padding-left 24px
+      padding-right 70px
+      display inline-block
+      vertical-align top
+
+      &:last-child
+        padding-right 0
+
+      &:first-child
+        padding-top 0
+
+      img
+        margin-left -24px
+
+      .rates--globe_img
+        height 150px
+
+      h2
+        font-family 'Open Sans Condensed'
+        width 130px
+        font-size 34px
+        color #95E7FF
+        line-height 35px
+        padding-top 12px
+        padding-bottom 0
+
+        a
+          color #95E7FF
+          text-decoration none
+
+          &:after
+            content ''
+            display block
+            width 70px
+            height 1px
+            background #95E7FF
+            margin 16px 0 2px
+
+          &:hover
+            color #ff5d61
+
+            &:after
+              background #de4839
+
+
+      dl
+        dt
+          display inline-block
+          padding-top 24px
+          font-weight 600
+          font-size 16px
+          color #FFFFFF
+          line-height 22px
+
+        dd
+          font-family 'Open Sans Condensed'
+          font-size 72px
+          color #FFFFFF
+          letter-spacing 0px
+          line-height 78px
+
+.rates_header
+  text-align center
+  padding-bottom 20px
+
+  .searchCountries
+    width 100%
+    margin 0 auto
+    max-width 550px
+    text-align left
+
+    input
+      background none
+      color #fff
+
+      +placeholder()
+        font-size 16px
+        color #FFF
+
+
+.top_countries
+  text-align center
+  width 1000px
+  margin 0 auto
+  clearfix()
+
+  h2
+    font-size 68px
+    margin-bottom 52px
+
+  .rates--countries
+    float none
+    width 100%
+    ul
+      li
+        padding 0
+        width 300px
+
+        h2
+          width 100%
+          text-align center
+          margin-bottom 0
+
+          a
+            &:after
+              margin 16px auto
+
+        dl
+          margin-top -18px
+
+  .countriesCatalog
+    padding-top 80px
+
+    .countriesCatalog--alphabet
+      li
+        display inline-block
+
+        a
+          font-family 'Open Sans Condensed'
+          font-size 52px
+          font-weight 300
+          padding 0 8px
+          color #95E7FF
+
+          &:hover
+            color #fff
+
+    .countriesCatalog--list
+      margin-left 36px
+      font-size 0
+      padding-top 10px
+
+      .countriesCatalog--collumn
+        width 25%
+        display inline-block
+        vertical-align top
+        font-size 16px
+
+        ul
+          padding-top 30px
+          opacity 1
+          transition opacity 0.2s
+
+          &.-fade
+            opacity 0.3
+
+          &:hover
+            opacity 1
+
+
+          li
+            text-align left
+            position relative
+            width 70%
+
+            a
+              display block
+              font-size 16px
+              color #FFF
+              padding 3px 0
+              line-height 22px
+              transition opacity 0.2s
+
+              &:hover
+                opacity 0.7
+
+            h3
+              position absolute
+              left -40px
+              margin-top 2px
+              font-family 'Open Sans Condensed'
+              font-weight 300
+              font-size 42px
+              color #95E7FF
+
+@media (max-width 1000px)
+  // .rates
+  //   position relative
+  //
+  // .rates .rates--check h3
+  //   display none
+  //
+  // .rates .rates--check h2
+  //   text-align center
+  //
+  // .rates--countries
+  //   float none
+  //   margin 0 auto
+  //   margin-top 298px
+  //   width 615px
+  //
+  // .rates .rates--check
+  //   position absolute
+  //   top -176px
+  //   left 50%
+  //   transform translate(-50%, -50%)
+  //   width 477px
+  //
+  // .rates .rates--check .searchCountries.-activeInput form .input_wraper
+  //   padding-top 0px !important;
+  //
+  // .rates .rates--form .rates--form--text
+  //   padding 14px 0 14px
+  //   text-align center
+  //
+  // .rates .rates--form p
+  //   text-align center
+  //
+  // .rates .rates--form p .button.-medium.-lighter
+  //   display inline-block
+  //
+  // .rates .rates--check .label
+  //   display inline-block
+  //   vertical-align top
+  //   width 100%
+  //   text-align center
+  //
+  // .rates--countries ul li h2
+  //   font-size 31px
+  //   line-height 33px
+  //   padding-top 9px
+  //
+  // .rates--countries ul li dl dt
+  //   padding-top 30px
+
+// @media (max-width 810px)
+//   .rates .rates--check h2
+//     font-size 63px
+//     line-height 64px
+//
+//   .rates--countries ul li h2
+//     font-size 31px
+//     line-height 33px
+//     padding-top 9px
+//
+//   .rates--countries ul li dl dt
+//     padding-top 30px
+//
+//   .rates--countries ul li dl dd
+//     font-size 65px
+//     line-height 73px
+//
+//   .rates--countries ul li
+//     padding-right 58px
+//
+// @media (max-width 1040px)
+//   .top_section .header_info h1
+//     font-size 62px
+//     line-height 63px
+//
+//   .top_section .header_info .header_info--description
+//     font-size 18px
+//     line-height 20px
+//     padding 30px 0 30px
+//
+//   .searchCountries.-rates .searchCountries--rates
+//     font-size 16px !important
+//     padding 14px 28px 11px !important
+//
+//   .searchCountries.-rates .-search
+//     padding 15px 0 16px 40px !important
+//
+//   .searchCountries .searchCountries--icon:before
+//     transform scale(.8)
+//
+//   .searchCountries .searchCountries--result
+//     margin-top 52px !important
+//     padding-bottom 40px !important
+//
+//   .searchCountries .searchCountries--result .searchCountries--country h2
+//     font-size 32px !important
+//     line-height 28px !important
+//     margin-bottom 42px !important
+//
+//   .searchCountries .searchCountries--result .searchCountries--planet
+//     transform scale(.9) !important
+//
+//   .searchCountries .searchCountries--result .searchCountries--country .searchCountries--plan li p
+//     font-size 67px !important
+//     line-height 72px !important
+//
+// @media (max-width 920px)
+//   .top_section .header_info h1
+//     font-size 58px
+//     line-height 59px
+//
+//   .top_section .header_info .header_info--description
+//     font-size 16px
+//     line-height 20px
+//     padding 18px 0 18px
+//
+//   .searchCountries.-rates .searchCountries--rates
+//     font-size 15px !important
+//     padding 13px 28px 11px !important
+//
+//   .searchCountries .searchCountries--result .searchCountries--country h2
+//     font-size 30px !important
+//     line-height 21px !important
+//     margin-bottom 37px !important
+//
+//   .searchCountries .searchCountries--result .searchCountries--country .searchCountries--plan li span
+//     font-size 15px
+//     line-height 18px
+//
+//   .searchCountries .searchCountries--result .searchCountries--country .searchCountries--plan li p
+//     font-size 60px !important
+//     line-height 64px !important
+//
+//   .searchCountries .searchCountries--result .searchCountries--country .searchCountries--plan li.searchCountries--phone:before
+//     transform scale(.9)
+//
+//   .searchCountries .searchCountries--result .searchCountries--country .searchCountries--plan li.searchCountries--mobile:before
+//     transform scale(.9)
+//
+//   .searchCountries .searchCountries--result .searchCountries--planet
+//     transform scale(.8) !important
+//     margin-right 31px !important
+//
+//
+// @media (max-width 1040px)
+//   .top_countries
+//     width 95%;
+//
+//   .top_countries h2
+//     margin-bottom 35px;
+//
+//   .section h2
+//     font-size 58px
+//     line-height 60px
+//
+//   .rates--countries ul li img
+//     transform scale(.9)
+//
+//   .top_countries .rates--countries ul li
+//     width 265px
+//
+//   .rates--countries ul li h2
+//     font-size 32px
+//     line-height 27px
+//     padding-bottom 9px
+//
+//   .rates--countries ul li dl dt
+//     font-size 15px
+//     padding-top 30px
+//
+//   .rates--countries ul li dl dd
+//     font-size 67px
+//     line-height 67px
+//
+//   .top_countries .rates--countries
+//     margin-top 0px
+//
+//   .top_countries .countriesCatalog .countriesCatalog--alphabet li a
+//     font-size 33px
+//     padding 0 6px
+//
+//   .top_countries .countriesCatalog .countriesCatalog--list .countriesCatalog--collumn ul li a
+//     font-size 15px
+//     line-height 20px
+//     padding 3px 0
+//
+//   .top_countries .countriesCatalog .countriesCatalog--list .countriesCatalog--collumn ul li h3
+//     left -29px
+//     font-size 39px
+//
+//   .top_countries .countriesCatalog
+//     padding-top 60px
+//
+// @media (max-width 910px)
+//   .top_countries h2
+//     font-size 52px
+//     line-height 48px
+//     margin-bottom 23px
+//
+//   .rates--countries ul li img
+//     transform scale(.9)
+//
+//   .top_countries .rates--countries ul li h2
+//     font-size 29px
+//     line-height 18px
+//     padding-bottom 5px
+//
+//   .rates--countries ul li dl dt
+//     font-size 14px
+//     padding-top 30px
+//
+//   .rates--countries ul li dl dd
+//     font-size 60px
+//     line-height 55px
+//
+//   .rates--countries ul li .rates--globe_img
+//     height 140px
+//
+//   .top_countries .rates--countries ul li
+//     width 210px
+//
+//   .top_countries .countriesCatalog .countriesCatalog--alphabet li a
+//     font-size 30px
+//
+//   .section.-land
+//     padding-bottom 460px
+//
+// @media (max-width 810px)
+//   .searchCountries .searchCountries--result
+//     margin-left -70px !important
+
+@media (max-width 767px)
+  .rates
+    .rates--form
+      display none
+
+    .rates--check
+      width calc(100% - 60px)
+      position relative
+      z-index 9990
+      left 50%
+      float none
+      top -30px
+      margin-top 0
+      transform translate(-50%, 0)
+
+      h2
+        font-size 40px
+        line-height 48px
+        text-align center
+
+      h3
+        display none
+
+      .searchCountries
+        label
+          display block
+          text-align center
+          padding-bottom 0
+
+  .rates--countries
+    margin-top 0
+    width 100%
+
+    ul li
+      img
+        margin-left 0
+
+      h2
+        margin 0 auto
+
+        a
+          &:after
+            margin 16px auto 2px
+
+  .section.-land
+    padding-bottom 0px
+
+
+.-mobile--catalog
+  padding 20px 48px 48px 48px
+
+  .searchCountries
+    margin-bottom 30px
+
+  h2
+    font-family 'Open Sans Condensed'
+    font-size 28px
+    color #FFFFFF
+    line-height 35px
+    text-align center
+
+  h4
+    font-size 13px
+    color #FFFFFF
+    line-height 13px
+    text-align center
+    margin 18px 0 12px
+
+  h3
+    font-family 'Open Sans Condensed'
+    font-size 42px
+    line-height 60px
+    color #95E7FF
+    border-bottom 1px solid #95E7FF
+    margin-bottom 18px
+
+  li
+    font-size 0
+
+    a
+      display block
+      padding 8px 0
+      font-size 18px
+      color #FFFFFF
+
+  .searchCountries
+    .-search
+      background none
+      color #fff
+      border 1px solid #95E7FF

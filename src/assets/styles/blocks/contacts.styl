@@ -1,0 +1,139 @@
+.contacts
+  background url('../images/content/universbg.jpg')
+  background-attachment fixed
+  text-align center
+  padding 50px 0 100px
+
+  .contacts--description
+    width 610px
+    font-size 20px
+    color #6E989E
+    letter-spacing 0px
+    line-height 30px
+    margin 24px auto 0
+
+  .contacts--form
+    width 820px
+    margin 18px auto 0
+    clearfix()
+
+    .contacts--message
+      width 400px
+      text-align left
+      float left
+
+      .headline2
+        margin-bottom 18px
+
+      input:focus, textarea:focus
+        background #fff
+        color #000
+
+        + label
+          color #2379ff
+
+      label
+        color #fff
+
+      .input_large
+        margin-bottom 28px
+
+      #userMessage
+        height 100px
+        margin-bottom -12px
+
+  .contacts--submit
+    text-align right
+
+  .contacts--location
+    padding-left 50px
+
+    .contacts--planet
+      width 210px
+
+    h3
+      font-size 20px
+      color #6E989E
+      line-height 30px
+      text-align center
+      margin 24px 0 12px
+
+    p
+      text-align left
+
+      a
+        color #2379FF
+        text-decoration underline
+
+        &:hover
+          color #5D9BFB
+      span
+        display inline-block
+        color #fff
+        font-size 16px
+        line-height 30px
+        vertical-align top
+
+        &:before
+          content ''
+          display block
+          position absolute
+
+        &:first-child
+          font-family 'IntroBookBold'
+          width 80px
+          position relative
+          padding-left 24px
+
+        &:last-child
+          width 250px
+
+        &.contacts--address
+          &:before
+            left 0
+            top 2px
+            sprite($s-address_white)
+
+        &.contacts--phone
+          &:before
+            left 0
+            top 4px
+            sprite($s-phone_white)
+
+        &.contacts--fax
+          &:before
+            left 0
+            top 5px
+            sprite($s-fax_white)
+
+        &.contacts--email
+          &:before
+            left 0
+            top 6px
+            sprite($s-email_white)
+
+#contactMobile
+  background #fff
+
+  h2
+    background rgba(35,121,255,0.97)
+    text-align center
+    font-family 'Open Sans Condensed'
+    font-size 28px
+    color #fff
+    line-height 35px
+    padding 20px 0 24px
+
+  .contacts--form
+    margin 30px 24px 0
+
+    .input_large
+      margin-bottom 12px
+
+      input, textarea
+        color #000
+
+    .button_square.-large
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;

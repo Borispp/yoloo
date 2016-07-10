@@ -1,0 +1,130 @@
+.feedback
+  text-align center
+
+  h2
+    font-family 'Open Sans Condensed'
+    font-size 62px
+    color #FFF
+    line-height 72px
+    padding-bottom 6px
+
+  p.feedback--text
+    font-size 20px
+    color #6E989E
+    line-height 30px
+    max-width 650px
+    margin 0 auto 40px
+
+
+  .feedback--list
+    li
+      display inline-block
+      position relative
+      borderbox()
+
+      .feedback--list--first
+        background url('../images/content/p1.png') no-repeat
+        width 361px
+        height 329px
+        padding 75px 60px 0
+        borderbox()
+
+      .feedback--list--second
+        background url('../images/content/p2.png') no-repeat
+        width 360px
+        height 330px
+        padding 75px 70px 0 35px
+        top 20px
+        borderbox()
+
+      .feedback--list--third
+        background url('../images/content/p3.png') no-repeat
+        width 343px
+        height 300px
+        padding 70px 40px 0
+        borderbox()
+
+      .feedback--list--rating
+        padding-bottom 20px
+
+        .icon
+          display inline-block
+
+      h3
+        font-weight 600
+        font-size 16px
+        color #080340
+        padding-bottom 15px
+
+      p
+        font-size 14px
+        color #758188
+        line-height 20px
+
+.feedback .bx-wrapper
+  display none
+
+
+@media (max-width 1120px)
+  .feedback h2
+    font-size 58px
+    line-height 68px
+    margin-bottom 0px
+
+  .feedback p.feedback--text
+    font-size 18px
+    line-height 25px
+    max-width 587px
+
+  .section.-satellite .satellite
+    transform scale(.7)
+
+  .section.-satellite .satellite
+    width: 105px;
+    height: 140px;
+    background-size: 105px 140px;
+
+
+@media (max-width 810px)
+  .feedback h2
+    font-size 50px
+    line-height 50px
+
+  .feedback p.feedback--text
+    font-size 16px
+    line-height 22px
+    max-width 526px
+
+@media (max-width 767px)
+
+  .section.-satellite
+    .satellite
+      animation none
+      top -12px
+      left -1px
+
+    h2
+      font-size 36px
+      line-height 42px
+      padding-bottom 12px
+
+    .feedback--text
+      font-size 14px
+      padding 0 24px
+
+  .feedback .feedback--list li
+    background-repeat no-repeat !important
+
+    > div
+      margin 0 auto !important
+
+    .feedback--list--second
+      top 0
+      padding 75px 60px 0 40px
+      background-position 12px 0px
+
+    .feedback--list--third
+      padding 70px 50px 0 30px
+
+  .feedback .bx-wrapper
+    display block

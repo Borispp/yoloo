@@ -1,0 +1,260 @@
+.account_params
+  overflow hidden
+  width 1000px
+  margin 0 auto
+
+  .aside
+    float left
+    position absolute
+    width 180px
+    top 218px
+    left 60px
+    bottom auto
+
+    // &.-fixed
+    //   position fixed
+    //   top 20px
+      // transition top 0.4s linear, bottom 0.4s linear
+
+    &.-top
+      position fixed
+      top 30px
+
+    &.-bottom
+      position absolute
+      top auto
+      bottom 100px
+
+    ul
+      li
+        display block
+        text-align center
+
+        a
+          display block
+          width 106px
+          font-family 'IntroBookBold'
+          font-size 18px
+          color #FFF
+          padding-top 18px
+          padding-bottom 18px
+          transition none
+
+          &:hover, &.-active
+            color #FF5D61
+
+            &.account_params--dashboard:before
+              sprite($s-dashboard_hover)
+
+            &.account_params--profile:before
+              sprite($s-profile_hover)
+
+            &.account_params--recharge:before
+              sprite($s-recharge_hover)
+
+            &.account_params--call:before
+              sprite($s-call_hover)
+
+            &.account_params--payment:before
+              sprite($s-payment_hover)
+
+            &.account_params--referrals:before
+              sprite($s-referals_hover)
+
+          &:before
+            content ''
+            display block
+            margin 0 auto 18px
+
+          &.account_params--dashboard:before
+            sprite($s-dashboard)
+
+          &.account_params--profile:before
+            sprite($s-profile)
+
+          &.account_params--recharge:before
+            sprite($s-recharge)
+
+          &.account_params--call
+            &:before
+              sprite($s-call)
+
+          &.account_params--payment:before
+            sprite($s-payment)
+
+          &.account_params--referrals:before
+            sprite($s-referals)
+
+  .account_params--content
+    position relative
+    z-index 1
+    float left
+    margin-left 180px
+    width 670px
+
+    .account_params--header
+      color #fff
+      text-align center
+      padding-bottom 50px
+
+      h1, .account_params--greeting
+        font-family 'Open Sans Condensed'
+        font-weight 300
+        font-size 68px
+        color #FFFFFF
+        line-height 69px
+        padding-bottom 30px
+
+        .tooltip
+          &:before
+            left calc(100% - 28px)
+
+      .account_params--username
+        font-family 'Open Sans Condensed'
+        font-weight 300
+        font-size 68px
+        color #FFFFFF
+        line-height 69px
+        display inline-block
+        position relative
+        width 100%
+        margin-bottom 28px
+
+        .button
+          position absolute
+          top 18px
+          right 0
+          padding-left 18px
+          padding-right 18px
+
+        span
+          position absolute
+          right 0
+          text-align right
+          font-family 'Intro Book'
+          display block
+          font-size 14px
+          color #FFFFFF
+          line-height 22px
+          padding-top 5px
+
+          a
+            color #2379FF
+            text-decoration underline
+
+            &:hover
+              color #5C92E6
+
+      .account_params--hello
+        font-size 48px
+        color #FFFFFF
+        line-height 54px
+        text-align left
+        clearfix()
+
+        .account_params--uname
+          float left
+
+        .account_params--ballance
+          text-align right
+          float right
+
+        span
+          a, span
+            display block
+            font-size 18px
+            line-height 30px
+            margin-bottom 12px
+            font-family 'IntroBook'
+
+          a
+            color #2379FF
+
+            &:hover
+              color #5697FB
+
+      .account_params--description
+        font-family 'Intro Book'
+        font-size 20px
+        color #6E989E
+        letter-spacing 0px
+        line-height 30px
+
+      .account_params--greeting
+        line-height 100px
+        padding-bottom 0
+        margin-bottom -30px
+
+        .account_params--controls
+          padding-top 24px
+
+          .button_square
+            font-family 'IntroBookBold'
+            width 200px
+            margin-right 20px
+
+            &:last-child
+              margin-right 0
+
+        .account_params--topped
+          margin-top -10px
+          position relative
+          font-size 62px
+          display block
+          color #2DC22D
+
+        .account_params--credit
+          padding-top 30px
+          padding-left 20px
+          display inline-block
+          font-size 14px
+          font-family 'Intro Book'
+          vertical-align top
+          line-height 32px
+
+          .button
+            font-family 'IntroBookBold'
+            padding-left 18px
+            padding-right 18px
+            text-decoration none
+            color #fff
+
+            &:hover
+              color #fff
+
+          a
+            color #2379FF
+            text-decoration underline
+
+            &:hover
+              text-decoration none
+              color #82A2FA
+
+      .account_params--ballance
+        color #66CC66
+
+      p
+        font-size 20px
+        color #6E989E
+        line-height 30px
+
+        span
+          color #fff
+
+        &.-top
+          padding-top 15px
+
+@media (max-width 1220px)
+  .account_params .aside
+    position absolute !important
+    top 218px !important
+    left 100px !important
+
+
+@media (max-height 767px)
+  .-with_mobile
+    .account_params .aside ul li a
+      padding 15px 0
+
+      &:before
+        margin-bottom 15px

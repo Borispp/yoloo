@@ -1,0 +1,791 @@
+.button
+  cursor pointer
+  display inline-block
+  border 2px solid #1F5AFB
+  font-family 'IntroBookBold'
+  font-size 18px
+  line-height 18px
+  color #FFF
+  letter-spacing -1px
+  border-radius 24px
+  padding 15px 36px 13px
+  background-color transparent
+  position relative
+  transition border-color 0.15s linear, color 0.15s linear, background 0.15s linear
+
+  &:hover, &.zeroclipboard-is-hover
+    border-color #fff
+
+  &.-red
+    border 2px solid #DE4839
+    background #FF5D61
+
+    &:hover
+      background #DE4839
+
+    &:active
+      background #d62a19
+      border-color #d62a19
+      top 1px
+
+  &.-blue
+    border none
+    background #1F5AFB
+
+    &:hover
+      background #0a40d2
+
+    &:active
+      background #0635b4
+      top 1px
+
+  &.-blue_white
+    background #fff
+    color #2379FF
+
+    &:hover
+      background #0a40d2
+      color #fff
+
+    &:active
+      background #0635b4
+      top 1px
+
+  &.-lighter
+    border-color #95E7FF
+
+    &:hover
+      border-color #FF5D61
+      background #FF5D61
+
+    &:active
+      background #DE4839
+      border-color #DE4839
+      top 1px
+
+  &.-medium
+    padding 14px 32px 11px
+
+  &.-small_medium
+    padding 10px 32px 7px
+
+
+  &.-button_icon
+    color #2379FF
+    padding 16px 36px 12px
+    transition none
+    &:before
+      content ''
+      display inline-block
+      position absolute
+
+    &:hover
+      color #fff
+
+  &.-mail
+    padding-left 62px
+    &:before
+      left 24px
+      top 13px
+      sprite($s-mail_blue)
+
+    &:hover:before
+      sprite($s-mail)
+
+  &.-facebook
+    padding-left 46px
+    &:before
+      left 26px
+      top 11px
+      sprite($s-facebook_blue)
+
+    &:hover:before
+      sprite($s-facebook)
+
+  &.-twitter
+    padding-left 58px
+    &:before
+      left 26px
+      top 11px
+      sprite($s-twitter_blue)
+
+    &:hover:before
+      sprite($s-twitter)
+
+  &.-linkedin
+    padding-left 54px
+    &:before
+      left 24px
+      top 10px
+      sprite($s-linkedin_blue)
+
+    &:hover:before
+      sprite($s-linkedin)
+
+.button_square
+  display inline-block
+  padding 18px 30px 15px
+  font-family 'IntroBookBold'
+  font-size 18px
+  color #FFF
+  border-radius 4px
+  position relative
+
+  &.-red
+    border 2px solid #DE4839
+    background #FF5D61
+    transition border-color 0.2s linear, background 0.2s linear
+    position relative
+
+    &:hover
+      background #DE4839
+
+    &:active
+      background #d62a19
+      border-color #d62a19
+      top 1px
+
+    &.-transparent
+      transition color 0.2s
+      &:hover, &:active
+        color #DE4839
+
+  &.-blue
+    background #1F5AFB
+    transition border-color 0.2s linear, background 0.2s linear
+    position relative
+
+    &:hover
+      background #1C4CD2
+
+    &:active
+      background #0D3EC4
+      top 1px
+
+  &.-ios
+    padding-left 64px
+    &:before
+      content ''
+      position absolute
+      left 18px
+      top 10px
+      display inline-block
+      sprite($s-ios)
+
+  &.-android
+    padding-left 56px
+    &:before
+      content ''
+      position absolute
+      left 18px
+      top 10px
+      display inline-block
+      sprite($s-android)
+
+  &.-large
+    padding-top 25px
+    padding-bottom 25px
+
+  &.-transparent
+    background none
+
+    &:hover, &:active
+      background none
+
+  &.-small_medium
+    padding 10px 18px 8px
+
+.label
+  font-size 16px
+  line-height 22px
+  color #4A4A4A
+
+  &.-white
+    color #FFFFFF
+
+.input
+  border-width 2px
+  border-style solid
+  padding 13px 12px 11px
+  font-size 16px
+  line-height 22px
+  border-color #1F5AFB
+  // transition border-color 0.2s
+  borderbox()
+
+  &:focus
+    border-color #95E7FF
+
+  &.-white
+    border-color #95E7FF
+    color #FFFFFF
+    background none
+
+    &:focus
+      border-color #95E7FF
+
+  +placeholder()
+    text-indent 0
+    transition text-indent 0.35s
+
+  &:focus
+    +placeholder()
+      text-indent -400px
+
+.input_large
+  border 2px solid #1F5AFB
+  position relative
+  overflow hidden
+
+  label
+    position absolute
+    top 0
+    left 0
+    font-family 'IntroBookBold'
+    font-size 14px
+    color #2379FF
+    line-height 22px
+    transform translate(24px, 28px)
+    transition transform 0.25s
+
+    &.-non_empty
+      transform translate(24px, 14px)
+
+  &.-focus
+    border-color #4b94f8
+
+  input, textarea
+    background none
+    border none
+    font-size 16px
+    color #FFF
+    line-height 22px
+    padding 40px 24px 20px
+    width 100%
+    height 100%
+
+    &:focus
+      + label
+        transform translate(24px, 14px)
+
+  textarea
+    height 177px
+
+.form--search
+  position relative
+
+  label
+    display inline-block
+    padding-bottom 18px
+
+  &:before
+    content ''
+    position absolute
+    sprite($s-search_icon)
+    bottom 12px
+    left 15px
+
+  .input
+    padding-left 36px
+
+.icon
+  display block
+
+  &.-cheap
+    sprite($s-cheap)
+  &.-hd
+    sprite($s-hd)
+  &.-safe
+    sprite($s-safe)
+  &.-longlife
+    sprite($s-longlife)
+  &.-star
+    sprite($s-star)
+  &.-staryellow
+    sprite($s-staryellow)
+  &.-ok
+    sprite($s-ok)
+
+.link
+  color #2379FF
+  text-decoration underline
+
+  &:hover
+    color #0E58CB
+    text-decoration none
+
+  &.-no_underline
+    text-decoration none
+
+  &.-green
+    color #66CC66
+
+.checkbox
+  input
+    display none
+
+    &:checked + label
+      .checkbox--status:before
+        content ''
+        display inline-block
+        sprite($s-arrow)
+
+  &:hover
+    label
+      color #4e8df4
+      .checkbox--status
+        border 2px solid #4e8df4
+
+  label
+    display inline-block
+    position relative
+    font-family 'IntroBookBold'
+    font-size 16px
+    color #FFFFFF
+    line-height 22px
+    vertical-align top
+    padding-left 48px
+    transition color .2s
+
+    .checkbox--status
+      display block
+      position absolute
+      margin-top 4px
+      left 0
+      width 30px
+      height 30px
+      border 2px solid #1F5AFB
+      border-radius 5px
+      text-align center
+      padding-top 3px
+      transition border-color .2s
+      borderbox()
+
+.infoPop
+  position relative
+
+  &:after
+    content ''
+    position absolute
+    z-index 1
+    bottom -15px
+    left 80px
+    width 0
+    height 0
+    border-top 80px solid #fff
+    border-right 40px solid transparent
+    transform rotate(30deg)
+
+.infoPopInner
+  position relative
+  z-index 2
+  background url('../images/content/rates_mask.png')
+  width 346px
+  height 313px
+  background-size 346px 313px
+  // -webkit-clip-path polygon(1% 18%, 100% 0, 93% 95%, 7% 86%)
+  // clip-path polygon(1% 18%, 100% 0, 90% 95%, 10% 86%)
+
+  // &.-medium
+    // width 360px
+
+  .infoPop--content
+    position relative
+    z-index 2
+    padding 105px 0 80px 60px
+
+    h2
+      font-family 'IntroBookBold'
+      font-size 24px
+      color #FF5D61
+      padding-bottom 12px
+
+      .flag
+        position relative
+        top -11px
+
+.rates_price
+  li
+    display inline-block
+    width 100px
+    margin-right 30px
+
+    span
+      display block
+      font-family 'IntroBookBold'
+      font-size 16px
+      color #676E89
+      line-height 22px
+      padding-bottom 26px
+
+    p
+      font-family 'Open Sans Condensed'
+      font-size 52px
+      color #2379FF
+
+.notification
+  background #fff
+  border-radius 10px
+  padding 44px 30px 42px
+  border 1px solid #D9D9D9
+
+  h2
+    font-family 'IntroBookBold'
+    font-size 22px
+    color #4A4A4A
+    line-height 32px
+
+.tooltip
+  // position absolute
+  position relative
+  font-family 'Intro Book'
+  z-index 9989
+  background #fff
+  padding 30px 50px 24px 30px
+  border 2px solid #1F5AFB
+  borderbox()
+  clearfix()
+
+  &.-reffer
+    margin 8px 0 4px
+
+  &.-hideTooltip
+    display none
+
+  .tooltip--type
+    display block
+    float left
+    width 78px
+    height 78px
+    border-radius 50%
+
+    &.-green
+      background #66CC66
+
+
+  .tooltip--text
+    float right
+    width calc(100% - 100px)
+    p
+      font-size 20px
+      color #6E989E
+      line-height 30px
+      padding-bottom 18px
+
+  &:before
+    content ''
+    position absolute
+    top -11px
+    left 50%
+    margin-left -10px
+    width 18px
+    height 18px
+    border-left 2px solid #1F5AFB
+    border-top 2px solid #1F5AFB
+    background #fff
+    transform rotate(52deg) skewY(-15deg)
+
+    // width 0
+    // height 0
+    // border-left 15px solid transparent
+    // border-right 15px solid transparent
+    // border-bottom 10px solid #fff
+
+  .tooltip--content
+    text-align left
+    font-size 16px
+    color #4A4A4A
+    line-height 22px
+
+    h2
+      font-family 'IntroBookBold'
+      font-size 20px
+      color #080340
+      line-height 32px
+      padding-bottom 6px
+
+    p.tooltip--description
+      font-size 16px
+      color #4A4A4A
+      line-height 22px
+
+    .button
+      font-size 18px
+      letter-spacing 0px
+      margin 18px 0 8px
+
+    .tooltip--section
+      width 400px
+      float left
+
+    .hex
+      float right
+      margin-top 5px
+
+.hex
+  display block
+  sprite($s-hex)
+  font-family 'IntroBookBold'
+  font-size 29px !important
+  color #2379FF !important
+  letter-spacing 0px
+  padding-top 25px
+  text-align center
+  borderbox()
+
+
+.headline1
+  font-family 'Open Sans Condensed'
+  font-size 68px
+  color #FFF
+  line-height 69px
+
+.headline2
+  font-family 'Open Sans Condensed'
+  font-size 34px
+  color #FFF
+  line-height 42px
+
+.buttonChoice
+  display inline-block
+  vertical-align top
+  border 1px solid #2379FF
+  border-radius 4px
+  font-size 16px
+  line-height 22px
+  width 120px
+  height 45px
+  padding 11px 0 0 58px
+  margin-right 15px
+  position relative
+  transition background 0.1s linear, color 0.1s linear
+  borderbox()
+
+  &.-yes
+    color #2379FF
+
+    &:before
+      content ''
+      display block
+      position absolute
+      left 30px
+      top 15px
+      sprite($s-yes)
+
+    &:hover, &:active
+      background #2379FF
+      color #fff !important
+
+      &:before
+        sprite($s-yes_hover)
+
+    &:active
+      background #226ce1 !important
+
+  &.-no
+    color #FF5D61 !important
+    border-color #FF5D61
+
+    &:before
+      content ''
+      display block
+      position absolute
+      left 36px
+      top 13px
+      sprite($s-no)
+
+    &:hover, &:active
+      background #FF5D61
+      color #fff !important
+
+      &:before
+        sprite($s-no_hover)
+
+    &:active
+      background #e84246
+
+.select2
+  width 100% !important
+  font-size 14px
+  color #FFF
+  line-height 22px
+
+.select2-container--default .select2-selection--single
+  height 50px !important
+  border 2px solid #1F5AFB
+  background none !important
+  border-radius 0
+  transition border-color 0.2s
+
+  &:hover
+    border-color #4b94f8
+
+  .select2-selection__rendered
+    height 50px !important
+    line-height 48px !important
+    padding-left 18px !important
+    font-size 14px
+    color #FFF
+
+.select2-container--default .select2-results__option
+  padding 18px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  top 26px
+  right 8px
+
+  b
+    display none !important
+
+  &:after
+    content ''
+    width 0
+    height 0
+    border-left 5px solid transparent
+    border-right 5px solid transparent
+    border-top 6px solid #fff
+
+.select2-container--open .select2-selection__arrow
+  top 26px !important
+
+  &:after
+    transform rotate(45deg) !important
+
+.select2-container--open .select2-dropdown--below
+  border-radius 0 !important
+
+
+.wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: auto;
+  display: block;
+  width: 195px;
+}
+
+@media (max-width 1260px)
+  .button_square.-red
+    font-size 17px
+
+@media (max-width 1125px)
+  .button_square
+    padding 17px 24px 15px
+
+  .button
+    font-size 17px
+
+    &.-medium
+      padding 12px 30px 9px
+
+@media (max-width 1040px)
+
+  body
+    // width 100%
+    min-width inherit
+
+  .button
+    font-size 16px
+
+    &.-medium
+      padding 10px 28px 7px
+
+  .button_square
+    padding 16px 24px 14px
+
+    &.-ios
+      padding-left 56px
+
+      &:before
+        transform scale(.9)
+
+    &.-android
+      padding-left 48px
+
+      &:before
+        transform scale(.9)
+
+    &.-red
+      font-size 15px
+
+@media (max-width 980px)
+  .button_square
+    padding 16px 24px 12px
+
+    &.-ios
+      padding-left 48px
+
+
+      &:before
+        transform scale(.9)
+        left 11px
+        top 7px
+
+    &.-android
+      padding-left 41px
+
+      &:before
+        transform scale(.9)
+        left 11px
+        top 8px
+
+// @media (max-width 810px)
+//   .button
+//     font-size 16px
+//
+//     &.-medium
+//       padding 12px 24px 9px
+
+.bx-wrapper
+  background none
+  border none
+  box-shadow none
+  margin 0
+  position relative
+
+  .bx-pager
+    &.bx-default-pager
+      a.bx-pager-link
+        background none
+        border 1px solid #fff
+        width 8px
+        height 8px
+
+        &.active
+          background #fff
+
+  .bx-controls-direction a
+    width 21px
+    height 32px
+
+  .bx-next, .bx-prev
+    sprite($s-arrow2)
+    margin-top -44px !important
+
+    &:hover
+      sprite($s-arrow2)
+
+  .bx-prev
+    transform rotate(-180deg)
+
+.bxslider
+  li
+    padding-right 0 !important
+    padding-left 0 !important
+    padding-top 0 !important
+    text-align center
+    clearfix()
+
+.bx-wrapper img
+  display inline-block
+
+.rates--price
+  display inline-block
+  margin 0 24px
+
+  dt
+    font-size 16px !important
+    padding-top 16px !important
+    padding-bottom 6px
+
+  dd
+    font-size 48px !important

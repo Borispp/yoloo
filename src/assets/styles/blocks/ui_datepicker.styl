@@ -1,0 +1,237 @@
+.jrange
+  position absolute
+  width 240px
+  height 50px
+
+  &.-large
+    .hasDatepicker
+      width 242px
+      float right
+      left 0 !important
+
+  input
+    width 100%
+    background none
+    color #fff
+    font-size 13px
+    border 2px solid #1f5afb
+    padding-left 18px
+    borderbox()
+    transition border-color 0.2s
+
+  &:hover
+    input
+      border 2px solid #4b94f8
+
+
+.datepicker
+  height 100px
+
+  .jrange
+    position relative
+
+    input
+      height 50px
+
+      + .hasDatepicker
+        top 0 !important
+
+    .icon
+      &:before
+        content ''
+        cursor pointer
+        display block
+        position absolute
+        right 18px
+        top 17px
+        sprite($s-calendar_white)
+
+.ui-datepicker
+  position absolute
+  z-index 1001
+  box-shadow 0 2px 4px rgba(0,0,0,0.15)
+  border-radius 0
+  border 2px solid #1F5AFB
+  padding 0 !important
+  width 100% !important
+  background #fff
+  top -2px
+  box-sizing border-box
+
+  .ui-datepicker-month:after
+    content ','
+
+  // &:before
+  //   content ''
+  //   position absolute
+  //   display block
+  //   background #fff
+  //   right 16px
+  //   top -7px
+  //   width 20px
+  //   height 20px
+  //   border-radius 2px
+  //   box-shadow 0 2px 4px rgba(0,0,0,0.5)
+  //   transform rotate(-45deg)
+
+  .ui-widget-content
+    border none !important
+
+  .ui-datepicker-buttonpane
+    display none
+
+  .ui-datepicker-header
+    background #fff
+    padding 12px 18px !important
+    border-top-left-radius 6px
+    border-top-right-radius 6px
+    overflow hidden
+
+    .ui-datepicker-title
+      font-size 16px
+      color #575757
+      line-height 27px
+
+    .ui-corner-all
+      cursor pointer
+      width 40px
+      height 100%
+      top 0
+      transition background 0.2s
+
+      &:before
+        content ''
+        display block
+        width 0
+        height 0
+        border-top 4px solid transparent
+        border-bottom 4px solid transparent
+        position absolute
+        top 19px
+        transition border-color 0.2s
+
+      span
+        display none
+
+      &.ui-datepicker-prev-hover
+        left 0
+
+      &.ui-datepicker-next-hover
+        right 0
+
+      &.ui-datepicker-prev
+        left 0
+
+        &:before
+          border-right 5px solid #1F5AFB
+          right 18px
+
+        &:hover:before
+          border-right 5px solid #10B873
+
+      &.ui-datepicker-next
+        right 0
+
+        &:before
+          border-left 5px solid #1F5AFB
+          left 18px
+
+        &:hover:before
+          border-left 5px solid #10B873
+
+  table
+    thead
+      color #9B9B9B
+
+      th
+        font-weight normal
+        padding 0 0 10px
+        font-size 14px
+
+        span
+          display block
+          border-bottom 1px solid rgba(155,155,155,0.2)
+          padding-bottom 8px
+
+    tr
+
+      td
+        padding 0
+
+        &:first-child a
+          // padding-left 4px
+
+        &:last-child a
+          // padding-right 4px
+
+        a
+          display block
+          width 34px
+          height 34px
+          text-align center
+          padding 5px 0 5px
+          box-sizing border-box
+          border-top 3px solid transparent
+          font-family 'IntroBook'
+          font-size 14px
+          color #1F5AFB
+          line-height 22px
+          transition none !important
+
+      .date-range-selected a, .ui-state-active
+        background rgba(155,155,155,0.3)
+        // border-top 3px solid #16A065
+        // color #fff
+
+      .date-range-selected.date-range-first,
+      .date-range-selected.date-range-last
+        position relative
+        // background rgba(155,155,155,0.3)
+        a
+          border-radius 50%
+          background #1F5AFB
+          color #fff
+          position relative
+          z-index 1
+
+      .date-range-selected.date-range-first:before
+        content ''
+        display block
+        position absolute
+        top 0
+        z-index 0
+        width 50%
+        height 100%
+        right 0
+        background rgba(155,155,155,0.3)
+
+      .date-range-selected.date-range-last:before
+        content ''
+        display block
+        position absolute
+        top 0
+        z-index 0
+        width 50%
+        height 100%
+        left 0
+        background rgba(155,155,155,0.3)
+
+      .date-range-first.date-range-last:before
+        display none
+
+  .ui-datepicker-calendar
+    margin-bottom 10px
+
+  .ui-datepicker-buttonpane
+    margin-top 2px
+    border-top-width 1px
+    text-align center
+
+    .ui-datepicker-current
+      display none
+
+    .submit_button
+      font-size 15px
+      padding 5px 24px 4px
+      margin 8px auto 12px
+      float none

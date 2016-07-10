@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: Referral</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div id="wrapper">
+    <section class="top_section -universe">
+      <header id="header">
+        <a href="index.html" class="logo"></a>
+
+        <ul class="menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <div class="user_menu">
+          <span class="user_phone">+373 69583934</span>
+          <span class="user_balance">$43.14</span>
+
+          <div class="user_menu--sub">
+            <div class="user_info">
+              <div class="user_info--item">
+                <div class="user_info--name">
+                  <h2>
+                    <span>Bobby Torres</span>
+                    <input type="text" placeholder="Insert your name" class="-insert -hide">
+                  </h2>
+                  <p>
+                    <label for="addPhoto">Add profile photo</label>
+                    <input type="file" id="addPhoto" hidden>
+                  </p>
+                </div>
+              </div>
+              <div class="user_info--email">
+                <span>bob.torres@gmail.com</span>
+                <input type="text" placeholder="Insert your email" class="-insert -mail -hide">
+              </div>
+
+              <p class="user_menu--save -hide">
+                <a href="#" class="button_square -red -small_medium">Save</a>
+              </p>
+            </div>
+
+            <ul class="user_menu--sub_menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="my_profile.html">My profile</a></li>
+              <li><a href="get_credit.html">Recharge</a></li>
+              <li><a href="history.html">Call history</a></li>
+              <li><a href="#">Payment history</a></li>
+              <li><a href="referral.html">Referrals</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="account_params">
+        <aside class="aside">
+          <ul>
+            <li><a href="dashboard.html" class="account_params--dashboard">Dashboard</a></li>
+            <li><a href="my_profile.html" class="account_params--profile">My profile</a></li>
+            <li><a href="get_credit.html" class="account_params--recharge">Recharge</a></li>
+            <li><a href="history.html" class="account_params--call">Call history</a></li>
+            <li><a href="#" class="account_params--payment">Payment history</a></li>
+            <li><a href="referral.html" class="account_params--referrals  -active">Referrals</a></li>
+          </ul>
+        </aside>
+
+        <section class="account_params--content">
+          <header class="account_params--header">
+            <h1>Yoloo Referral program</h1>
+            <p>
+              Referr a friend and get up to $5 for free! Once your friend gets our services with your code, you’ll get + $5 to your Yoloo account. <br>
+              <span>Your referral code is:</span> <a href="#" class="link -no_underline -green">http://yoloo.com/friends/BOBBY5YRC</a>
+            </p>
+
+            <p class="-top">
+              <a href="#" class="button" data-copy="http://www.zexfinance.com/partner/12415287267610-9202">Copy link</a>
+            </p>
+          </header>
+
+          <div class="referral">
+            <form action="">
+              <h2 class="headline2">Share your referral code by:</h2>
+              <p class="referral--share">
+                <input type="radio" name="share" id="mailShare" checked>
+                <label class="button -button_icon -mail" for="mailShare">E-mail</label>
+                  <input type="radio" name="share" id="fbShare">
+                <label class="button -button_icon -facebook" for="fbShare">Facebook</label>
+                  <input type="radio" name="share" id="twShare">
+                <label class="button -button_icon -twitter" for="twShare">Twitter</label>
+                  <input type="radio" name="share" id="ldShare">
+                <label class="button -button_icon -linkedin" for="ldShare">LinkedIn</label>
+              </p>
+
+              <section class="referral--send">
+                <p class="input_large -half">
+                  <input type="text" id="userFirstName" value="Bobby">
+                  <label for="userFirstName">First name</label>
+                </p>
+
+                <p class="input_large -half">
+                  <input type="text" id="userLastName" value="Torres">
+                  <label for="userLastName">Last name</label>
+                </p>
+
+                <p class="input_large">
+                  <textarea id="userText">
+Hi there,
+
+Bobby Torres wants you to try Yoloo Application and get free $5 on your yoloo account. To accept invitation click the link below: http://yoloo.com/friends/BOBBY5YRC
+
+Thank you,
+Yoloo Team</textarea>
+                  <label for="userText">Message</label>
+                </p>
+
+                <p class="referral--submit">
+                  <a href="#" class="button_square -blue -large">Send via e-mail</a>
+                </p>
+              </section>
+            </form>
+
+            <div class="referral--stats">
+              <h2 class="headline1">Nice! You’ve got <span>$55</span></h2>
+              <p class="referral--count">from 12 referrals</p>
+
+              <h2 class="headline2">Check your referrals:</h2>
+
+              <div class="table_block">
+                <div class="table_block--selection">
+
+                  <!-- <p class="selection--select">
+                    <label for="" class="label">Show by</label>
+                    <select name="" class="select">
+                      <option value="1">Last week</option>
+                      <option value="2">Last month</option>
+                      <option value="3">Last year</option>
+                    </select>
+                  </p> -->
+                  <div class="selection--select datepicker" style="width: 475px">
+                    <label class="label -white -small_padding">Select a date</label>
+                    <div class="jrange dates -large" style="width: 475px">
+                      <span class="icon"></span>
+                      <input class="datepicker_chart input -no_focus -datepicker" data-date="" value="5 Mar, 2016"/>
+                      <div></div>
+                    </div>
+                  </div>
+                  <p class="selection--submit">
+                    <a href="#" class="button">Update list</a>
+                  </p>
+                </div>
+
+                <table class="sorting_table -call_history" id="historyTable">
+                  <thead>
+                    <tr>
+                      <td>Date <span></span></td>
+                      <td>Time <span></span></td>
+                      <td>Number <span></span></td>
+                      <td>Duration <span></span></td>
+                      <td>Cost <span></span></td>
+                    </tr>
+                  </thead>
+                  <!-- <tbody>
+                    <tr>
+                      <td data-order="1624825580">18 april</td>
+                      <td data-order="721">11:33 AM</td>
+                      <td data-order="42044234124">+ 420 (44) 234-124</td>
+                      <td data-order="145">00:04:25</td>
+                      <td data-order="438">$ 4,38</td>
+                    </tr>
+                    <tr>
+                      <td data-order="1624825590">28 april</td>
+                      <td data-order="720">11:32 AM</td>
+                      <td data-order="42044234124">+ 420 (44) 234-124</td>
+                      <td data-order="144">00:04:24</td>
+                      <td data-order="638">$ 6,38</td>
+                    </tr>
+                    <tr>
+                      <td data-order="1624825585">22 april</td>
+                      <td data-order="727">11:37 AM</td>
+                      <td data-order="42044234126">+ 420 (44) 234-126</td>
+                      <td data-order="84">00:01:24</td>
+                      <td data-order="538">$ 5,38</td>
+                    </tr>
+                    <tr>
+                      <td data-order="1624825555">1 april</td>
+                      <td data-order="500">06:37 AM</td>
+                      <td data-order="42044534126">+ 420 (44) 534-126</td>
+                      <td data-order="624">00:10:24</td>
+                      <td data-order="1538">$ 15,38</td>
+                    </tr>
+                  </tbody> -->
+                </table>
+
+                <div id="table_start"></div>
+                <a href="#" class="table_block--expand_link" data-url="./posts.json">February, 2016 <span></span></a>
+                <a href="#" class="table_block--expand_link" data-url="./posts.json">January, 2016 <span></span></a>
+                <a href="#" class="table_block--expand_link -year" data-url="./posts.json">2015 <span></span></a>
+                <a href="#" class="table_block--expand_link -year" data-url="./posts.json">2014 <span></span></a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </section>
+    </section>
+
+    <footer id="footer">
+      <div class="base_full_col">
+        <div class="footer--apps">
+          <h2>Download Yoloo app for free on AppStore or Google Market</h2>
+
+          <a href="#" class="button_square -red -android">Download for Android</a>
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+        </div>
+
+        <div class="footer--menu">
+          <a href="index.html" class="footer--logo"></a>
+
+          <div class="footer--menu--items">
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Yoloo</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Speak freely</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Guides</h3>
+              <ul>
+                <li><a href="#">Pricing Guide</a></li>
+                <li><a href="#">Calling Cards</a></li>
+                <li><a href="#">International Calling Guide</a></li>
+                <li><a href="#">Free Calls</a></li>
+                <li><a href="#">Access Numbers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Calling</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Info</h3>
+              <ul>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+
+              <a href="http://difiz.com" class="difiz"><span>Design by <span>difiz.com</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="overlay" class="-hide"></div>
+
+  <div id="infoPopup" class="popup -hidePopupTop">
+    <div class="clipInfo -green">
+      <div class="popupBlock popupInfo">
+        <span class="icon -ok"></span>
+        <p class="infoPopupMessage">Your link has been copied to your clipboard</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="privacy" class="popup -hidePopup -action">
+    <div class="popupBlock textPopup">
+      <a href="#" class="closePopup"></a>
+
+      <div class="textPopup--content">
+        <h2>Privacy policy</h2>
+
+        <div class="textPopup--item">
+          <h3>Information we collect</h3>
+          <p>We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which ads you’ll find most useful, the people who matter most to you online, or which YouTube videos you might like.</p>
+          <p>We collect information in the following ways:</p>
+
+          <ul>
+            <li><strong>Information you give us.</strong> For example, many of our services require you to sign up for a Yoloo Account. When you do, we’ll ask for personal information, like your name, email address, telephone number or credit card to store with your account. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible Yoloo Profile, which may include your name and photo. If you have recently made a Call to a contact it will show "Calling" under the contact's name. Just tap on that contact to initiate a Call. Your call will be connected depending on your call setup.</li>
+            <li><strong>Information we get from your use of our services.</strong> We collect information about the services that you use and how you use them, like when you watch a video on YouTube, visit a website that uses our advertising services, or view and interact with our ads and content. This information includes:</li>
+          </ul>
+        </div>
+
+        <div class="textPopup--item">
+          <h3>How we use information we collect</h3>
+          <p>We use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones, and to protect Yoloo and our users. We also use this information to offer you tailored content – like giving you more relevant search results and ads.</p>
+          <p>We may use the name you provide for your Yoloo Profile across all of the services we offer that require a Yoloo Account. In addition, we may replace past names associated with your Google Account so that you are represented consistently across all our services. If other users already have your email, or other information that identifies you, we may show them your publicly visible Yoloo Profile information, such as your name and photo.</p>
+          <p>If you have a Yoloo Account, we may display your Profile name, Profile photo, and actions you take on Yoloo or on third-party applications connected to your Yoloo Account (such as +1’s, reviews you write and comments you post) in our services, including displaying in ads and other commercial contexts. We will respect the choices you make to limit sharing or visibility settings in your Yoloo Account.</p>
+          <p>When you contact Yoloo, we keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.</p>
+          <p>We use information collected from cookies and other technologies, like pixel tags, to improve your user experience and the overall quality of our services. One of the products we use to do this on our own services is Yoloo Analytics. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate an identifier from cookies or similar technologies with sensitive categories, such as those based on race, religion, sexual orientation or health.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+  <script src="assets/libs/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+
+  <script language="JavaScript">
+    $.datepicker.regional['en'] = {
+      closeText: 'Close',
+      currentText: 'Today',
+      done: 'Select',
+      // monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      // monthNamesShort: ['янв','фев','мар','апр','май','июн', 'июл','авг','сен','окт','ноя','дек'],
+      dateFormatFrom: 'd M, yy',
+      dateFormat: 'd M, yy',
+      firstDay: 1,
+      isRTL: false,
+      changeDate: function (date) {
+        console.log(date);
+      }
+    };
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+
+
+    $(document).ready(function () {
+      ZeroClipboard.config( { swfPath: "assets/libs/zeroclipboard/dist/ZeroClipboard.swf" } );
+      var client = new ZeroClipboard($("[data-copy]"));
+
+      $("[data-copy]").on('click', function (e) {
+        e.preventDefault();
+      })
+
+      client.on( "copy", function (event) {
+        var clipboard = event.clipboardData;
+        var cp = $(event.target).data('copy')
+
+        console.log(cp);
+
+
+        // $('#topmesasge').html('Copied: '+ cp.replace('<', '&lt;')).addClass('-show');
+        // setTimeout(function () {
+        //   $('#topmesasge').removeClass('-show');
+        // }, 3000)
+
+        $('.infoPopupMessage').html('Your link has been copied to your clipboard');
+        openInfoPopup('#infoPopup');
+
+        clipboard.setData( "text/plain", cp );
+      });
+    });
+
+  </script>
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

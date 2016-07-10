@@ -1,0 +1,28 @@
+{
+  "name": "fabium",
+  "version": "0.0.1",
+  "description": "fabium bower",
+  "main": "gulpfile.js",
+  "keywords": [
+    "frontend",
+    "fabium"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "select2": "select2/select2#~4.0.0",
+    "jquery-ui": "components/jqueryui#~1.11.4",
+    "bxslider-4": "stevenwanderski/bxslider-4#~4.2.5",
+    "datatables": "DataTables/DataTables#~1.10.11",
+    "zeroclipboard": "zeroclipboard/zeroclipboard#^2.2.0",
+    "skrollr": "Prinzhorn/skrollr#^0.6.30"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}
