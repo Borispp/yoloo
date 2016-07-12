@@ -28,8 +28,8 @@
         </ul>
 
         <div class="user_menu -not_login">
-          <a href="#" class="button -medium">Log In</a>
-          <a href="#" class="button -medium -red">Sign In</a>
+          <a href="#login" class="button -medium openPopup">Log In</a>
+          <a href="#signIn" class="button -medium -red openPopup">Sign In</a>
         </div>
 
         <a href="#mainMobile" class="menu_mobile -mobile"></a>
@@ -426,7 +426,6 @@
     <section class="section -world -angle -revert">
       <div class="base_col">
         <div class="world--description">
-          <img src="./assets/images/content/planet.png" alt="" class="world--planet">
           <h2>CALL YOUR FRIENDS ALL OVER THE WORLD</h2>
           <p>If you are a serious astronomy fanatic like a lot of us are, you can probably remember that one event in childhood that started you along this exciting hobby.</p>
           <p><a href="#" class="button">Show rates</a></p>
@@ -625,6 +624,8 @@
       </div>
     </footer>
   </div>
+
+  <div id="overlay" class="-hide"></div>
 
   <div class="mobile_menu_popup -mobile_hide_popup" id="mainMobile">
     <a href="#" class="close"></a>
@@ -1040,6 +1041,108 @@
           <li><a href="#">Zambia</a></li>
           <li><a href="#">Zimbabwe</a></li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="login" class="popup -hidePopup -action">
+    <div class="clip -login">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Login or register:</h2>
+
+        <form action="" class="form login">
+          <fieldset>
+            <div class="searchCountries -activeInput -login">
+              <form action="" autocomplete="off">
+                <div class="input_wraper">
+                  <label for="countryCode">
+                    Country code
+                  </label>
+                  <input type="search" id="countryCode" class="input -search -searchCountries">
+
+                  <ul class="countriesList -hide">
+                    <li data-val="+373" class="visibleLink"><i class="flag flag-md"></i> <span>+373</span></li>
+                    <li data-val="+273" class="visibleLink"><i class="flag flag-gb"></i> <span>+273</span></li>
+                    <li data-val="+173" class="visibleLink"><i class="flag flag-gr"></i> <span>+173</span></li>
+                    <li data-val="+073" class="visibleLink"><i class="flag flag-it"></i> <span>+073</span></li>
+                    <li data-val="+573" class="visibleLink"><i class="flag flag-de"></i> <span>+573</span></li>
+                    <li data-val="+673" class="visibleLink"><i class="flag flag-es"></i> <span>+673</span></li>
+                    <li data-val="+473" class="visibleLink"><i class="flag flag-fr"></i> <span>+473</span></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+
+            <p class="input_large -half">
+              <input type="text" id="userPhoneNumber" value="" maxlength="12">
+              <label for="userPhoneNumber" class="">Phone number</label>
+            </p>
+
+            <p class="-hint">You will get an SMS with a 4 digit code.</p>
+          </fieldset>
+
+          <p class="submit">
+            <a href="#secretcode" class="button_square -blue -large openPopup">Get your pass code</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="secretcode" class="popup -hidePopup -action">
+    <div class="clip -login">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Enter 4 digits code</h2>
+
+        <form action="" class="form login">
+          <fieldset>
+
+            <p class="input_large -half" style="width: 130px">
+              <input type="text" id="userSecretCode" value="" maxlength="12">
+              <label for="userSecretCode" class="">Secret code</label>
+            </p>
+            <p class="-half -hint_code">
+              Enter the code we’ve just sent via SMS on +373 78 067 346
+            </p>
+
+            <p class="-hint" style="padding-top: 18px">
+              <input type="checkbox" id="keep" checked>
+              <label for="keep">Keep me logged in</label>
+            </p>
+          </fieldset>
+
+          <p class="submit">
+            <a href="#secretcode" class="button_square -blue -large openPopup">LogIn</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="signIn" class="popup -hidePopup -action">
+    <div class="clip">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Sign In</h2>
+
+        <form action="" class="form sign">
+          <p class="sign--place"><i class="flag flag-md"></i> You’re in Moldova (+373)</p>
+
+          <p class="sign--phone">
+            <label for="phoneNumber" class="label">Your phone number:</label>
+            <span class="sign--code">+373</span>
+            <input type="tel" id="phoneNumber" placeholder="Enter your phone number" class="input">
+          </p>
+
+          <p class="submit">
+            <input type="submit" value="Get your pass code" class="button -blue">
+          </p>
+        </form>
       </div>
     </div>
   </div>

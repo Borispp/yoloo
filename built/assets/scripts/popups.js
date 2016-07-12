@@ -62,3 +62,8 @@ $('[data-image]').on('click', function (e) {
   $overlay.removeClass('-hide');
   $body.addClass('popup_active');
 });
+
+$('.imagePopup .close').on('click', function (e) {
+  e.preventDefault();
+  closePopup();
+});

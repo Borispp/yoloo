@@ -58,6 +58,81 @@ div.clip
   top 50%
   transform translate(-50%, -50%)
 
+  &.-login
+    background url('../images/content/login_bg.png')
+    background-size 466px 391px
+    width 466px
+    height 391px
+
+    .bigPopup
+      width 330px
+      margin 70px 0 40px 90px
+
+      .closePopup
+        top -42px
+        right -12px
+
+      fieldset
+        margin-bottom 8px
+
+      .button_square
+        width calc(100% - 30px)
+        borderbox()
+        text-align center
+
+      .-half, .searchCountries
+        width 150px
+        display inline-block
+        vertical-align top
+
+      .searchCountries
+        width 135px
+        margin-right 12px
+
+        input
+          padding 38px 12px 16px
+
+          &:focus
+            border-color #1f5afb
+
+        .countriesList
+          border-color #1f5afb
+
+        label
+          font-family 'IntroBookBold'
+          font-size 14px
+          color #2379FF
+          line-height 22px
+          position absolute
+          z-index 12
+          margin 16px 0 0 20px
+
+      .-hint
+        font-size 14px
+        padding 26px 0 12px
+
+        label
+          font-size 16px
+          position relative
+          top 2px
+
+      .-hint_code
+        font-size 14px
+        color #09073F
+        line-height 23px
+        padding-left 18px
+        padding-top 8px
+
+      .input_large
+        width 150px
+
+        input
+          color #000
+          padding 42px 24px 18px
+
+        label
+          transform translate(24px, 14px)
+
 #check
   div.clip
     background url('../images/content/check_mask.png')
@@ -143,7 +218,7 @@ div.clipInfo
 
 .popupBlock
   h2
-    font-weight 600
+    font-family 'IntroBookBold'
     font-size 24px
     color #FF5D61
     padding-bottom 26px
@@ -396,6 +471,17 @@ div.clipInfo
   left 50%
   transform translate(-50%, -50%) scale(0)
   transition transform 0.2s
+
+  .close
+    position absolute
+    top -36px
+    right -36px
+    opacity 0.7
+    sprite($s-close_big)
+    transition opacity 0.2s
+
+    &:hover
+      opacity 1
 
   img
     max-width 100%

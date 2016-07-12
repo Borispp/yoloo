@@ -316,7 +316,7 @@ input[type="search"] {
 #header.-white .user_menu:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -228px -313px;
+  background-position: -262px -313px;
   width: 33px;
   height: 33px;
 }
@@ -427,7 +427,7 @@ input[type="search"] {
   margin-top: -1px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -262px -313px;
+  background-position: -228px -313px;
   width: 33px;
   height: 33px;
 }
@@ -1128,13 +1128,13 @@ input[type="search"] {
 }
 .account_params .aside ul li a:hover.account_params--dashboard:before,
 .account_params .aside ul li a.-active.account_params--dashboard:before {
-  background-position: -422px -319px;
+  background-position: -91px -281px;
   width: 42px;
   height: 27px;
 }
 .account_params .aside ul li a:hover.account_params--profile:before,
 .account_params .aside ul li a.-active.account_params--profile:before {
-  background-position: -275px -212px;
+  background-position: -422px -279px;
   width: 34px;
   height: 39px;
 }
@@ -1158,7 +1158,7 @@ input[type="search"] {
 }
 .account_params .aside ul li a:hover.account_params--referrals:before,
 .account_params .aside ul li a.-active.account_params--referrals:before {
-  background-position: -475px -259px;
+  background-position: -475px -205px;
   width: 50px;
   height: 53px;
 }
@@ -1170,21 +1170,21 @@ input[type="search"] {
 .account_params .aside ul li a.account_params--dashboard:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -91px -281px;
+  background-position: -422px -319px;
   width: 42px;
   height: 27px;
 }
 .account_params .aside ul li a.account_params--profile:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -422px -279px;
+  background-position: -275px -212px;
   width: 34px;
   height: 39px;
 }
 .account_params .aside ul li a.account_params--recharge:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -422px -199px;
+  background-position: -422px -239px;
   width: 39px;
   height: 39px;
 }
@@ -1198,14 +1198,14 @@ input[type="search"] {
 .account_params .aside ul li a.account_params--payment:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -422px -239px;
+  background-position: -422px -199px;
   width: 39px;
   height: 39px;
 }
 .account_params .aside ul li a.account_params--referrals:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -475px -205px;
+  background-position: -475px -259px;
   width: 50px;
   height: 53px;
 }
@@ -2973,6 +2973,83 @@ div.clip {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+div.clip.-login {
+  background: url("../images/content/login_bg.png");
+  background-size: 466px 391px;
+  width: 466px;
+  height: 391px;
+}
+div.clip.-login .bigPopup {
+  width: 330px;
+  margin: 70px 0 40px 90px;
+}
+div.clip.-login .bigPopup .closePopup {
+  top: -42px;
+  right: -12px;
+}
+div.clip.-login .bigPopup fieldset {
+  margin-bottom: 8px;
+}
+div.clip.-login .bigPopup .button_square {
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  text-align: center;
+}
+div.clip.-login .bigPopup .-half,
+div.clip.-login .bigPopup .searchCountries {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+div.clip.-login .bigPopup .searchCountries {
+  width: 135px;
+  margin-right: 12px;
+}
+div.clip.-login .bigPopup .searchCountries input {
+  padding: 38px 12px 16px;
+}
+div.clip.-login .bigPopup .searchCountries input:focus {
+  border-color: #1f5afb;
+}
+div.clip.-login .bigPopup .searchCountries .countriesList {
+  border-color: #1f5afb;
+}
+div.clip.-login .bigPopup .searchCountries label {
+  font-family: 'IntroBookBold';
+  font-size: 14px;
+  color: #2379ff;
+  line-height: 22px;
+  position: absolute;
+  z-index: 12;
+  margin: 16px 0 0 20px;
+}
+div.clip.-login .bigPopup .-hint {
+  font-size: 14px;
+  padding: 26px 0 12px;
+}
+div.clip.-login .bigPopup .-hint label {
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+div.clip.-login .bigPopup .-hint_code {
+  font-size: 14px;
+  color: #09073f;
+  line-height: 23px;
+  padding-left: 18px;
+  padding-top: 8px;
+}
+div.clip.-login .bigPopup .input_large {
+  width: 150px;
+}
+div.clip.-login .bigPopup .input_large input {
+  color: #000;
+  padding: 42px 24px 18px;
+}
+div.clip.-login .bigPopup .input_large label {
+  -webkit-transform: translate(24px, 14px);
+          transform: translate(24px, 14px);
+}
 #check div.clip {
   background: url("../images/content/check_mask.png");
   background-size: 607px 613px;
@@ -3054,7 +3131,7 @@ div.clipInfo.-green {
   right: -90px;
 }
 .popupBlock h2 {
-  font-weight: 600;
+  font-family: 'IntroBookBold';
   font-size: 24px;
   color: #ff5d61;
   padding-bottom: 26px;
@@ -3155,7 +3232,7 @@ div.clipInfo.-green {
   top: 24px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -280px -281px;
+  background-position: -305px -281px;
   width: 16px;
   height: 16px;
 }
@@ -3174,7 +3251,7 @@ div.clipInfo.-green {
   top: 24px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -297px -281px;
+  background-position: -336px -313px;
   width: 16px;
   height: 14px;
 }
@@ -3341,6 +3418,21 @@ div.clipInfo.-green {
           transform: translate(-50%, -50%) scale(0);
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+}
+.imagePopup .close {
+  position: absolute;
+  top: -36px;
+  right: -36px;
+  opacity: 0.7;
+  background-image: url("../images/design/sprite.png");
+  background-size: 528px 411px;
+  background-position: -134px -281px;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s;
+}
+.imagePopup .close:hover {
+  opacity: 1;
 }
 .imagePopup img {
   max-width: 100%;
@@ -4729,7 +4821,7 @@ div.clipInfo.-green {
 .referral .referral--share input:checked + label.-mail:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -234px -281px;
+  background-position: -259px -281px;
   width: 28px;
   height: 18px;
 }
@@ -4743,7 +4835,7 @@ div.clipInfo.-green {
 .referral .referral--share input:checked + label.-twitter:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -159px -281px;
+  background-position: -209px -281px;
   width: 24px;
   height: 22px;
 }
@@ -4875,6 +4967,9 @@ div.clipInfo.-green {
 }
 .searchCountries {
   position: relative;
+}
+.searchCountries.-login .-search {
+  padding-left: 12px;
 }
 .searchCountries.-rates .-search {
   padding: 19px 0 17px 40px;
@@ -5967,7 +6062,7 @@ div.clipInfo.-green {
   height: 18px;
 }
 .button.-mail:hover:before {
-  background-position: -234px -281px;
+  background-position: -259px -281px;
   width: 28px;
   height: 18px;
 }
@@ -5996,12 +6091,12 @@ div.clipInfo.-green {
   top: 11px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -134px -281px;
+  background-position: -234px -281px;
   width: 24px;
   height: 22px;
 }
 .button.-twitter:hover:before {
-  background-position: -159px -281px;
+  background-position: -209px -281px;
   width: 24px;
   height: 22px;
 }
@@ -6023,6 +6118,7 @@ div.clipInfo.-green {
   height: 19px;
 }
 .button_square {
+  cursor: pointer;
   display: inline-block;
   padding: 18px 30px 15px;
   font-family: 'IntroBookBold';
@@ -6054,6 +6150,7 @@ div.clipInfo.-green {
 }
 .button_square.-blue {
   background: #1f5afb;
+  border: none;
   transition: border-color 0.2s linear, background 0.2s linear;
   position: relative;
 }
@@ -6263,14 +6360,14 @@ div.clipInfo.-green {
 .icon.-star {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -184px -281px;
+  background-position: -159px -281px;
   width: 24px;
   height: 22px;
 }
 .icon.-staryellow {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -209px -281px;
+  background-position: -184px -281px;
   width: 24px;
   height: 22px;
 }
@@ -6586,7 +6683,7 @@ div.clipInfo.-green {
 }
 .buttonChoice.-no:hover:before,
 .buttonChoice.-no:active:before {
-  background-position: -336px -313px;
+  background-position: -326px -348px;
   width: 14px;
   height: 15px;
 }
