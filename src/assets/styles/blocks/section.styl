@@ -37,7 +37,7 @@
       z-index 0
       right -60px
       bottom -130px
-      transform rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)
+      // transform rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)
       transform rotateX(30deg) rotateY(30deg) rotateZ(20deg) translate(700px, -30px) scale(0.5)
       transition transform 1s
 
@@ -234,7 +234,7 @@
       width 456px
       height 267px
       background-size 456px 267px
-      margin 0 auto
+      margin -40px auto 0
 
   &.-hd
     padding-bottom 24px
@@ -266,43 +266,49 @@
   .section.-angle.-revert:before
     transform rotate(2deg)
 
-
-@media (max-width 1300px)
-  .top_section.-main .hand_yoloo
-    transform scale(.85)
-
 @media (max-width 1260px)
-  .top_section.-main .main_description h1
-    font-size 62px
+  .top_section.-main
+    .base_col
+      width 100%
+
+  .top_section.-main .main_description
+    padding-top 60px
+    padding-left 60px
+
+    h1
+      font-size 62px
+
+    .main_description--text
+      width 458px
+      font-size 18px
+      line-height 27px
 
   .top_section.-main .hand_yoloo
-    transform scale(.8)
+    background-size 496px 510px
+    width 496px
+    height 510px
+    right -30px
+    bottom -30px
 
-  .top_section.-main .main_description .main_description--text
-    width 458px
-    font-size 18px
-    line-height 27px
+  .section.-world
+    padding 250px 0 140px
 
-// @media (max-width 1170px)
-//   .top_section.-main
-//     padding-bottom 104px
-//
-//   .top_section.-main .hand_yoloo
-//     transform scale(.75)
-//     right -124px
+    .world--description
+      margin-right 60px
 
-@media (max-width 1125px)
-  // .top_section.-main .main_description h1
-    // font-size 52px
-    // line-height 54px
+      h2
+        font-size 50px
+        line-height 60px
 
-  // .top_section.-main .main_description .main_description--text
-  //   width 406px
-    // font-size 16px
-    // line-height 23px
+      p
+        font-size 18px
+        line-height 26px
 
-  // .top_section.-main .main_description .main_description--text
-  //   padding-bottom 30px
+@media (max-width 1140px)
+
+  .section.-satellite
+    .base_col--large
+      width 100%
 
 @media (max-width 1040px)
   // .base_col
@@ -351,30 +357,6 @@
   //
   // .top_section.-main .main_description
   //   padding 40px 0 60px
-
-@media (max-width 810px)
-  .top_section.-main .main_description
-    h1
-      width 100%
-      text-align center
-
-  .top_section.-main .main_description .main_description--text
-    // width 100%
-    margin: 0 auto
-    text-align center
-    font-size 15px
-
-  .top_section.-main .main_description .main_description--download
-    display block
-    width 500px
-    text-align center
-    margin 0 auto
-
-  .top_section.-main .main_description
-    padding 10px 0 60px
-
-  .top_section.-main .hand_yoloo
-    right -452px
 
 // @media (max-width 890px)
 //     .section.-land #land
@@ -428,6 +410,29 @@
 
 
 @media (max-width 767px)
+  .top_section.-main .main_description
+    h1
+      width 100%
+      text-align center
+
+  .top_section.-main .main_description .main_description--text
+    // width 100%
+    margin: 0 auto
+    text-align center
+    font-size 15px
+
+  .top_section.-main .main_description .main_description--download
+    display block
+    width 500px
+    text-align center
+    margin 0 auto
+
+  .top_section.-main .main_description
+    padding 10px 0 60px
+
+  .top_section.-main .hand_yoloo
+    right -452px
+
   .-with_mobile
     .base_col
       width calc(100% - 20px)

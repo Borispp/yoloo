@@ -1,6 +1,16 @@
 .searchCountries
   position relative
 
+  &.-with_flag
+    .input_wraper
+      .-search
+        padding-left 48px !important
+
+    .icon
+      position absolute
+      top 18px
+      left -6px
+
   &.-login
     .-search
       padding-left 12px
@@ -65,6 +75,16 @@
 
             &:last-child
               width 52px
+
+  &.-error
+    label
+      color #FF5D61 !important
+
+    input
+      border-color #FF5D61
+
+      &:focus
+        border-color #FF5D61 !important
 
   .-search
     width 100%

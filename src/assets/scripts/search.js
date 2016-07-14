@@ -1,10 +1,15 @@
 $('.-search').on('focus', function (e) {
+	$(this).val('')
+	$(this).parent().find('.icon').html('')
+	$(this).closest('.searchCountries').removeClass('-with_flag')
+
 	var _this = this;
 	$(this).next().find('li').removeClass('active');
 	searchCountries(this);
 	setTimeout(function () {
 		$(_this).next().removeClass('-hide');
 	}, 150);
+
 }).on('keyup', function (e) {
 	var $list = $(this).next();
 	var $listLiActive = $list.find('li.active');
@@ -52,16 +57,17 @@ $('.-search').on('focus', function (e) {
 	if (e.which == '13') {
 		var val = $(this).next().find('.active').data('val');
 		if (val) {
+
+			var flag = $(this).next().find('.active').find('.flag');
+			$(this).parent().find('label .icon').html($(flag).clone());
+			$(this).closest('.searchCountries').addClass('-with_flag')
+
 			$(this).val(val);
 			$(this).blur();
 		}
 
-
 		var data = $(this).next().find('.active').data('rates');
 		var $result = $(this).next().next();
-
-
-		setSearchCountriesResult(data, $result)
 	}
 }).on('blur', function () {
 	var _this = this;
@@ -72,12 +78,25 @@ $('.-search').on('focus', function (e) {
 	}, 200);
 });
 
+$('.searchCountries.-rates .-search').on('keyup', function (e) {
+	if (e.which == '13') {
+		var data = $(this).next().find('.active').data('rates');
+		var $result = $(this).next().next();
+		setSearchCountriesResult(data, $result)
+	}
+});
+
+
 $('.searchCountries form').submit(function (e) {
 	e.preventDefault();
 });
 
 // $('.-activeInput li').on('click', function () {
 $('.searchCountries li').on('click', function () {
+	var flag = $(this).find('.flag');
+	$(this).closest('.searchCountries').addClass('-with_flag')
+	$(this).parent().prev().prev().find('.icon').html($(flag).clone());
+
 	$(this).parent().prev().val($(this).data('val'));
 });
 
@@ -96,7 +115,7 @@ var setSearchCountriesResult = function (data, $result) {
 }
 
 var searchCountries = function (_this) {
-	var filter = $(_this).val(), count = 0, unvis = 0;
+	var filter = $(_this).val().replace('+',''), count = 0, unvis = 0;
 	var commonCount = $(_this).next().find('li').length;
 
 	$(_this).next().find('li').each(function(){

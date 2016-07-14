@@ -38,7 +38,13 @@
         <br><br>
         <a href="#login" class="button openPopup">Login or register</a>
         <br><br>
+        <a href="#downloadQr" class="button openPopup">Download via QR code</a>
+        <br><br>
+        <a href="#loginBad" class="button openPopup">Login or register - Bad Validation</a>
+        <br><br>
         <a href="#secretcode" class="button openPopup">Secret Code</a>
+        <br><br>
+        <a href="#secretcodeBad" class="button openPopup">Secret Code - Bad validation</a>
         <br><br>
         <a href="#check" class="button openPopup">Check</a>
         <br><br>
@@ -300,13 +306,16 @@
 
         <form action="" class="form login">
           <fieldset>
-            <div class="searchCountries -activeInput -login">
+            <div class="searchCountries -activeInput -login -with_flag">
               <form action="" autocomplete="off">
                 <div class="input_wraper">
                   <label for="countryCode">
                     Country code
+                    <span class="icon">
+                      <i class="flag flag-md"></i>
+                    </span>
                   </label>
-                  <input type="search" id="countryCode" class="input -search -searchCountries">
+                  <input type="text" id="countryCode" class="input -search -searchCountries" value="+373">
 
                   <ul class="countriesList -hide">
                     <li data-val="+373" class="visibleLink"><i class="flag flag-md"></i> <span>+373</span></li>
@@ -337,6 +346,103 @@
     </div>
   </div>
 
+
+  <div id="downloadQr" class="popup -hidePopup -action">
+    <div class="clip -login -download">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Download our app</h2>
+
+        <p class="download--message">It’s your first log in, congrats! So first thing’s first, download our amazing app to get started:</p>
+        <div class="download--qr">
+          <p>
+            <img src="./assets/images/content/qr.png" alt="">
+            <span>AppStore</span>
+          </p>
+          <p>
+            <img src="./assets/images/content/qr.png" alt="">
+            <span>Google Market</span>
+          </p>
+        </div>
+
+        <p class="show_download">
+          <a href="#downloadButtons" class="openPopup">Show download buttons</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="downloadButtons" class="popup -hidePopup -action">
+    <div class="clip -login -download">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Download our app</h2>
+
+        <p class="download--message">It’s your first log in, congrats! So first thing’s first, download our amazing app to get started:</p>
+        <div class="download--buttons">
+          <a href="#" class="button_square -red -ios">Download for IOS</a>
+          <a href="#" class="button_square -red -android">Download for Android</a>
+        </div>
+
+        <p class="show_download">
+          <a href="#downloadQr" class="openPopup">Show QR Code please</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="loginBad" class="popup -hidePopup -action">
+    <div class="clip -login">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Login or register:</h2>
+
+        <form action="" class="form login">
+          <fieldset>
+            <div class="searchCountries -activeInput -login">
+              <form action="" autocomplete="off">
+                <div class="input_wraper">
+                  <label for="countryCode">
+                    Country code
+                    <span class="icon"></span>
+                  </label>
+                  <input type="search" id="countryCode" class="input -search -searchCountries">
+
+                  <ul class="countriesList -hide">
+                    <li data-val="+373" class="visibleLink"><i class="flag flag-md"></i> <span>+373</span></li>
+                    <li data-val="+273" class="visibleLink"><i class="flag flag-gb"></i> <span>+273</span></li>
+                    <li data-val="+173" class="visibleLink"><i class="flag flag-gr"></i> <span>+173</span></li>
+                    <li data-val="+073" class="visibleLink"><i class="flag flag-it"></i> <span>+073</span></li>
+                    <li data-val="+573" class="visibleLink"><i class="flag flag-de"></i> <span>+573</span></li>
+                    <li data-val="+673" class="visibleLink"><i class="flag flag-es"></i> <span>+673</span></li>
+                    <li data-val="+473" class="visibleLink"><i class="flag flag-fr"></i> <span>+473</span></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+
+            <p class="input_large -half -error">
+              <input type="text" id="userPhoneNumber" value="a3487688" maxlength="12">
+              <label for="userPhoneNumber" class="">Phone number</label>
+            </p>
+
+            <p class="message -error">Phone number doesn’t seem to be correct</p>
+
+            <p class="-hint">You will get an SMS with a 4 digit code.</p>
+
+          </fieldset>
+
+          <p class="submit">
+            <a href="#secretcode" class="button_square -blue -large openPopup">Get your pass code</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <div id="secretcode" class="popup -hidePopup -action">
     <div class="clip -login">
       <div class="popupBlock bigPopup">
@@ -354,6 +460,40 @@
             <p class="-half -hint_code">
               Enter the code we’ve just sent via SMS on +373 78 067 346
             </p>
+
+            <p class="-hint" style="padding-top: 18px">
+              <input type="checkbox" id="keep" checked>
+              <label for="keep">Keep me logged in</label>
+            </p>
+          </fieldset>
+
+          <p class="submit">
+            <a href="#secretcode" class="button_square -blue -large openPopup">LogIn</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="secretcodeBad" class="popup -hidePopup -action">
+    <div class="clip -login">
+      <div class="popupBlock bigPopup">
+        <a href="#" class="closePopup"></a>
+
+        <h2>Enter 4 digits code</h2>
+
+        <form action="" class="form login">
+          <fieldset>
+
+            <p class="input_large -half -error" style="width: 130px">
+              <input type="text" id="userSecretCode" maxlength="12" value="3243">
+              <label for="userSecretCode" class="">Secret code</label>
+            </p>
+            <p class="-half -hint_code">
+              Enter the code we’ve just sent via SMS on +373 78 067 346
+            </p>
+
+            <p class="message -error">Phone number doesn’t seem to be correct</p>
 
             <p class="-hint" style="padding-top: 18px">
               <input type="checkbox" id="keep" checked>

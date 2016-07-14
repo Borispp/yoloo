@@ -67,3 +67,7 @@ $('.imagePopup .close').on('click', function (e) {
   e.preventDefault();
   closePopup();
 });
+
+$('[href="#login"]').on('click', function (e) {
+  $('#userPhoneNumber').focus();
+});

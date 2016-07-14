@@ -256,6 +256,12 @@
   &.-focus
     border-color #4b94f8
 
+  &.-error
+    border-color #FF5D61
+
+    label
+      color #FF5D61
+
   input, textarea
     background none
     border none
@@ -605,6 +611,22 @@
 
     &:active
       background #e84246
+
+.message
+  font-size 14px
+  line-height 30px
+  position relative
+  padding-left 16px
+
+  &.-error
+    color #FF5D61
+
+    &:before
+      content ''
+      position absolute
+      left 0
+      top 8px
+      sprite($s-bad)
 
 .select2
   width 100% !important

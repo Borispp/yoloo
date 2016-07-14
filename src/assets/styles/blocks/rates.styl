@@ -149,6 +149,8 @@
   .rates--countries
     float none
     width 100%
+    margin-left 0
+
     ul
       li
         padding 0
@@ -230,6 +232,25 @@
               font-weight 300
               font-size 42px
               color #95E7FF
+
+@media (max-width 1260px)
+  .rates--countries
+    margin-left 60px
+
+    ul li
+      padding-right 40px
+
+      h2
+        font-size 30px
+
+      dl dd
+        font-size 66px
+
+  .rates--check
+    margin-right 60px
+
+  .top_countries .countriesCatalog .countriesCatalog--list
+    margin-left 80px
 
 @media (max-width 1000px)
   // .rates
@@ -493,6 +514,7 @@
 
   .rates--countries
     margin-top 0
+    margin-left 0
     width 100%
 
     ul li
