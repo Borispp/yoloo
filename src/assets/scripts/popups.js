@@ -25,6 +25,9 @@ var openPopup = function () {
   $(popupOpen).removeClass('-hidePopup');
   $overlay.removeClass('-hide');
   $body.addClass('popup_active');
+  if(!$('#secretcode').hasClass('-hidePopup'))  {
+    $('#userSecretCode').focus();
+  }
 }
 
 var closePopup = function () {
@@ -44,6 +47,8 @@ var openInfoPopup = function (popupOpen) {
   var popupOpen = popupOpen || $this.attr('href');
 
   $(popupOpen).removeClass('-hidePopupTop');
+
+  
 
   setTimeout(function () {
     $(popupOpen).addClass('-hidePopupTop');
@@ -70,3 +75,26 @@ $('.imagePopup .close').on('click', function (e) {
 $('[href="#login"]').on('click', function (e) {
   $('#userPhoneNumber').focus()
 })
+
+// if(!$('#secretcode').hasClass('-hidePopup')) {
+//   $('#userSecretCode').focus()
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
