@@ -118,7 +118,7 @@
       background #eff4f5
 
   &.-world
-    background url('../images/content/universe3.jpg')
+    background url('../images/content/universbg.jpg')
     padding 300px 0 170px
     background-size cover
     background-position center center
@@ -134,7 +134,11 @@
       float right
 
       .world--planet
-        display none
+        display block
+        position absolute
+        width 600px
+        top -230px
+        left -25px 
 
       p
         font-size 20px
@@ -303,6 +307,13 @@
       p
         font-size 18px
         line-height 26px
+
+      .world--planet
+        display block
+        position absolute
+        width 500px
+        top -190px
+        left 60px 
 
 @media (max-width 1140px)
 
@@ -519,3 +530,4 @@
           display block
           width 286px
           margin 0 auto -60px
+          position static
