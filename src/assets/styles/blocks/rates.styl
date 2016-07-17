@@ -533,7 +533,7 @@
 
 
 .-mobile--catalog
-  padding 20px 48px 48px 48px
+  padding 20px 36px 48px 36px
 
   .searchCountries
     margin-bottom 30px
@@ -574,3 +574,140 @@
       background none
       color #fff
       border 1px solid #95E7FF
+
+.rates--data
+  text-align center
+  position relative
+  padding 40px 0 50px
+
+  .closeRate
+    display block
+    position absolute
+    top 12px !important
+    right -36px !important
+    width 66px
+    height 66px
+
+    &:before
+      content ''
+      display block
+      position absolute
+      left 24px
+      top 24px
+      sprite($s-close2)
+
+  &:before, &:after
+    content ''
+    display block
+    position absolute
+    width calc(100% + 72px)
+    height 1px
+    margin-left -36px
+    background #95E7FF
+
+  &:before
+    top 10px
+
+  &:after
+    bottom 20px
+
+  img
+    width 120px
+
+  h2
+    color #95E7FF
+    font-size 24px
+    margin-bottom 30px
+
+    &:after
+      content ''
+      display block
+      width 110px
+      margin 12px auto 0
+      height 1px
+      background rgba(255,255,255,.5)
+
+  h4
+    font-family 'IntroBookBold'
+    font-size 10px
+    color #95E7FF
+    letter-spacing 0.71px
+    line-height 40px
+    text-transform uppercase
+    text-align left
+    margin-bottom 0
+    margin-top 0
+    line-height 18px
+
+  h5
+    font-size 12px
+    color #FFFFFF
+    line-height 30px
+    margin-bottom 5px
+
+  .rates--underline
+    &:after
+      content ''
+      display block
+      position absolute
+      bottom 12px
+      width calc(100% + 36px)
+      height 1px
+      margin-left 0
+      background rgba(149, 231, 255, .45)
+
+  .rates--min
+    position relative
+    display inline-block
+    font-size 14px
+    color #fff
+    padding-left 12px
+    width 120px
+
+    &:before
+      content ''
+      display block
+      sprite($s-min_white)
+      left 0
+      top -2px
+      position absolute
+
+  .rates--sms
+    position relative
+    font-size 14px
+    color #fff
+    padding-left 24px
+
+    &:before
+      content ''
+      display block
+      sprite($s-sms_white)
+      left 0
+      top 0px
+      position absolute
+
+  .rates--landline
+    position relative
+    font-size 14px
+    color #fff
+    padding-left 24px
+
+    &:before
+      content ''
+      display block
+      sprite($s-landline_white)
+      left 0
+      top -2px
+      position absolute
+
+  .rates--list
+    text-align left
+    font-size 14px
+    margin-bottom 10px
+
+    li
+      padding-bottom 20px
+      position relative
+
+  .button
+    padding 14px 0 12px

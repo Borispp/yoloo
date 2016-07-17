@@ -181,3 +181,8 @@ $('.support--list h3').on('click', function (e) {
 		$(this).parent().addClass('-opened');
 	}
 });
+
+$('.rates--data .closeRate').on('click', function (e) {
+	e.preventDefault();
+	$(this).parent().addClass('-hide');
+});
