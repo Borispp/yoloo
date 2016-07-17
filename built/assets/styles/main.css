@@ -287,7 +287,7 @@ input[type="search"] {
   display: block;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -403px -156px;
+  background-position: -403px -194px;
   width: 18px;
   height: 17px;
 }
@@ -326,7 +326,7 @@ input[type="search"] {
 #header.-white .user_menu .user_phone:after {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -462px -178px;
+  background-position: -462px -207px;
   width: 11px;
   height: 7px;
 }
@@ -402,7 +402,7 @@ input[type="search"] {
   color: #ff5d61;
 }
 #header .user_menu:hover .user_phone:after {
-  background-position: -462px -170px;
+  background-position: -462px -199px;
   width: 11px;
   height: 7px;
 }
@@ -452,7 +452,7 @@ input[type="search"] {
   right: -22px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -462px -186px;
+  background-position: -462px -215px;
   width: 11px;
   height: 7px;
 }
@@ -553,7 +553,7 @@ input[type="search"] {
   right: -26px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -504px -393px;
+  background-position: -403px -156px;
   width: 18px;
   height: 18px;
 }
@@ -588,7 +588,7 @@ input[type="search"] {
   right: -26px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -504px -393px;
+  background-position: -403px -156px;
   width: 18px;
   height: 18px;
 }
@@ -762,7 +762,7 @@ input[type="search"] {
   background: #eff4f5;
 }
 .section.-world {
-  background: url("../images/content/universe3.jpg");
+  background: url("../images/content/universbg.jpg");
   padding: 300px 0 170px;
   background-size: cover;
   background-position: center center;
@@ -782,7 +782,11 @@ input[type="search"] {
   float: right;
 }
 .section.-world .world--description .world--planet {
-  display: none;
+  display: block;
+  position: absolute;
+  width: 600px;
+  top: -230px;
+  left: -25px;
 }
 .section.-world .world--description p {
   font-size: 20px;
@@ -960,6 +964,13 @@ input[type="search"] {
     font-size: 18px;
     line-height: 26px;
   }
+  .section.-world .world--description .world--planet {
+    display: block;
+    position: absolute;
+    width: 500px;
+    top: -190px;
+    left: 60px;
+  }
 }
 @media (max-width: 1140px) {
   .section.-satellite .base_col--large {
@@ -1075,6 +1086,7 @@ input[type="search"] {
     display: block;
     width: 286px;
     margin: 0 auto -60px;
+    position: static;
   }
 }
 @-webkit-keyframes satellite {
@@ -1147,37 +1159,37 @@ input[type="search"] {
 }
 .account_params .aside ul li a:hover.account_params--dashboard:before,
 .account_params .aside ul li a.-active.account_params--dashboard:before {
-  background-position: -422px -319px;
+  background-position: -91px -281px;
   width: 42px;
   height: 27px;
 }
 .account_params .aside ul li a:hover.account_params--profile:before,
 .account_params .aside ul li a.-active.account_params--profile:before {
-  background-position: -422px -279px;
+  background-position: -275px -212px;
   width: 34px;
   height: 39px;
 }
 .account_params .aside ul li a:hover.account_params--recharge:before,
 .account_params .aside ul li a.-active.account_params--recharge:before {
-  background-position: -422px -199px;
+  background-position: -422px -239px;
   width: 39px;
   height: 39px;
 }
 .account_params .aside ul li a:hover.account_params--call:before,
 .account_params .aside ul li a.-active.account_params--call:before {
-  background-position: -422px -79px;
+  background-position: -422px -119px;
   width: 40px;
   height: 39px;
 }
 .account_params .aside ul li a:hover.account_params--payment:before,
 .account_params .aside ul li a.-active.account_params--payment:before {
-  background-position: -422px -119px;
+  background-position: -422px -199px;
   width: 39px;
   height: 39px;
 }
 .account_params .aside ul li a:hover.account_params--referrals:before,
 .account_params .aside ul li a.-active.account_params--referrals:before {
-  background-position: -475px -259px;
+  background-position: -475px -205px;
   width: 50px;
   height: 53px;
 }
@@ -1189,14 +1201,14 @@ input[type="search"] {
 .account_params .aside ul li a.account_params--dashboard:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -91px -281px;
+  background-position: -422px -319px;
   width: 42px;
   height: 27px;
 }
 .account_params .aside ul li a.account_params--profile:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -275px -212px;
+  background-position: -326px -348px;
   width: 34px;
   height: 39px;
 }
@@ -1210,21 +1222,21 @@ input[type="search"] {
 .account_params .aside ul li a.account_params--call:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -475px -353px;
+  background-position: -422px -79px;
   width: 40px;
   height: 39px;
 }
 .account_params .aside ul li a.account_params--payment:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -422px -239px;
+  background-position: -422px -279px;
   width: 39px;
   height: 39px;
 }
 .account_params .aside ul li a.account_params--referrals:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -475px -205px;
+  background-position: -475px -259px;
   width: 50px;
   height: 53px;
 }
@@ -2292,7 +2304,7 @@ input[type="search"] {
   top: 24px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -403px -195px;
+  background-position: -317px -281px;
   width: 16px;
   height: 16px;
 }
@@ -2369,7 +2381,7 @@ input[type="search"] {
   display: block;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -463px -101px;
+  background-position: -463px -141px;
   width: 8px;
   height: 14px;
   left: 0;
@@ -2387,7 +2399,7 @@ input[type="search"] {
   display: block;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -406px -285px;
+  background-position: -387px -313px;
   width: 14px;
   height: 15px;
   left: 0;
@@ -2405,7 +2417,7 @@ input[type="search"] {
   display: block;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -406px -251px;
+  background-position: -406px -272px;
   width: 14px;
   height: 16px;
   left: 0;
@@ -2960,7 +2972,7 @@ input[type="search"] {
   top: 17px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -403px -212px;
+  background-position: -336px -313px;
   width: 16px;
   height: 16px;
 }
@@ -3150,7 +3162,7 @@ input[type="search"] {
   right: 20px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -288px -281px;
+  background-position: -353px -313px;
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -3348,6 +3360,13 @@ div.clipInfo {
 div.clipInfo .icon {
   margin: 80px auto 18px;
 }
+div.clipInfo .icon.-err {
+  background-image: url("../images/design/sprite.png");
+  background-size: 528px 411px;
+  background-position: -475px -313px;
+  width: 49.5px;
+  height: 44px;
+}
 div.clipInfo p {
   font-size: 20px;
   color: #eff4f5;
@@ -3358,6 +3377,12 @@ div.clipInfo p {
 }
 div.clipInfo.-green {
   background: url("../images/content/info_mask.png");
+  width: 303px;
+  height: 265px;
+  background-size: 303px 265px;
+}
+div.clipInfo.-red {
+  background: url("../images/content/info_mask-red.png");
   width: 303px;
   height: 265px;
   background-size: 303px 265px;
@@ -3507,7 +3532,7 @@ div.clipInfo.-green {
   top: 24px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -403px -195px;
+  background-position: -317px -281px;
   width: 16px;
   height: 16px;
 }
@@ -3526,7 +3551,7 @@ div.clipInfo.-green {
   top: 24px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -336px -313px;
+  background-position: -310px -237px;
   width: 16px;
   height: 14px;
 }
@@ -3648,7 +3673,7 @@ div.clipInfo.-green {
 .popup_price .popup_price--prices .popup_price--item .popup_price--mobile:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -516px -375px;
+  background-position: -463px -101px;
   width: 8px;
   height: 15px;
 }
@@ -3658,7 +3683,7 @@ div.clipInfo.-green {
 .popup_price .popup_price--prices .popup_price--item .popup_price--sms:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -406px -268px;
+  background-position: -406px -289px;
   width: 14px;
   height: 16px;
 }
@@ -3668,7 +3693,7 @@ div.clipInfo.-green {
 .popup_price .popup_price--prices .popup_price--item .popup_price--landline:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -356px -348px;
+  background-position: -376px -348px;
   width: 14px;
   height: 15px;
 }
@@ -4718,7 +4743,7 @@ div.clipInfo.-green {
   display: inline-block;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -475px -313px;
+  background-position: -475px -358px;
   width: 53px;
   height: 39px;
   margin-bottom: 6px;
@@ -4950,12 +4975,12 @@ div.clipInfo.-green {
 .support .support--questions li .quest--icon.-calling:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -475px -69px;
+  background-position: -475px -137px;
   width: 50px;
   height: 67px;
 }
 .support .support--questions li .quest--icon.-calling:hover:before {
-  background-position: -475px -137px;
+  background-position: -475px -69px;
   width: 50px;
   height: 67px;
 }
@@ -5112,21 +5137,21 @@ div.clipInfo.-green {
 .referral .referral--share input:checked + label.-mail:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -259px -281px;
+  background-position: -288px -281px;
   width: 28px;
   height: 18px;
 }
 .referral .referral--share input:checked + label.-facebook:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -463px -79px;
+  background-position: -463px -119px;
   width: 11px;
   height: 21px;
 }
 .referral .referral--share input:checked + label.-twitter:before {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -209px -281px;
+  background-position: -159px -281px;
   width: 24px;
   height: 22px;
 }
@@ -5412,7 +5437,7 @@ div.clipInfo.-green {
   left: 0;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -462px -139px;
+  background-position: -462px -179px;
   width: 10px;
   height: 18px;
 }
@@ -5427,7 +5452,7 @@ div.clipInfo.-green {
   top: 0px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -457px -279px;
+  background-position: -403px -175px;
   width: 17px;
   height: 18px;
 }
@@ -5442,7 +5467,7 @@ div.clipInfo.-green {
   top: -3px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -457px -298px;
+  background-position: -403px -212px;
   width: 17px;
   height: 18px;
 }
@@ -6174,7 +6199,7 @@ div.clipInfo.-green {
   top: 2px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -403px -174px;
+  background-position: -406px -234px;
   width: 14px;
   height: 20px;
 }
@@ -6183,7 +6208,7 @@ div.clipInfo.-green {
   top: 4px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -462px -119px;
+  background-position: -462px -159px;
   width: 12px;
   height: 19px;
 }
@@ -6192,7 +6217,7 @@ div.clipInfo.-green {
   top: 5px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -406px -234px;
+  background-position: -406px -255px;
   width: 15px;
   height: 16px;
 }
@@ -6376,12 +6401,12 @@ div.clipInfo.-green {
   top: 13px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -475px -393px;
+  background-position: -259px -281px;
   width: 28px;
   height: 18px;
 }
 .button.-mail:hover:before {
-  background-position: -259px -281px;
+  background-position: -288px -281px;
   width: 28px;
   height: 18px;
 }
@@ -6393,12 +6418,12 @@ div.clipInfo.-green {
   top: 11px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -516px -353px;
+  background-position: -463px -79px;
   width: 11px;
   height: 21px;
 }
 .button.-facebook:hover:before {
-  background-position: -463px -79px;
+  background-position: -463px -119px;
   width: 11px;
   height: 21px;
 }
@@ -6410,12 +6435,12 @@ div.clipInfo.-green {
   top: 11px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -234px -281px;
+  background-position: -209px -281px;
   width: 24px;
   height: 22px;
 }
 .button.-twitter:hover:before {
-  background-position: -209px -281px;
+  background-position: -159px -281px;
   width: 24px;
   height: 22px;
 }
@@ -6685,14 +6710,14 @@ div.clipInfo.-green {
 .icon.-star {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -184px -281px;
+  background-position: -234px -281px;
   width: 24px;
   height: 22px;
 }
 .icon.-staryellow {
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -159px -281px;
+  background-position: -184px -281px;
   width: 24px;
   height: 22px;
 }
@@ -6725,7 +6750,7 @@ div.clipInfo.-green {
   display: inline-block;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -295px -252px;
+  background-position: -275px -252px;
   width: 18px;
   height: 12px;
 }
@@ -6967,7 +6992,7 @@ div.clipInfo.-green {
   top: 15px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -275px -252px;
+  background-position: -495px -398px;
   width: 19px;
   height: 12px;
 }
@@ -6978,7 +7003,7 @@ div.clipInfo.-green {
 }
 .buttonChoice.-yes:hover:before,
 .buttonChoice.-yes:active:before {
-  background-position: -310px -237px;
+  background-position: -475px -398px;
   width: 19px;
   height: 12px;
 }
@@ -6997,7 +7022,7 @@ div.clipInfo.-green {
   top: 13px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -341px -348px;
+  background-position: -361px -348px;
   width: 14px;
   height: 15px;
 }
@@ -7008,7 +7033,7 @@ div.clipInfo.-green {
 }
 .buttonChoice.-no:hover:before,
 .buttonChoice.-no:active:before {
-  background-position: -326px -348px;
+  background-position: -402px -313px;
   width: 14px;
   height: 15px;
 }
@@ -7031,7 +7056,7 @@ div.clipInfo.-green {
   top: 8px;
   background-image: url("../images/design/sprite.png");
   background-size: 528px 411px;
-  background-position: -462px -159px;
+  background-position: -515px -398px;
   width: 10px;
   height: 10px;
 }
