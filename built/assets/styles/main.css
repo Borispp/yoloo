@@ -3763,12 +3763,23 @@ div.clipInfo.-red {
 }
 .rates-planet {
   position: fixed;
-  top: 694px;
+  bottom: -5px;
   left: 0;
   width: 100%;
 }
 #ratesMobile .countriesCatalog--list {
   padding-bottom: 220px;
+}
+.fixed-input {
+  background-color: #2379ff !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+.fixed-icon {
+  position: fixed !important;
+  top: 18px !important;
+  right: 52px !important;
 }
 .flag {
   display: inline-block;
@@ -5417,6 +5428,9 @@ div.clipInfo.-red {
 }
 .searchCountries .searchCountries--icon-andora {
   top: 32px !important;
+}
+.searchCountries .searchCountries--icon-andora.fixed-icon {
+  top: 6px !important;
 }
 .searchCountries .searchCountries--result {
   width: 100%;

@@ -53,5 +53,15 @@ $(document).ready(function () {
 				$('#land').removeClass('-transform');
 			}
 		};
+
+		$('.mobile_menu_popup').on('scroll', function () {
+			if ($(this).scrollTop() > 100) {
+				$('.-searchCountries').addClass('fixed-input');
+				$('.searchCountries--icon').addClass('fixed-icon');
+			} else {
+				$('.-searchCountries').removeClass('fixed-input');
+				$('.searchCountries--icon').removeClass('fixed-icon');
+			}
+		});
 	}
 });
