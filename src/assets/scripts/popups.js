@@ -76,9 +76,9 @@ $('[href="#login"]').on('click', function (e) {
   $('#userPhoneNumber').focus()
 })
 
-// if(!$('#secretcode').hasClass('-hidePopup')) {
-//   $('#userSecretCode').focus()
-// }
+$('.countriesCatalog--collumn > ul >li > a ').on('click', function(e) {
+  $('.rates--data').removeClass('-hide');
+})
 
 
 
