@@ -51,16 +51,19 @@ $(document).ready(function () {
 			} else {
 				$('#land').removeClass('-transform');
 			}
+
+			
 		}
 
-		$('.mobile_menu_popup').on('scroll', function() { 
-				if($(this).scrollTop() > 100) {
-					$('.-searchCountries').addClass('fixed-input');
-					$('.searchCountries--icon').addClass('fixed-icon');
-				} else {
-					$('.-searchCountries').removeClass('fixed-input');
-					$('.searchCountries--icon').removeClass('fixed-icon');
-				}
-		});
+		// document.addEventListener('touchmove', function() { 
+		// 		if(window.pageYOffset > 100) {
+		// 		console.log(this.scrollTop());
+		// 			$('.-searchCountries').addClass('fixed-input');
+		// 			$('.searchCountries--icon').addClass('fixed-icon');
+		// 		} else {
+		// 			$('.-searchCountries').removeClass('fixed-input');
+		// 			$('.searchCountries--icon').removeClass('fixed-icon');
+		// 		}
+		// });
 	}
 });

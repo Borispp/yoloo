@@ -15,9 +15,10 @@
 
 </head>
 <body>
-  <section class="contacts">
-      <h1 class="contacts--headline headline1">Yoloo contacts</h1>
-      <p id="contacts--description--mobile" class="contacts--description">Still can’t find an answer to your question, please write us your question or contact us directly.</p>
+  <section class="contacts contacts-mobile">
+      <a href="#mainMobile" id="mobile-menu" class="menu_mobile menu_mobile1 "></a>
+      <h1 class="contacts--headline contacts-mobile--headline headline1">Yoloo contacts</h1>
+      <p id="contacts--description--mobile" class="contacts--description contacts-mobile--description">Still can’t find an answer to your question, please write us your question or contact us directly.</p>
 
       <form action="" class="contacts--form contacts--form--mobile">
       <fieldset class="contacts--location contacts--location-mobile">
@@ -69,5 +70,52 @@
         
       </form>
     </section>
+    <div class="mobile_menu_popup -mobile_hide_popup" id="mainMobile">
+      <a href="#" class="close"></a>
+
+      <ul class="mobile_menu_popup--list">
+        <li><a href="rates-mobile.html" class="menu_mobile">Rates</a></li>
+        <li><a href="support-mobile.html" class="menu_mobile">Support</a></li>
+        <li><a href="contacts-mobile.html" class="menu_mobile">Contact Us</a></li>
+      </ul>
+
+      <p class="main_description--download">
+        <a href="#" class="button_square -red -ios">Download for IOS</a>
+        <a href="#" class="button_square -red -android">Download for Android</a>
+      </p>
+    </div>
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+  <script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="assets/libs/skrollr/dist/skrollr.min.js"></script>
+  <script src="assets/libs/bxslider-4/dist/jquery.bxslider.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    var slider = $('.bxslider').bxSlider({
+      infiniteLoop: true,
+      pager: false,
+    });
+
+    $('.bxslider2').bxSlider({
+      pager: true,
+      controls: false
+    })
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      var s;
+    } else {
+      var s = skrollr.init();
+    }
+
+  </script>
+
+  <script src="assets/scripts/datepicker.js"></script>
 </body>
 </html>

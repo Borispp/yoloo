@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <title>Yoloo: support</title>
+  <link href="assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="assets/libs/jquery-ui/themes/base/datepicker.css" rel="stylesheet" />
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/svg.css" rel="stylesheet" type="text/css">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" href="assets/images/content/fav.png" type="image/x-icon" />
+
+</head>
+<body>
+  <div class="support-mobile mobile_menu_popup -mobile_hide_popup" id="supportMobile">
+  <a href="#mainMobile" id="mobile-menu" class="menu_mobile menu_mobile1 "></a>
+    <h2>
+      Yoloo support
+    </h2>
+
+    <div class="support--list">
+      <div class="support--item">
+        <h3>Calling Questions</h3>
+
+        <div class="support--response">
+          <strong>How can I check my call history from the app?</strong>
+          <p>If you don't see the icon: Yoloo is not running. Restart it from the Applications folder (Mac), Start Menu (Windows), or Programs Menu (Linux). When prompted, sign in with the email and password for your Yoloo account. Your computer will begin to sync with your Yoloo account online.</p>
+
+          <strong>Can I receive an support service call?</strong>
+          <p>Verify that your number is correct and click on "Send me a new PIN". We will then send you a new pin to your phone. Enter that new pin to log in to your account.</p>
+
+          <strong>How do I change the language on my account?</strong>
+          <p>The call is placed through your mobile operator. Your call will be connected through a local number and connect you to your international number.</p>
+        </div>
+      </div>
+      <div class="support--item">
+        <h3>Payment Questions</h3>
+
+        <div class="support--response">
+          <strong>How can I check my call history from the app?</strong>
+          <p>If you don't see the icon: Yoloo is not running. Restart it from the Applications folder (Mac), Start Menu (Windows), or Programs Menu (Linux). When prompted, sign in with the email and password for your Yoloo account. Your computer will begin to sync with your Yoloo account online.</p>
+
+          <strong>Can I receive an support service call?</strong>
+          <p>Verify that your number is correct and click on "Send me a new PIN". We will then send you a new pin to your phone. Enter that new pin to log in to your account.</p>
+
+          <strong>How do I change the language on my account?</strong>
+          <p>The call is placed through your mobile operator. Your call will be connected through a local number and connect you to your international number.</p>
+        </div>
+      </div>
+      <div class="support--item">
+        <h3>Calling Questions</h3>
+
+        <div class="support--response">
+          <strong>How can I check my call history from the app?</strong>
+          <p>If you don't see the icon: Yoloo is not running. Restart it from the Applications folder (Mac), Start Menu (Windows), or Programs Menu (Linux). When prompted, sign in with the email and password for your Yoloo account. Your computer will begin to sync with your Yoloo account online.</p>
+
+          <strong>Can I receive an support service call?</strong>
+          <p>Verify that your number is correct and click on "Send me a new PIN". We will then send you a new pin to your phone. Enter that new pin to log in to your account.</p>
+
+          <strong>How do I change the language on my account?</strong>
+          <p>The call is placed through your mobile operator. Your call will be connected through a local number and connect you to your international number.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile_menu_popup -mobile_hide_popup" id="mainMobile">
+      <a href="#" class="close"></a>
+
+      <ul class="mobile_menu_popup--list">
+        <li><a href="rates-mobile.html" class="menu_mobile">Rates</a></li>
+        <li><a href="support-mobile.html" class="menu_mobile">Support</a></li>
+        <li><a href="contacts-mobile.html" class="menu_mobile">Contact Us</a></li>
+      </ul>
+
+      <p class="main_description--download">
+        <a href="#" class="button_square -red -ios">Download for IOS</a>
+        <a href="#" class="button_square -red -android">Download for Android</a>
+      </p>
+    </div>
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+  <script src="assets/libs/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="assets/libs/skrollr/dist/skrollr.min.js"></script>
+  <script src="assets/libs/bxslider-4/dist/jquery.bxslider.min.js"></script>
+
+  <script src="assets/scripts/scroll.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/datatables.js"></script>
+  <script src="assets/scripts/popups.js"></script>
+
+  <script language="JavaScript">
+    var slider = $('.bxslider').bxSlider({
+      infiniteLoop: true,
+      pager: false,
+    });
+
+    $('.bxslider2').bxSlider({
+      pager: true,
+      controls: false
+    })
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      var s;
+    } else {
+      var s = skrollr.init();
+    }
+
+  </script>
+
+  <script src="assets/scripts/datepicker.js"></script>
+</body>
+</html>

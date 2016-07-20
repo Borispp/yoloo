@@ -123,7 +123,7 @@ $('.footer--menu--items h3').on('click', function (e) {
 })
 
 // Mobile menu
-$('.menu_mobile').on('click', function (e) {
+$('.menu_mobile1').on('click', function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href');
 
