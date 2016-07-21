@@ -2378,14 +2378,14 @@ input[type="search"] {
   content: '';
   display: block;
   width: 110px;
-  margin: 12px auto 0;
+  margin: 5px auto 0;
   height: 1px;
   background: rgba(255,255,255,0.5);
 }
 .rates--data h2 a {
   color: #95e7ff;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .rates--data h4 {
   font-family: 'IntroBookBold';
@@ -2482,6 +2482,13 @@ input[type="search"] {
 }
 .rates--data .button {
   padding: 14px 0 12px;
+}
+.ratesMobileandor img {
+  background: #287bfe;
+  display: block;
+}
+.rates--data--inner h2:after {
+  margin-top: 0;
 }
 .table_block {
   padding-bottom: 10px;

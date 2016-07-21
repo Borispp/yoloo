@@ -77,7 +77,7 @@ $('[href="#login"]').on('click', function (e) {
 })
 
 $('.countriesCatalog--collumn > ul >li > a ').on('click', function(e) {
-  $('.rates--data').removeClass('-hide');
+  $('.rates--data').slideDown();
 })
 
 
